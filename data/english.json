@@ -1,0 +1,108 @@
+{
+  "id": "english",
+  "name": "English",
+  "paper_note": "You will read an extract from Blood Brothers and complete a range of tasks.",
+  "scope": [
+    { "heading": "You will be assessed for the following skills", "items": ["Comprehension", "Subject terminology", "Analysis (Explanation and Inference)", "SPaG"], "source": "booklet" },
+    { "heading": "How can I revise?", "items": ["Complete the tasks on page 5 of your booklet", "Create mind maps for key characters (Mickey, Eddie, Mrs Johnstone, Linda)", "Revise the key themes: Class, hope, gender, nature vs nurture"], "source": "booklet" }
+  ],
+  "flashcard_sets": [
+    { "id": "characters", "title": "Key characters" },
+    { "id": "themes", "title": "Key themes" },
+    { "id": "terms", "title": "Subject terminology" }
+  ],
+  "flashcards": [
+    { "id": "en-fc-01", "set": "characters", "key": true, "front": "Who wrote Blood Brothers?", "back": "Willy Russell. It is a musical play set in Liverpool.", "source": "generated" },
+    { "id": "en-fc-02", "set": "characters", "key": true, "front": "Mrs Johnstone", "back": "A poor, working-class single mother of many children. She works as a cleaner for Mrs Lyons. She gives away one of her twins.", "source": "generated" },
+    { "id": "en-fc-03", "set": "characters", "key": true, "front": "Mickey", "back": "The twin who stays with Mrs Johnstone. He grows up working class. Later he loses his job, goes to prison and becomes depressed.", "source": "generated" },
+    { "id": "en-fc-04", "set": "characters", "key": true, "front": "Eddie (Edward)", "back": "The twin given to Mrs Lyons. He grows up middle class, goes to university and becomes a councillor.", "source": "generated" },
+    { "id": "en-fc-05", "set": "characters", "key": true, "front": "Mrs Lyons", "back": "A wealthy woman who cannot have children. She persuades Mrs Johnstone to give her one twin. She becomes anxious and paranoid.", "source": "generated" },
+    { "id": "en-fc-06", "set": "characters", "key": true, "front": "Linda", "back": "A friend of both twins since childhood. She marries Mickey.", "source": "generated" },
+    { "id": "en-fc-07", "set": "characters", "front": "The Narrator", "back": "A character who comments on the action and reminds the audience about fate and the ending.", "source": "generated" },
+    { "id": "en-fc-08", "set": "characters", "front": "Sammy", "back": "Mickey's older brother. He gets into trouble and leads Mickey into crime.", "source": "generated" },
+    { "id": "en-fc-09", "set": "characters", "front": "Blood brothers", "back": "Mickey and Eddie become 'blood brothers' as children. They do not know they are really twins.", "source": "generated" },
+    { "id": "en-fc-10", "set": "themes", "key": true, "front": "Theme: class", "back": "The twins have very different lives because of the class they grow up in. Money gives Eddie chances that Mickey never gets.", "source": "generated" },
+    { "id": "en-fc-11", "set": "themes", "key": true, "front": "Theme: hope", "back": "Characters dream of a better life, but their hopes are often crushed by money worries and class.", "source": "generated" },
+    { "id": "en-fc-12", "set": "themes", "key": true, "front": "Theme: gender", "back": "Women in the play, like Mrs Johnstone and Linda, have few choices and depend on men and money.", "source": "generated" },
+    { "id": "en-fc-13", "set": "themes", "key": true, "front": "Theme: nature vs nurture", "back": "The twins are born the same (nature) but grow up in different homes (nurture). The play suggests upbringing shapes their lives.", "source": "generated" },
+    { "id": "en-fc-14", "set": "themes", "front": "Theme: superstition and fate", "back": "Mrs Lyons invents a superstition that twins separated at birth will die if they learn the truth. The Narrator keeps hinting at this fate.", "source": "generated" },
+    { "id": "en-fc-15", "set": "terms", "key": true, "front": "Repetition", "back": "Using the same word or phrase more than once to make an idea stand out.", "source": "generated" },
+    { "id": "en-fc-16", "set": "terms", "key": true, "front": "Emotive language", "back": "Words chosen to make the reader or audience feel strong emotions, such as sadness or anger.", "source": "generated" },
+    { "id": "en-fc-17", "set": "terms", "key": true, "front": "Metaphor", "back": "Saying something IS something else, to compare them. For example: 'Time is a thief.'", "source": "generated" },
+    { "id": "en-fc-18", "set": "terms", "key": true, "front": "Direct address", "back": "Speaking straight to someone, often using 'you'.", "source": "generated" },
+    { "id": "en-fc-19", "set": "terms", "key": true, "front": "Ellipsis", "back": "Three dots (…) that show words are left out or a thought trails off. It can create tension or sadness.", "source": "generated" },
+    { "id": "en-fc-20", "set": "terms", "key": true, "front": "Simile", "back": "Comparing two things using 'like' or 'as'. For example: 'as cold as ice'.", "source": "generated" },
+    { "id": "en-fc-21", "set": "terms", "key": true, "front": "Foreshadowing", "back": "A hint early in a story about something that will happen later.", "source": "generated" },
+    { "id": "en-fc-22", "set": "terms", "key": true, "front": "Dramatic irony", "back": "When the audience knows something that a character does not know.", "source": "generated" },
+    { "id": "en-fc-23", "set": "terms", "front": "Sympathy", "back": "Feeling sorry for a character and understanding how they feel.", "source": "generated" },
+    { "id": "en-fc-24", "set": "terms", "front": "Inference", "back": "Working out something the writer suggests but does not say directly.", "source": "generated" }
+  ],
+  "quiz_sets": [
+    { "id": "techniques", "title": "Spot the technique" },
+    { "id": "play", "title": "The play: characters and themes" }
+  ],
+  "quiz": [
+    { "id": "en-q-01", "set": "techniques", "q": "\"The classroom was a zoo.\" Which technique is this?", "options": ["Simile", "Metaphor", "Ellipsis", "Repetition"], "answer": 1, "explain": "It says the classroom IS a zoo, without 'like' or 'as'.", "source": "generated" },
+    { "id": "en-q-02", "set": "techniques", "q": "\"Her voice was as soft as a feather.\" Which technique is this?", "options": ["Simile", "Metaphor", "Direct address", "Dramatic irony"], "answer": 0, "explain": "It compares using 'as … as'.", "source": "generated" },
+    { "id": "en-q-03", "set": "techniques", "q": "\"Never, never, never give up.\" Which technique is this?", "options": ["Ellipsis", "Simile", "Foreshadowing", "Repetition"], "answer": 3, "explain": "The word 'never' is used three times for emphasis.", "source": "generated" },
+    { "id": "en-q-04", "set": "techniques", "q": "\"You know how it feels to wait.\" Which technique is this?", "options": ["Metaphor", "Ellipsis", "Direct address", "Simile"], "answer": 2, "explain": "The speaker talks straight to 'you'.", "source": "generated" },
+    { "id": "en-q-05", "set": "techniques", "q": "\"I thought he would come back…\" What does the ellipsis (…) suggest?", "options": ["The speaker is shouting", "A thought trailing off, perhaps sadly", "A list of items", "A question"], "answer": 1, "explain": "Ellipsis shows words left unsaid, often sadness or doubt.", "source": "generated" },
+    { "id": "en-q-06", "set": "techniques", "q": "\"The heartbroken child sobbed alone in the freezing dark.\" Which technique is used most?", "options": ["Emotive language", "Simile", "Repetition", "Direct address"], "answer": 0, "explain": "Words like 'heartbroken', 'sobbed' and 'alone' are chosen to make us feel sad.", "source": "generated" },
+    { "id": "en-q-07", "set": "techniques", "q": "Early in a story, a character says: \"Nothing bad will ever happen here.\" Later something terrible happens. What was the early line?", "options": ["Simile", "Ellipsis", "Metaphor", "Foreshadowing"], "answer": 3, "explain": "It hints at what will happen later.", "source": "generated" },
+    { "id": "en-q-08", "set": "techniques", "q": "The audience knows a letter is fake, but the character believes it. What is this called?", "options": ["Repetition", "Dramatic irony", "Direct address", "Emotive language"], "answer": 1, "explain": "The audience knows something the character does not.", "source": "generated" },
+    { "id": "en-q-09", "set": "techniques", "q": "\"Hope is a candle in a storm.\" Which technique is this?", "options": ["Metaphor", "Simile", "Ellipsis", "Direct address"], "answer": 0, "explain": "It says hope IS a candle.", "source": "generated" },
+    { "id": "en-q-10", "set": "techniques", "q": "\"Run like the wind!\" Which technique is this?", "options": ["Metaphor", "Repetition", "Simile", "Foreshadowing"], "answer": 2, "explain": "It compares using 'like'.", "source": "generated" },
+    { "id": "en-q-11", "set": "techniques", "q": "\"Listen to me, please. Just listen.\" Which TWO techniques are used here?", "options": ["Simile and metaphor", "Ellipsis and simile", "Foreshadowing and simile", "Direct address and repetition"], "answer": 3, "explain": "The speaker talks to someone directly and repeats 'listen'.", "source": "generated" },
+    { "id": "en-q-12", "set": "techniques", "q": "\"The bills piled up, cruel and endless, crushing the family.\" Which technique is this?", "options": ["Simile", "Emotive language", "Ellipsis", "Dramatic irony"], "answer": 1, "explain": "Words like 'cruel' and 'crushing' make us feel the family's pain.", "source": "generated" },
+    { "id": "en-q-13", "set": "play", "q": "Where is Blood Brothers set?", "options": ["London", "Manchester", "Liverpool", "Birmingham"], "answer": 2, "explain": "The play is set in Liverpool.", "source": "generated" },
+    { "id": "en-q-14", "set": "play", "q": "Why does Mrs Johnstone agree to give away a twin?", "options": ["She is poor and cannot afford another child", "She does not like babies", "Her husband tells her to", "The police make her"], "answer": 0, "explain": "She is already struggling for money with many children.", "source": "generated" },
+    { "id": "en-q-15", "set": "play", "q": "Which twin is brought up by Mrs Lyons?", "options": ["Mickey", "Sammy", "Linda", "Eddie"], "answer": 3, "explain": "Eddie (Edward) grows up in the wealthy Lyons family.", "source": "generated" },
+    { "id": "en-q-16", "set": "play", "q": "Which theme is about upbringing shaping who you become?", "options": ["Hope", "Nature vs nurture", "Gender", "Friendship"], "answer": 1, "explain": "The twins share nature but have different nurture.", "source": "generated" },
+    { "id": "en-q-17", "set": "play", "q": "In the page 5 extract, how does Mrs Johnstone enter?", "options": ["Running and laughing", "Pushing a pram", "Carrying shopping", "With Mrs Lyons"], "answer": 1, "explain": "The stage direction at the top of the extract tells you. Check it in your booklet.", "source": "generated" },
+    { "id": "en-q-18", "set": "play", "q": "In the page 5 extract, what is Mrs Johnstone mostly worried about?", "options": ["Losing her baby and money troubles", "Going on holiday", "Her job at a shop", "A school report"], "answer": 0, "explain": "She worries about debts and about not being allowed to keep the baby.", "source": "generated" },
+    { "id": "en-q-19", "set": "play", "q": "What does Linda do later in the play?", "options": ["She moves to London", "She marries Eddie", "She marries Mickey", "She becomes a teacher"], "answer": 2, "explain": "Linda marries Mickey.", "source": "generated" },
+    { "id": "en-q-20", "set": "play", "q": "Which theme is shown by Eddie going to university while Mickey loses his job?", "options": ["Superstition", "Gender", "Friendship", "Class"], "answer": 3, "explain": "Money and class give Eddie chances that Mickey does not get.", "source": "generated" }
+  ],
+  "writing_intro": "Use PEA paragraphs: Point, Evidence, Analysis. Use your booklet to find the evidence. Type your own quotation from the extract on page 5.",
+  "writing_guide": {
+    "PEA": {
+      "P": "Make one point that answers the question.",
+      "E": "Copy a short quotation from the extract on page 5 of your booklet that supports your point.",
+      "X": "Name the technique. Say what one word suggests. Explain why it proves your point."
+    }
+  },
+  "writing": [
+    {
+      "id": "sympathy", "type": "PEA", "paragraphs": 3, "source": "booklet",
+      "title": "How does Russell create sympathy in the extract?",
+      "question": "How does Russell create sympathy in the extract?",
+      "starters": {
+        "P": ["Russell creates sympathy for Mrs Johnstone by", "The audience feels sorry for Mrs Johnstone because", "Another way Russell creates sympathy is"],
+        "E": ["This is shown when she says \"", "For example, \"", "In the extract, \""],
+        "X": ["The technique here is", "The word \"", "This suggests that", "This makes the audience feel"]
+      },
+      "hints": ["Look for words about money, bills and debt.", "Look for lines where she speaks to the baby.", "Look for words that are repeated.", "Look for lines about not being able to keep things.", "Think about the ellipsis at the end."],
+      "hints_source": "generated"
+    }
+  ],
+  "booklet_tasks": {
+    "title": "Booklet tasks on page 5 (do these on paper)",
+    "items": [
+      "AO1 Reading comprehension: answer the three questions on page 5.",
+      "AO1 Subject terminology: find examples of repetition, emotive language, metaphor, direct address and ellipsis in the extract.",
+      "Additional task: how does Russell show hope, class and gender in the play?"
+    ],
+    "source": "booklet"
+  },
+  "resources": [
+    { "label": "Your paper booklet, pages 4 and 5", "url": null, "note": "The extract and the revision tasks are on page 5. How to write a PEA paragraph is on page 4.", "source": "booklet" }
+  ],
+  "rag_topics": [
+    { "id": "comprehension", "group": "Skills", "label": "Comprehension", "source": "booklet" },
+    { "id": "terminology", "group": "Skills", "label": "Subject terminology", "source": "booklet" },
+    { "id": "analysis", "group": "Skills", "label": "Analysis (Explanation and Inference)", "source": "booklet" },
+    { "id": "spag", "group": "Skills", "label": "SPaG (spelling, punctuation and grammar)", "source": "booklet" },
+    { "id": "characters", "group": "Knowledge", "label": "Key characters: Mickey, Eddie, Mrs Johnstone, Linda", "source": "booklet" },
+    { "id": "themes", "group": "Knowledge", "label": "Key themes: class, hope, gender, nature vs nurture", "source": "booklet" }
+  ]
+}

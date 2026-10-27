@@ -1,0 +1,134 @@
+{
+  "id": "re",
+  "name": "RE",
+  "paper_note": "Your assessment has 3 sections: key terminology, knowledge and understanding, and extended writing.",
+  "scope": [
+    { "heading": "Creation and Covenant", "items": ["Genesis 1, Creation imago Dei and the sanctity of life", "Genesis 2, relationships and morality", "The Sacrament of Matrimony"], "source": "booklet" },
+    { "heading": "Prophecy and Promise", "items": ["Reading the Bible allegorically", "The importance of Hannah"], "source": "booklet" },
+    { "heading": "Your assessment will have 3 sections", "items": ["Key terminology", "Knowledge and understanding", "Extended writing"], "source": "booklet" }
+  ],
+  "flashcard_sets": [
+    { "id": "creation", "title": "Key terms: Creation and Covenant" },
+    { "id": "prophecy", "title": "Key terms: Prophecy and Promise" },
+    { "id": "background", "title": "Genesis, Hannah and reading the Bible" }
+  ],
+  "flashcards": [
+    { "id": "re-fc-01", "set": "creation", "key": true, "front": "Imago Dei", "back": "Latin for 'image of God'. Catholics believe every human is made in the image and likeness of God (Genesis 1:27).", "source": "generated", "needs_parent_check": true },
+    { "id": "re-fc-02", "set": "creation", "key": true, "front": "Inalienable Dignity", "back": "The worth every human person has because they are made in God's image. It can never be taken away or lost.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-fc-03", "set": "creation", "key": true, "front": "Human Person", "back": "A human being made by God, with a body and a soul. A person can think, choose and love.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-fc-04", "set": "creation", "key": true, "front": "Relational", "back": "Humans are made to live in relationship with God and with other people. Genesis 2 says it is not good for the man to be alone.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-fc-05", "set": "creation", "key": true, "front": "Rational", "back": "Humans can think, reason and understand. This is part of being made in God's image.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-fc-06", "set": "creation", "key": true, "front": "Volitional", "back": "Humans have free will. We can choose to do good or to do wrong.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-fc-07", "set": "creation", "key": true, "front": "Sanctity of Life", "back": "The belief that all human life is sacred (holy) because it is a gift from God. Life must be protected from conception to natural death.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-fc-08", "set": "creation", "key": true, "front": "Marriage", "back": "A lifelong, faithful union between a man and a woman, open to having children.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-fc-09", "set": "creation", "key": true, "front": "Sacrament of Matrimony", "back": "The sacrament where a baptised man and woman make vows before God to love each other faithfully for life. The couple give the sacrament to each other.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-fc-10", "set": "prophecy", "key": true, "front": "Typology", "back": "Reading the Old Testament to find people and events that point forward to Jesus and the New Testament.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-fc-11", "set": "prophecy", "key": true, "front": "Protoevangelium", "back": "Means 'first Gospel'. In Genesis 3:15 God promises that the woman's offspring will defeat the serpent. Catholics see this as the first promise of a Saviour.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-fc-12", "set": "prophecy", "key": true, "front": "Mary", "back": "The mother of Jesus. Catholics honour her as the greatest of all the saints.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-fc-13", "set": "prophecy", "key": true, "front": "Mother of God", "back": "A title for Mary. Jesus is truly God, so Mary, his mother, is the Mother of God.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-fc-14", "set": "prophecy", "key": true, "front": "Immaculate Conception", "back": "The belief that Mary was kept free from original sin from the very start of her life, by God's grace. It is not the same as the Virgin Birth.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-fc-15", "set": "prophecy", "key": true, "front": "Our Lady", "back": "A title of love and respect that Catholics use for Mary.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-fc-16", "set": "prophecy", "key": true, "front": "New Eve", "back": "A title for Mary. Eve said no to God. Mary said yes. Mary's obedience helps to undo Eve's disobedience.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-fc-17", "set": "prophecy", "key": true, "front": "Magnificat", "back": "Mary's song of praise to God in Luke 1, when she visits Elizabeth. It begins: 'My soul magnifies the Lord.'", "source": "generated", "needs_parent_check": true },
+    { "id": "re-fc-18", "set": "prophecy", "key": true, "front": "The Rosary", "back": "A Catholic prayer using beads. People pray the Hail Mary and think about events in the lives of Jesus and Mary, called the mysteries.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-fc-19", "set": "background", "front": "Genesis 1", "back": "The first creation story. God creates the world in six days and rests on the seventh. Humans are made last, male and female, in God's image. God sees it is very good.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-fc-20", "set": "background", "front": "Genesis 2", "back": "The second creation story. God forms Adam from the dust and breathes life into him. God makes Eve as a partner for Adam. It focuses on relationships.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-fc-21", "set": "background", "front": "Covenant", "back": "A sacred agreement or promise between God and his people.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-fc-22", "set": "background", "front": "Reading the Bible allegorically", "back": "Looking for a deeper, symbolic meaning in a Bible story, not only the literal meaning. Catholics do not have to read Genesis as a scientific account.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-fc-23", "set": "background", "front": "Reading the Bible literally", "back": "Believing a Bible story happened exactly as it is written, word for word.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-fc-24", "set": "background", "front": "Hannah", "back": "A woman in 1 Samuel who could not have children. She prayed at the temple and promised to give her son to God. God answered her prayer and she had Samuel.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-fc-25", "set": "background", "front": "Why is Hannah important?", "back": "She shows faithful prayer and trust in God. Her song of praise in 1 Samuel 2 is like Mary's Magnificat. Catholics see her as pointing forward to Mary.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-fc-26", "set": "background", "front": "Samuel", "back": "Hannah's son. He grew up serving God in the temple and became a great prophet.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-fc-27", "set": "background", "front": "Stewardship", "back": "The duty God gives humans to look after the world he made.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-fc-28", "set": "background", "front": "Prophecy", "back": "A message from God, spoken by a prophet. It often points to what God will do in the future.", "source": "generated", "needs_parent_check": true }
+  ],
+  "quiz_sets": [
+    { "id": "creation", "title": "Creation and Covenant" },
+    { "id": "prophecy", "title": "Prophecy and Promise" }
+  ],
+  "quiz": [
+    { "id": "re-q-01", "set": "creation", "q": "What does 'Imago Dei' mean?", "options": ["Image of God", "Gift of God", "Word of God", "Son of God"], "answer": 0, "explain": "Imago Dei is Latin for 'image of God'.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-q-02", "set": "creation", "q": "Which part of the Bible says humans are made in God's image?", "options": ["Exodus 20", "Genesis 1:27", "Luke 1:46", "1 Samuel 1"], "answer": 1, "explain": "Genesis 1:27 says God created humans in his own image, male and female.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-q-03", "set": "creation", "q": "What does 'sanctity of life' mean?", "options": ["Life is short", "Life should be enjoyed", "Life is sacred because it comes from God", "Only some lives matter"], "answer": 2, "explain": "Sanctity of life means all human life is holy because it is God's gift.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-q-04", "set": "creation", "q": "What does 'volitional' mean?", "options": ["Able to love", "Able to think", "Able to pray", "Able to choose (free will)"], "answer": 3, "explain": "Volitional means having free will, so we can choose.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-q-05", "set": "creation", "q": "What does 'rational' mean?", "options": ["Able to think and reason", "Able to make friends", "Able to make things", "Able to keep promises"], "answer": 0, "explain": "Rational means humans can think, reason and understand.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-q-06", "set": "creation", "q": "In which creation story does God make Eve as a partner for Adam?", "options": ["Genesis 1", "Genesis 2", "Exodus", "Luke"], "answer": 1, "explain": "Genesis 2 tells the story of Adam and Eve and focuses on relationships.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-q-07", "set": "creation", "q": "Genesis 1 says God created the world in how many days, before resting?", "options": ["Three", "Five", "Six", "Seven"], "answer": 2, "explain": "God creates in six days and rests on the seventh day.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-q-08", "set": "creation", "q": "What does 'inalienable dignity' mean?", "options": ["Dignity you earn by working hard", "Dignity given by the government", "Dignity only adults have", "Worth that can never be taken away"], "answer": 3, "explain": "Every person has dignity because they are made in God's image, and it cannot be lost.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-q-09", "set": "creation", "q": "In the Sacrament of Matrimony, who gives the sacrament?", "options": ["The bride and groom give it to each other", "The bishop", "The parents", "The witnesses"], "answer": 0, "explain": "In Catholic teaching the couple are the ministers of the sacrament. The priest or deacon is the Church's witness.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-q-10", "set": "creation", "q": "Which of these is part of Catholic teaching about marriage?", "options": ["It lasts until one person wants to leave", "It is lifelong, faithful and open to children", "It is only a legal contract", "It does not need any promises"], "answer": 1, "explain": "Catholics believe marriage is lifelong, faithful and open to new life.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-q-11", "set": "creation", "q": "What does 'relational' mean?", "options": ["Humans are made to live alone", "Humans are related to animals", "Humans are made for relationships with God and others", "Humans must have big families"], "answer": 2, "explain": "Humans are made to be in relationship with God and with each other.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-q-12", "set": "prophecy", "q": "What does 'reading the Bible allegorically' mean?", "options": ["Reading it very fast", "Looking for a deeper, symbolic meaning", "Reading it in Latin", "Only reading the New Testament"], "answer": 1, "explain": "An allegorical reading looks for deeper meaning beyond the literal story.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-q-13", "set": "prophecy", "q": "Who was Hannah's son?", "options": ["David", "Isaac", "Moses", "Samuel"], "answer": 3, "explain": "Hannah prayed for a child and God gave her Samuel.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-q-14", "set": "prophecy", "q": "Why do Catholics see a link between Hannah and Mary?", "options": ["Both sang a song of praise to God about their child", "Both were queens", "Both lived in Rome", "Both were sisters"], "answer": 0, "explain": "Hannah's song in 1 Samuel 2 is like Mary's Magnificat in Luke 1.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-q-15", "set": "prophecy", "q": "What is the Immaculate Conception?", "options": ["Jesus being born in Bethlehem", "Mary being taken up to heaven", "Mary being free from original sin from the start of her life", "The angel visiting Mary"], "answer": 2, "explain": "The Immaculate Conception is about Mary, not about Jesus' birth.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-q-16", "set": "prophecy", "q": "What does 'Protoevangelium' mean?", "options": ["Last prayer", "First Gospel", "New covenant", "Holy mother"], "answer": 1, "explain": "Protoevangelium means 'first Gospel'. It refers to Genesis 3:15.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-q-17", "set": "prophecy", "q": "Why is Mary called the 'New Eve'?", "options": ["She was the first woman", "She lived in Eden", "She had many children", "She said yes to God where Eve said no"], "answer": 3, "explain": "Mary's obedience to God is compared with Eve's disobedience.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-q-18", "set": "prophecy", "q": "What is the Magnificat?", "options": ["Mary's song of praise in Luke 1", "A Catholic church in Rome", "The first book of the Bible", "A type of rosary bead"], "answer": 0, "explain": "The Magnificat begins 'My soul magnifies the Lord'.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-q-19", "set": "prophecy", "q": "What is typology?", "options": ["Studying the types of churches", "Writing prayers", "Finding Old Testament people and events that point to Jesus", "Learning Bible verses by heart"], "answer": 2, "explain": "Typology links Old Testament people and events to the New Testament.", "source": "generated", "needs_parent_check": true },
+    { "id": "re-q-20", "set": "prophecy", "q": "What do people use to help them pray the Rosary?", "options": ["A candle", "Beads", "A bell", "A book of songs"], "answer": 1, "explain": "The Rosary uses beads to count the prayers.", "source": "generated", "needs_parent_check": true }
+  ],
+  "writing_intro": "Use a PEE paragraph: Point, Evidence, Explain. The first three are the Challenge questions from page 10. The last three are the Extended writing topics from page 10.",
+  "writing_guide": {
+    "PEE": {
+      "P": "Make one clear point that answers the question.",
+      "E": "Give evidence: a Bible quote, a Church teaching or an example.",
+      "X": "Explain what the evidence shows and how it links to your point."
+    }
+  },
+  "writing": [
+    {
+      "id": "challenge-1", "type": "PEE", "paragraphs": 2, "source": "booklet",
+      "title": "Challenge 1: What do Catholics believe about creation?",
+      "question": "What do Catholics believe about creation?",
+      "starters": { "P": ["Catholics believe that", "One belief about creation is that"], "E": ["This is shown in Genesis 1, which says", "For example,", "The Church teaches that"], "X": ["This means that", "This shows that", "Therefore Catholics"] },
+      "hints": ["God created everything out of nothing.", "God saw that creation was good.", "Humans are made in God's image (imago Dei).", "Catholics do not have to read Genesis as science. It teaches truths about God.", "Humans are stewards who must care for creation."],
+      "hints_source": "generated", "needs_parent_check": true
+    },
+    {
+      "id": "challenge-2", "type": "PEE", "paragraphs": 2, "source": "booklet",
+      "title": "Challenge 2: What is the difference between Genesis 1 and Genesis 2?",
+      "question": "What is the difference between Genesis 1 and Genesis 2?",
+      "starters": { "P": ["One difference is that", "Genesis 1 focuses on", "Genesis 2 focuses on"], "E": ["In Genesis 1,", "In Genesis 2,", "For example,"], "X": ["This shows that", "This means that", "Both stories teach that"] },
+      "hints": ["Genesis 1: creation in six days, humans made last, male and female together.", "Genesis 2: Adam made from dust first, then the garden, then Eve as a partner.", "Genesis 1 shows God's power and order.", "Genesis 2 shows relationships and how humans should live.", "Both stories teach that God made humans and that they are special."],
+      "hints_source": "generated", "needs_parent_check": true
+    },
+    {
+      "id": "challenge-3", "type": "PEE", "paragraphs": 2, "source": "booklet",
+      "title": "Challenge 3: Why is the Sacrament of Matrimony important to Catholics?",
+      "question": "Why is the Sacrament of Matrimony important to Catholics?",
+      "starters": { "P": ["Matrimony is important because", "One reason is that"], "E": ["In the wedding vows, the couple promise", "Genesis 2 says", "The Church teaches that"], "X": ["This means that", "This shows that", "Therefore Catholics believe"] },
+      "hints": ["It is a sacrament, so God's grace helps the couple.", "The couple make vows to be faithful for life.", "Marriage is open to children and family life.", "Genesis 2 says the man and woman become one flesh.", "It reflects the love of God for his people."],
+      "hints_source": "generated", "needs_parent_check": true
+    },
+    {
+      "id": "extended-1", "type": "PEE", "paragraphs": 1, "source": "booklet",
+      "title": "Extended writing: Genesis 1, imago Dei and the sanctity of life",
+      "question": "Write a PEE paragraph about Genesis 1, Creation, imago Dei and the sanctity of life.",
+      "starters": { "P": ["Catholics believe that", "Genesis 1 teaches that"], "E": ["Genesis 1:27 says", "For example,"], "X": ["This means that", "This is why Catholics"] }
+    },
+    {
+      "id": "extended-2", "type": "PEE", "paragraphs": 1, "source": "booklet",
+      "title": "Extended writing: Genesis 2, relationships and morality",
+      "question": "Write a PEE paragraph about Genesis 2, relationships and morality.",
+      "starters": { "P": ["Genesis 2 teaches that", "Catholics believe that"], "E": ["In Genesis 2,", "For example,"], "X": ["This means that", "This shows that"] }
+    },
+    {
+      "id": "extended-3", "type": "PEE", "paragraphs": 1, "source": "booklet",
+      "title": "Extended writing: the Sacrament of Matrimony",
+      "question": "Write a PEE paragraph about the Sacrament of Matrimony.",
+      "starters": { "P": ["Catholics believe that marriage", "The Sacrament of Matrimony is"], "E": ["In the vows,", "The Church teaches that"], "X": ["This means that", "This shows that"] }
+    }
+  ],
+  "resources": [
+    { "label": "ClassCharts", "url": "https://www.classcharts.com/", "note": "Use the knowledge organisers on ClassCharts from your RE teacher. You can ask your RE teacher for a paper copy.", "source": "booklet" }
+  ],
+  "rag_topics": [
+    { "id": "genesis1", "group": "Creation and Covenant", "label": "Genesis 1, Creation imago Dei and the sanctity of life", "source": "booklet" },
+    { "id": "genesis2", "group": "Creation and Covenant", "label": "Genesis 2, relationships and morality", "source": "booklet" },
+    { "id": "matrimony", "group": "Creation and Covenant", "label": "The Sacrament of Matrimony", "source": "booklet" },
+    { "id": "allegorical", "group": "Prophecy and Promise", "label": "Reading the Bible allegorically", "source": "booklet" },
+    { "id": "hannah", "group": "Prophecy and Promise", "label": "The importance of Hannah", "source": "booklet" },
+    { "id": "keyterms", "group": "Assessment sections", "label": "Key terminology (the 18 key terms)", "source": "booklet" }
+  ]
+}

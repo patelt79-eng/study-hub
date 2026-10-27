@@ -1,0 +1,89 @@
+{
+  "id": "science",
+  "name": "Science",
+  "paper_note": "AQA KS3 Science.",
+  "scope": [
+    { "heading": "What am I being assessed on?", "items": ["Breathing and Respiration", "The Periodic Table", "Magnets and Electromagnetics"], "source": "booklet" }
+  ],
+  "flashcard_sets": [
+    { "id": "breathing", "title": "Breathing and Respiration" },
+    { "id": "periodic", "title": "The Periodic Table" },
+    { "id": "magnets", "title": "Magnets and Electromagnets" }
+  ],
+  "flashcards": [
+    { "id": "sci-fc-01", "set": "breathing", "key": true, "front": "Aerobic respiration word equation", "back": "glucose + oxygen → carbon dioxide + water. Energy is released.", "source": "generated" },
+    { "id": "sci-fc-02", "set": "breathing", "key": true, "front": "Anaerobic respiration in muscles: word equation", "back": "glucose → lactic acid. Less energy is released than in aerobic respiration.", "source": "generated" },
+    { "id": "sci-fc-03", "set": "breathing", "front": "Anaerobic respiration in yeast (fermentation): word equation", "back": "glucose → ethanol + carbon dioxide.", "source": "generated" },
+    { "id": "sci-fc-04", "set": "breathing", "key": true, "front": "Where in the cell does aerobic respiration happen?", "back": "In the mitochondria.", "source": "generated" },
+    { "id": "sci-fc-05", "set": "breathing", "key": true, "front": "Trachea", "back": "The windpipe. It carries air from the mouth and nose down to the lungs. Rings of cartilage keep it open.", "source": "generated" },
+    { "id": "sci-fc-06", "set": "breathing", "key": true, "front": "Bronchi and bronchioles", "back": "The trachea splits into two bronchi, one for each lung. These branch into smaller tubes called bronchioles.", "source": "generated" },
+    { "id": "sci-fc-07", "set": "breathing", "key": true, "front": "Alveoli", "back": "Tiny air sacs at the end of the bronchioles. Gas exchange happens here.", "source": "generated" },
+    { "id": "sci-fc-08", "set": "breathing", "key": true, "front": "Diaphragm", "back": "A sheet of muscle under the lungs. It contracts and flattens when you breathe in.", "source": "generated" },
+    { "id": "sci-fc-09", "set": "breathing", "front": "What happens when you breathe in?", "back": "The diaphragm contracts and flattens. The rib muscles pull the ribs up and out. The chest gets bigger, pressure falls, and air moves in.", "source": "generated" },
+    { "id": "sci-fc-10", "set": "breathing", "front": "Gas exchange in the alveoli", "back": "Oxygen diffuses from the air in the alveoli into the blood. Carbon dioxide diffuses from the blood into the alveoli.", "source": "generated" },
+    { "id": "sci-fc-11", "set": "breathing", "front": "How are alveoli adapted for gas exchange?", "back": "Large surface area, walls only one cell thick, and a good blood supply.", "source": "generated" },
+    { "id": "sci-fc-12", "set": "periodic", "key": true, "front": "Group (in the periodic table)", "back": "A column. Elements in the same group have similar properties.", "source": "generated" },
+    { "id": "sci-fc-13", "set": "periodic", "key": true, "front": "Period (in the periodic table)", "back": "A row, going across the table.", "source": "generated" },
+    { "id": "sci-fc-14", "set": "periodic", "key": true, "front": "Where are metals and non-metals?", "back": "Metals are on the left and in the middle. Non-metals are on the right.", "source": "generated" },
+    { "id": "sci-fc-15", "set": "periodic", "front": "Properties of metals", "back": "Shiny, good conductors of heat and electricity, can be bent or hammered into shape (malleable), and most have high melting points.", "source": "generated" },
+    { "id": "sci-fc-16", "set": "periodic", "front": "Properties of non-metals", "back": "Dull, poor conductors of heat and electricity, and brittle when solid. Many are gases at room temperature.", "source": "generated" },
+    { "id": "sci-fc-17", "set": "periodic", "key": true, "front": "Group 1: the alkali metals", "back": "Soft metals with low density. They react with water to make hydrogen and an alkaline solution. They get more reactive going down the group.", "source": "generated" },
+    { "id": "sci-fc-18", "set": "periodic", "key": true, "front": "Group 0: the noble gases", "back": "Very unreactive gases. Boiling point increases going down the group. Examples: helium, neon, argon.", "source": "generated" },
+    { "id": "sci-fc-19", "set": "periodic", "front": "Why are group 1 metals stored in oil?", "back": "To stop them reacting with oxygen and water in the air.", "source": "generated" },
+    { "id": "sci-fc-20", "set": "periodic", "front": "Mendeleev", "back": "A scientist who arranged the elements in a table in 1869. He left gaps for elements that had not been discovered yet.", "source": "generated" },
+    { "id": "sci-fc-21", "set": "magnets", "key": true, "front": "Like poles and unlike poles", "back": "Like poles repel (north and north, or south and south). Unlike poles attract (north and south).", "source": "generated" },
+    { "id": "sci-fc-22", "set": "magnets", "key": true, "front": "Magnetic materials", "back": "Iron, nickel and cobalt. Steel is magnetic because it contains iron.", "source": "generated" },
+    { "id": "sci-fc-23", "set": "magnets", "key": true, "front": "Magnetic field", "back": "The area around a magnet where it has an effect. Field lines go from the north pole to the south pole.", "source": "generated" },
+    { "id": "sci-fc-24", "set": "magnets", "front": "Where is a magnetic field strongest?", "back": "At the poles, where the field lines are closest together.", "source": "generated" },
+    { "id": "sci-fc-25", "set": "magnets", "key": true, "front": "Electromagnet", "back": "A coil of wire with an electric current flowing through it, usually wrapped around an iron core. It is magnetic only when the current is on.", "source": "generated" },
+    { "id": "sci-fc-26", "set": "magnets", "key": true, "front": "Three ways to make an electromagnet stronger", "back": "More turns on the coil, a bigger current, and an iron core.", "source": "generated" },
+    { "id": "sci-fc-27", "set": "magnets", "front": "Uses of electromagnets", "back": "Scrapyard cranes, electric bells, door locks and relays.", "source": "generated" },
+    { "id": "sci-fc-28", "set": "magnets", "front": "Compass", "back": "A small magnet that lines up with the Earth's magnetic field. It can be used to plot field lines.", "source": "generated" }
+  ],
+  "quiz_sets": [
+    { "id": "breathing", "title": "Breathing and Respiration" },
+    { "id": "periodic", "title": "The Periodic Table" },
+    { "id": "magnets", "title": "Magnets and Electromagnets" }
+  ],
+  "quiz": [
+    { "id": "sci-q-01", "set": "breathing", "q": "What are the products of aerobic respiration?", "options": ["Glucose and oxygen", "Carbon dioxide and water", "Lactic acid", "Ethanol and carbon dioxide"], "answer": 1, "explain": "glucose + oxygen → carbon dioxide + water.", "source": "generated" },
+    { "id": "sci-q-02", "set": "breathing", "q": "What is made in muscles during anaerobic respiration?", "options": ["Lactic acid", "Oxygen", "Ethanol", "Water"], "answer": 0, "explain": "In muscles, glucose → lactic acid.", "source": "generated" },
+    { "id": "sci-q-03", "set": "breathing", "q": "Where does gas exchange happen in the lungs?", "options": ["Trachea", "Bronchi", "Diaphragm", "Alveoli"], "answer": 3, "explain": "Gas exchange happens in the tiny air sacs called alveoli.", "source": "generated" },
+    { "id": "sci-q-04", "set": "breathing", "q": "What does the diaphragm do when you breathe in?", "options": ["It relaxes and moves up", "It stays still", "It contracts and flattens", "It makes mucus"], "answer": 2, "explain": "The diaphragm contracts and flattens, so the chest gets bigger.", "source": "generated" },
+    { "id": "sci-q-05", "set": "breathing", "q": "Which part of the cell does aerobic respiration happen in?", "options": ["Nucleus", "Mitochondria", "Cell wall", "Vacuole"], "answer": 1, "explain": "Mitochondria are where aerobic respiration happens.", "source": "generated" },
+    { "id": "sci-q-06", "set": "breathing", "q": "Which gas moves from the alveoli into the blood?", "options": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"], "answer": 0, "explain": "Oxygen diffuses into the blood. Carbon dioxide diffuses out.", "source": "generated" },
+    { "id": "sci-q-07", "set": "breathing", "q": "What does yeast make during anaerobic respiration?", "options": ["Lactic acid only", "Oxygen and water", "Glucose", "Ethanol and carbon dioxide"], "answer": 3, "explain": "Yeast makes ethanol and carbon dioxide. This is called fermentation.", "source": "generated" },
+    { "id": "sci-q-08", "set": "breathing", "q": "Which is NOT an adaptation of the alveoli?", "options": ["Large surface area", "Thin walls", "Thick, waxy walls", "Good blood supply"], "answer": 2, "explain": "Alveoli have very thin walls so gases can pass through quickly.", "source": "generated" },
+    { "id": "sci-q-09", "set": "periodic", "q": "What is a column in the periodic table called?", "options": ["A period", "A group", "A block", "A family tree"], "answer": 1, "explain": "Columns are groups. Rows are periods.", "source": "generated" },
+    { "id": "sci-q-10", "set": "periodic", "q": "Where are the metals in the periodic table?", "options": ["On the left and in the middle", "Only on the right", "Only at the top", "Only in group 0"], "answer": 0, "explain": "Metals are on the left and in the middle. Non-metals are on the right.", "source": "generated" },
+    { "id": "sci-q-11", "set": "periodic", "q": "Which is a property of most metals?", "options": ["Dull", "Brittle", "Poor conductor of electricity", "Good conductor of electricity"], "answer": 3, "explain": "Metals are good conductors of heat and electricity.", "source": "generated" },
+    { "id": "sci-q-12", "set": "periodic", "q": "What gas is made when a group 1 metal reacts with water?", "options": ["Oxygen", "Carbon dioxide", "Hydrogen", "Chlorine"], "answer": 2, "explain": "Group 1 metal + water → metal hydroxide + hydrogen.", "source": "generated" },
+    { "id": "sci-q-13", "set": "periodic", "q": "What happens to the reactivity of group 1 metals going down the group?", "options": ["It increases", "It decreases", "It stays the same", "They stop reacting"], "answer": 0, "explain": "Potassium is more reactive than sodium, and sodium is more reactive than lithium.", "source": "generated" },
+    { "id": "sci-q-14", "set": "periodic", "q": "Why are noble gases (group 0) used in light bulbs and signs?", "options": ["They are very reactive", "They are metals", "They are unreactive", "They are heavy"], "answer": 2, "explain": "Noble gases are very unreactive, so they are safe to use.", "source": "generated" },
+    { "id": "sci-q-15", "set": "periodic", "q": "Which element is a noble gas?", "options": ["Sodium", "Neon", "Oxygen", "Iron"], "answer": 1, "explain": "Neon is in group 0, with helium and argon.", "source": "generated" },
+    { "id": "sci-q-16", "set": "periodic", "q": "Why did Mendeleev leave gaps in his periodic table?", "options": ["He ran out of space", "To make it look neat", "For elements that had not been discovered yet", "Because he did not like some elements"], "answer": 2, "explain": "His gaps were later filled by new elements with the properties he predicted.", "source": "generated" },
+    { "id": "sci-q-17", "set": "magnets", "q": "What happens when two north poles are put together?", "options": ["They attract", "They repel", "Nothing happens", "They become south poles"], "answer": 1, "explain": "Like poles repel. Unlike poles attract.", "source": "generated" },
+    { "id": "sci-q-18", "set": "magnets", "q": "Which of these is a magnetic material?", "options": ["Copper", "Aluminium", "Plastic", "Iron"], "answer": 3, "explain": "Iron, nickel and cobalt are magnetic.", "source": "generated" },
+    { "id": "sci-q-19", "set": "magnets", "q": "Which way do magnetic field lines point?", "options": ["From north to south", "From south to north", "In a straight line upwards", "They do not have a direction"], "answer": 0, "explain": "Field lines go from the north pole to the south pole.", "source": "generated" },
+    { "id": "sci-q-20", "set": "magnets", "q": "Which would make an electromagnet stronger?", "options": ["Fewer turns of wire", "Less current", "More turns of wire", "A plastic core"], "answer": 2, "explain": "More turns, more current and an iron core make it stronger.", "source": "generated" },
+    { "id": "sci-q-21", "set": "magnets", "q": "What is one advantage of an electromagnet over a permanent magnet?", "options": ["It can be switched on and off", "It never needs electricity", "It is always the same strength", "It works without wire"], "answer": 0, "explain": "An electromagnet is only magnetic when the current flows.", "source": "generated" },
+    { "id": "sci-q-22", "set": "magnets", "q": "Which is a use of an electromagnet?", "options": ["A wooden spoon", "A scrapyard crane", "A glass window", "A rubber band"], "answer": 1, "explain": "Scrapyard cranes switch the magnet on to lift steel and off to drop it.", "source": "generated" },
+    { "id": "sci-q-23", "set": "magnets", "q": "Where is the magnetic field of a bar magnet strongest?", "options": ["In the middle", "At the poles", "Far away from the magnet", "It is the same everywhere"], "answer": 1, "explain": "Field lines are closest together at the poles.", "source": "generated" }
+  ],
+  "resources": [
+    { "label": "Seneca", "url": "https://senecalearning.com/en-GB/", "note": "Complete questions on Seneca.", "source": "booklet" },
+    { "label": "BBC Bitesize (AQA)", "url": "https://www.bbc.co.uk/bitesize/subjects/zrkw2hv", "note": "AQA exam board.", "source": "booklet" },
+    { "label": "Free Science Lessons", "url": "https://www.freesciencelessons.co.uk/", "note": "Videos.", "source": "booklet" },
+    { "label": "Educake", "url": "https://www.educake.co.uk/", "note": "Complete your questions on Educake.", "source": "booklet" }
+  ],
+  "rag_topics": [
+    { "id": "lungs", "group": "Breathing and Respiration", "label": "Parts of the breathing system", "source": "generated" },
+    { "id": "breathing-in-out", "group": "Breathing and Respiration", "label": "Breathing in and out, and gas exchange", "source": "generated" },
+    { "id": "respiration", "group": "Breathing and Respiration", "label": "Aerobic and anaerobic respiration word equations", "source": "generated" },
+    { "id": "groups-periods", "group": "The Periodic Table", "label": "Groups, periods, metals and non-metals", "source": "generated" },
+    { "id": "group1", "group": "The Periodic Table", "label": "Group 1: alkali metals", "source": "generated" },
+    { "id": "group0", "group": "The Periodic Table", "label": "Group 0: noble gases", "source": "generated" },
+    { "id": "magnets", "group": "Magnets and Electromagnetics", "label": "Magnets, poles and magnetic fields", "source": "generated" },
+    { "id": "electromagnets", "group": "Magnets and Electromagnetics", "label": "Electromagnets and how to make them stronger", "source": "generated" }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "_help": "The year-group assessment grid from page 3 of the booklet. Group labels are neutral on purpose. default_class is the student's own core group and language group.",
+  "default_class": { "core": "B-core-3", "lang": "B-french-1" },
+  "days": ["2026-11-16", "2026-11-17", "2026-11-18", "2026-11-19", "2026-11-20", "2026-11-23", "2026-11-24", "2026-11-25"],
+  "subject_names": {
+    "re": "RE",
+    "geography": "Geography",
+    "science": "Science",
+    "maths": "Maths",
+    "history": "History",
+    "french": "French",
+    "english": "English",
+    "spanish": "Spanish"
+  },
+  "paper_info": {
+    "maths": "45 minutes. Non-calculator.",
+    "french": "Listening, reading and writing.",
+    "re": "Three sections: key terminology, knowledge and understanding, extended writing.",
+    "english": "An extract from Blood Brothers with a range of tasks."
+  },
+  "groups": [
+    { "id": "A-lang-es-1", "kind": "language", "label": "A side, Spanish group 1", "papers": { "2026-11-18": "spanish" } },
+    { "id": "A-lang-es-2", "kind": "language", "label": "A side, Spanish group 2", "papers": { "2026-11-23": "spanish" } },
+    { "id": "A-lang-es-3", "kind": "language", "label": "A side, Spanish group 3", "papers": { "2026-11-23": "spanish" } },
+    { "id": "A-french-1", "kind": "language", "label": "A side, French group 1", "papers": { "2026-11-18": "french" } },
+    { "id": "A-french-2", "kind": "language", "label": "A side, French group 2", "papers": { "2026-11-18": "french" } },
+    { "id": "A-core-1", "kind": "core", "label": "A side, Core group 1", "papers": { "2026-11-17": "science", "2026-11-18": "english", "2026-11-19": "geography", "2026-11-20": "history", "2026-11-24": "maths", "2026-11-25": "re" } },
+    { "id": "A-core-2", "kind": "core", "label": "A side, Core group 2", "papers": { "2026-11-16": "history", "2026-11-17": "science", "2026-11-18": "english", "2026-11-19": "geography", "2026-11-24": "maths", "2026-11-25": "re" } },
+    { "id": "A-core-3", "kind": "core", "label": "A side, Core group 3", "papers": { "2026-11-17": "science", "2026-11-18": "english", "2026-11-19": "geography", "2026-11-20": "re", "2026-11-24": "maths", "2026-11-25": "history" } },
+    { "id": "A-core-4", "kind": "core", "label": "A side, Core group 4", "papers": { "2026-11-17": "science", "2026-11-18": "english", "2026-11-19": "geography", "2026-11-20": "history", "2026-11-24": "maths", "2026-11-25": "re" } },
+    { "id": "A-core-5", "kind": "core", "label": "A side, Core group 5", "papers": { "2026-11-17": "science", "2026-11-18": "english", "2026-11-19": "geography", "2026-11-20": "history", "2026-11-24": "maths", "2026-11-25": "re" } },
+    { "id": "B-lang-es-1", "kind": "language", "label": "B side, Spanish group 1", "papers": { "2026-11-18": "spanish" } },
+    { "id": "B-lang-es-2", "kind": "language", "label": "B side, Spanish group 2", "papers": { "2026-11-16": "spanish" } },
+    { "id": "B-french-1", "kind": "language", "label": "B side, French group 1", "papers": { "2026-11-24": "french" } },
+    { "id": "B-french-2", "kind": "language", "label": "B side, French group 2", "papers": { "2026-11-24": "french" } },
+    { "id": "B-core-1", "kind": "core", "label": "B side, Core group 1", "papers": { "2026-11-17": "re", "2026-11-18": "history", "2026-11-19": "science", "2026-11-20": "maths", "2026-11-24": "geography", "2026-11-25": "english" } },
+    { "id": "B-core-2", "kind": "core", "label": "B side, Core group 2", "papers": { "2026-11-17": "re", "2026-11-18": "history", "2026-11-19": "science", "2026-11-20": "maths", "2026-11-24": "geography", "2026-11-25": "english" } },
+    { "id": "B-core-3", "kind": "core", "label": "B side, Core group 3", "papers": { "2026-11-17": "re", "2026-11-18": "geography", "2026-11-19": "science", "2026-11-20": "maths", "2026-11-24": "history", "2026-11-25": "english" } },
+    { "id": "B-core-4", "kind": "core", "label": "B side, Core group 4", "papers": { "2026-11-17": "re", "2026-11-18": "history", "2026-11-19": "science", "2026-11-20": "maths", "2026-11-24": "geography", "2026-11-25": "english" } }
+  ]
+}

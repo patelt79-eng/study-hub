@@ -1,0 +1,103 @@
+{
+  "_help": [
+    "The daily plan is worked out from these rules. The same date always gives the same plan.",
+    "start_date: the first day with a plan.",
+    "non_school_days: dates that get the weekend number of sessions (half-term, INSET days).",
+    "weights: how often each subject comes up before the assessments begin. Higher means more often.",
+    "tasks: each subject's sessions, used in this order and then repeated.",
+    "light: the single short session on the evening before that subject's paper.",
+    "light_evening_before: true means the day before a paper has only the light session for that paper.",
+    "Subjects are removed from the plan automatically once their paper date has passed.",
+    "overrides: optional. A date here replaces the worked-out plan for that day, for example {\"2026-11-02\": {\"sessions\": [], \"message\": \"No sessions today.\"}}."
+  ],
+  "start_date": "2026-10-28",
+  "non_school_days": ["2026-10-28", "2026-10-29", "2026-10-30"],
+  "sessions_school_day": 2,
+  "sessions_weekend": 3,
+  "session_minutes": 20,
+  "light_minutes": 10,
+  "light_evening_before": true,
+  "weights": { "re": 3, "geography": 3, "science": 3, "maths": 3, "history": 2, "french": 2, "english": 2 },
+  "tasks": {
+    "re": [
+      { "label": "RE key terms flashcards: Creation and Covenant", "route": "#/subject/re/flashcards/creation" },
+      { "label": "RE quiz: Creation and Covenant", "route": "#/subject/re/quiz/creation" },
+      { "label": "RE key terms flashcards: Prophecy and Promise", "route": "#/subject/re/flashcards/prophecy" },
+      { "label": "RE quiz: Prophecy and Promise", "route": "#/subject/re/quiz/prophecy" },
+      { "label": "RE writing: what Catholics believe about creation", "route": "#/subject/re/write/challenge-1" },
+      { "label": "RE flashcards: Genesis, Hannah and the Bible", "route": "#/subject/re/flashcards/background" },
+      { "label": "RE writing: Genesis 1 and Genesis 2", "route": "#/subject/re/write/challenge-2" },
+      { "label": "RE writing: the Sacrament of Matrimony", "route": "#/subject/re/write/challenge-3" }
+    ],
+    "geography": [
+      { "label": "Geography key terms flashcards (part 1)", "route": "#/subject/geography/flashcards/terms-1" },
+      { "label": "Geography quiz: Superpowers and the USA", "route": "#/subject/geography/quiz/usa" },
+      { "label": "Geography key terms flashcards (part 2)", "route": "#/subject/geography/flashcards/terms-2" },
+      { "label": "Geography quiz: Brazil", "route": "#/subject/geography/quiz/brazil" },
+      { "label": "Geography quiz: Russia", "route": "#/subject/geography/quiz/russia" },
+      { "label": "Geography quiz: India", "route": "#/subject/geography/quiz/india" },
+      { "label": "Geography quiz: China", "route": "#/subject/geography/quiz/china" },
+      { "label": "Geography quiz: South Africa", "route": "#/subject/geography/quiz/south-africa" }
+    ],
+    "science": [
+      { "label": "Science flashcards: Breathing and Respiration", "route": "#/subject/science/flashcards/breathing" },
+      { "label": "Science quiz: Breathing and Respiration", "route": "#/subject/science/quiz/breathing" },
+      { "label": "Science flashcards: The Periodic Table", "route": "#/subject/science/flashcards/periodic" },
+      { "label": "Science quiz: The Periodic Table", "route": "#/subject/science/quiz/periodic" },
+      { "label": "Science flashcards: Magnets and Electromagnets", "route": "#/subject/science/flashcards/magnets" },
+      { "label": "Science quiz: Magnets and Electromagnets", "route": "#/subject/science/quiz/magnets" }
+    ],
+    "maths": [
+      { "label": "Maths worked example and practice: nth term", "route": "#/subject/maths/worked/seq-nth" },
+      { "label": "Maths practice: angles in parallel lines", "route": "#/subject/maths/practice/ang-parallel" },
+      { "label": "Maths practice: fractions", "route": "#/subject/maths/practice/frac-ops" },
+      { "label": "Maths practice: expanding brackets", "route": "#/subject/maths/practice/alg-expand" },
+      { "label": "Maths quiz: number and indices", "route": "#/subject/maths/quiz/number" },
+      { "label": "Maths practice: interior and exterior angles", "route": "#/subject/maths/practice/ang-polygon" },
+      { "label": "Maths practice: decimals", "route": "#/subject/maths/practice/dec-ops" },
+      { "label": "Maths quiz: algebra and sequences", "route": "#/subject/maths/quiz/algebra" },
+      { "label": "Maths practice: HCF and LCM", "route": "#/subject/maths/practice/num-hcf" },
+      { "label": "Maths quiz: angles", "route": "#/subject/maths/quiz/angles" },
+      { "label": "Maths practice: bearings", "route": "#/subject/maths/practice/ang-bearings" },
+      { "label": "Maths quiz: decimals and fractions", "route": "#/subject/maths/quiz/fractions" }
+    ],
+    "history": [
+      { "label": "History flashcards: Treaty of Versailles", "route": "#/subject/history/flashcards/versailles" },
+      { "label": "History quiz: Treaty of Versailles", "route": "#/subject/history/quiz/versailles" },
+      { "label": "History flashcards: Weimar Germany", "route": "#/subject/history/flashcards/weimar" },
+      { "label": "History quiz: Weimar Germany", "route": "#/subject/history/quiz/weimar" },
+      { "label": "History flashcards: Rise of Hitler", "route": "#/subject/history/flashcards/rise" },
+      { "label": "History quiz: Rise of Hitler", "route": "#/subject/history/quiz/rise" },
+      { "label": "History flashcards: Nazi control", "route": "#/subject/history/flashcards/control" },
+      { "label": "History quiz: Nazi control", "route": "#/subject/history/quiz/control" }
+    ],
+    "french": [
+      { "label": "French flashcards: TV programmes and films", "route": "#/subject/french/flashcards/tv?dir=fr-en" },
+      { "label": "French quiz: verbs", "route": "#/subject/french/quiz/verbs" },
+      { "label": "French flashcards: time expressions", "route": "#/subject/french/flashcards/time?dir=en-fr" },
+      { "label": "French reading: Marine's email", "route": "#/subject/french/task/reading" },
+      { "label": "French flashcards: hair, eyes and nationalities", "route": "#/subject/french/flashcards/looks?dir=fr-en" },
+      { "label": "French quiz: vocabulary and opinions", "route": "#/subject/french/quiz/vocab" },
+      { "label": "French writing: what I did last weekend", "route": "#/subject/french/task/sentences" },
+      { "label": "French translations from the booklet", "route": "#/subject/french/task/translations" }
+    ],
+    "english": [
+      { "label": "English flashcards: characters", "route": "#/subject/english/flashcards/characters" },
+      { "label": "English flashcards: techniques", "route": "#/subject/english/flashcards/terms" },
+      { "label": "English quiz: spot the technique", "route": "#/subject/english/quiz/techniques" },
+      { "label": "English flashcards: themes", "route": "#/subject/english/flashcards/themes" },
+      { "label": "English PEA paragraphs: sympathy", "route": "#/subject/english/write/sympathy" },
+      { "label": "English quiz: the play", "route": "#/subject/english/quiz/play" }
+    ]
+  },
+  "light": {
+    "re": { "label": "RE key terms flashcards (light session)", "route": "#/subject/re/flashcards/key" },
+    "geography": { "label": "Geography key terms flashcards (light session)", "route": "#/subject/geography/flashcards/key" },
+    "science": { "label": "Science key terms flashcards (light session)", "route": "#/subject/science/flashcards/key" },
+    "maths": { "label": "Maths key facts flashcards (light session)", "route": "#/subject/maths/flashcards/key" },
+    "history": { "label": "History key terms flashcards (light session)", "route": "#/subject/history/flashcards/key" },
+    "french": { "label": "French key words flashcards (light session)", "route": "#/subject/french/flashcards/key?dir=fr-en" },
+    "english": { "label": "English key terms flashcards (light session)", "route": "#/subject/english/flashcards/key" }
+  },
+  "overrides": {}
+}

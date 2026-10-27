@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Study Hub</title>
+  <meta name="description" content="Revision hub">
+  <meta name="theme-color" content="#2f5d8a">
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Study Hub">
+  <link rel="stylesheet" href="css/app.css">
+  <script>
+    // Apply the saved theme before the first paint, so the page does not flash.
+    try {
+      var t = localStorage.getItem('sh:theme');
+      if (t) document.documentElement.setAttribute('data-theme', JSON.parse(t));
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="topbar">
+    <div class="topbar-row">
+      <a id="back" class="btn back" href="#/today" hidden>&larr; Back</a>
+      <span class="brand">Study Hub</span>
+      <button id="theme" class="btn theme-toggle" type="button" aria-pressed="false">Dark mode</button>
+    </div>
+    <nav class="tabs" aria-label="Main">
+      <a href="#/today" data-tab="today">Today</a>
+      <a href="#/schedule" data-tab="schedule">Schedule</a>
+      <a href="#/subjects" data-tab="subjects">Subjects</a>
+      <a href="#/progress" data-tab="progress">My Progress</a>
+    </nav>
+  </header>
+  <main id="main" tabindex="-1">
+    <p>Loading.</p>
+  </main>
+  <noscript><p>Study Hub needs JavaScript switched on.</p></noscript>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

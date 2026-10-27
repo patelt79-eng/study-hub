@@ -1,0 +1,408 @@
+{
+  "id": "maths",
+  "name": "Maths",
+  "paper_note": "45-minute non-calculator assessment. All content covered since September.",
+  "practise_heading": "Worked examples and practice",
+  "scope": [
+    { "heading": "Sequences", "items": ["nth term of linear sequences", "Fibonacci Sequences", "Arithmetic/Geometric", "Quadratic Sequences (sets 1-2)"], "source": "booklet" },
+    { "heading": "Angles", "items": ["Basic Angle rules", "Angles in Parallel Lines", "Interior/exterior angles", "Bearings"], "source": "booklet" },
+    { "heading": "Number/Indices", "items": ["BIDMAS", "HCF/LCM", "Laws of Indices", "Negative Indices", "Fractional Indices (sets 1-2)"], "source": "booklet" },
+    { "heading": "Decimals and Fractions", "items": ["Four operations with decimals", "Four operations with fractions", "Convert between fractions and decimals", "Recurring decimals (sets 1-2)"], "source": "booklet" },
+    { "heading": "Algebra", "items": ["Expand single brackets", "Factorise single brackets", "Expand double brackets", "Expand triple brackets", "Factorise Quadratics (sets 1-2)"], "source": "booklet" }
+  ],
+  "flashcard_sets": [
+    { "id": "facts", "title": "Key facts and methods" }
+  ],
+  "flashcards": [
+    { "id": "ma-fc-01", "set": "facts", "key": true, "front": "Angles on a straight line add up to…", "back": "180°", "source": "generated" },
+    { "id": "ma-fc-02", "set": "facts", "key": true, "front": "Angles around a point add up to…", "back": "360°", "source": "generated" },
+    { "id": "ma-fc-03", "set": "facts", "key": true, "front": "Angles in a triangle add up to…", "back": "180°", "source": "generated" },
+    { "id": "ma-fc-04", "set": "facts", "key": true, "front": "Angles in a quadrilateral add up to…", "back": "360°", "source": "generated" },
+    { "id": "ma-fc-05", "set": "facts", "key": true, "front": "Vertically opposite angles are…", "back": "Equal.", "source": "generated" },
+    { "id": "ma-fc-06", "set": "facts", "key": true, "front": "Alternate angles (Z shape) are…", "back": "Equal.", "source": "generated" },
+    { "id": "ma-fc-07", "set": "facts", "key": true, "front": "Corresponding angles (F shape) are…", "back": "Equal.", "source": "generated" },
+    { "id": "ma-fc-08", "set": "facts", "key": true, "front": "Co-interior angles (C shape) add up to…", "back": "180°", "source": "generated" },
+    { "id": "ma-fc-09", "set": "facts", "key": true, "front": "Exterior angles of any polygon add up to…", "back": "360°", "source": "generated" },
+    { "id": "ma-fc-10", "set": "facts", "key": true, "front": "Sum of interior angles of a polygon with n sides", "back": "(n − 2) × 180°", "source": "generated" },
+    { "id": "ma-fc-11", "set": "facts", "key": true, "front": "Three rules for bearings", "back": "Measure from north. Measure clockwise. Always write 3 figures, for example 045°.", "source": "generated" },
+    { "id": "ma-fc-12", "set": "facts", "key": true, "front": "BIDMAS", "back": "Brackets, Indices, Division and Multiplication (left to right), Addition and Subtraction (left to right).", "source": "generated" },
+    { "id": "ma-fc-13", "set": "facts", "key": true, "front": "HCF", "back": "Highest Common Factor: the biggest number that divides into both numbers.", "source": "generated" },
+    { "id": "ma-fc-14", "set": "facts", "key": true, "front": "LCM", "back": "Lowest Common Multiple: the smallest number that is in both times tables.", "source": "generated" },
+    { "id": "ma-fc-15", "set": "facts", "key": true, "front": "Index law: multiplying, aᵐ × aⁿ", "back": "Add the powers: aᵐ⁺ⁿ", "source": "generated" },
+    { "id": "ma-fc-16", "set": "facts", "key": true, "front": "Index law: dividing, aᵐ ÷ aⁿ", "back": "Subtract the powers: aᵐ⁻ⁿ", "source": "generated" },
+    { "id": "ma-fc-17", "set": "facts", "key": true, "front": "Index law: power of a power, (aᵐ)ⁿ", "back": "Multiply the powers: aᵐⁿ", "source": "generated" },
+    { "id": "ma-fc-18", "set": "facts", "key": true, "front": "Negative index: a⁻ⁿ", "back": "1 over aⁿ. For example, 2⁻³ = 1/8.", "source": "generated" },
+    { "id": "ma-fc-19", "set": "facts", "key": true, "front": "Anything to the power 0", "back": "1. For example, 7⁰ = 1.", "source": "generated" },
+    { "id": "ma-fc-20", "set": "facts", "key": true, "front": "Linear sequence (arithmetic)", "back": "You add or subtract the same amount each time.", "source": "generated" },
+    { "id": "ma-fc-21", "set": "facts", "key": true, "front": "Geometric sequence", "back": "You multiply by the same number each time.", "source": "generated" },
+    { "id": "ma-fc-22", "set": "facts", "key": true, "front": "Fibonacci sequence", "back": "Each term is the two terms before it added together: 1, 1, 2, 3, 5, 8…", "source": "generated" },
+    { "id": "ma-fc-23", "set": "facts", "key": true, "front": "Dividing fractions", "back": "Keep the first fraction, change ÷ to ×, flip the second fraction.", "source": "generated" },
+    { "id": "ma-fc-24", "set": "facts", "key": true, "front": "Adding or subtracting fractions", "back": "Make the denominators the same first. Then add or subtract the numerators.", "source": "generated" }
+  ],
+  "skills": [
+    {
+      "id": "seq-nth", "group": "Sequences", "label": "Nth term of a linear sequence", "clip": "102–103", "source": "booklet",
+      "example": "Find the nth term of 5, 8, 11, 14, …",
+      "steps": [
+        { "text": "Find the difference between the terms.", "math": "5 → 8 → 11 → 14: add 3 each time" },
+        { "text": "The difference is 3, so the nth term starts with 3n.", "math": "3n" },
+        { "text": "Write out 3n for n = 1, 2, 3, 4 (the 3 times table).", "math": "3, 6, 9, 12" },
+        { "text": "Compare with the sequence. Each term is 2 more than 3n.", "math": "5 − 3 = 2" },
+        { "text": "Write the nth term. Check with n = 1: 3 × 1 + 2 = 5. Correct.", "math": "nth term = 3n + 2" }
+      ],
+      "practice": [
+        { "q": "Find the nth term of 4, 7, 10, 13, …", "answer": "3n + 1", "method": ["The difference is +3, so start with 3n.", "3n gives 3, 6, 9, 12.", "Each term is 1 more, so the nth term is 3n + 1."] },
+        { "q": "Find the nth term of 2, 7, 12, 17, …", "answer": "5n − 3", "method": ["The difference is +5, so start with 5n.", "5n gives 5, 10, 15, 20.", "Each term is 3 less, so the nth term is 5n − 3."] },
+        { "q": "Find the nth term of 20, 18, 16, 14, …", "answer": "22 − 2n", "method": ["The difference is −2, so start with −2n.", "−2n gives −2, −4, −6, −8.", "Each term is 22 more, so the nth term is 22 − 2n."] },
+        { "q": "The nth term is 4n − 1. What is the 10th term?", "answer": "39", "method": ["Put n = 10 into 4n − 1.", "4 × 10 = 40.", "40 − 1 = 39."] }
+      ]
+    },
+    {
+      "id": "seq-fib", "group": "Sequences", "label": "Fibonacci sequences", "clip": "141", "source": "booklet",
+      "example": "Find the next two terms of 2, 5, 7, 12, …",
+      "steps": [
+        { "text": "In a Fibonacci-type sequence, each term is the two terms before it added together.", "math": "2 + 5 = 7, 5 + 7 = 12" },
+        { "text": "Add the last two terms to get the next term.", "math": "7 + 12 = 19" },
+        { "text": "Add the new last two terms to get the term after that.", "math": "12 + 19 = 31" },
+        { "text": "Write the answer.", "math": "19, 31" }
+      ],
+      "practice": [
+        { "q": "Find the next term: 1, 1, 2, 3, 5, 8, …", "answer": "13", "method": ["Add the last two terms.", "5 + 8 = 13."] },
+        { "q": "Find the next term: 3, 4, 7, 11, …", "answer": "18", "method": ["Add the last two terms.", "7 + 11 = 18."] },
+        { "q": "A Fibonacci-type sequence starts 2, 6, … What is the 5th term?", "answer": "22", "method": ["3rd term: 2 + 6 = 8.", "4th term: 6 + 8 = 14.", "5th term: 8 + 14 = 22."] },
+        { "q": "Find the next two terms: 5, 5, 10, 15, …", "answer": "25, 40", "method": ["10 + 15 = 25.", "15 + 25 = 40."] }
+      ]
+    },
+    {
+      "id": "seq-geo", "group": "Sequences", "label": "Arithmetic and geometric sequences", "clip": "163", "source": "booklet",
+      "example": "Is 3, 6, 12, 24, … arithmetic or geometric? Find the next term.",
+      "steps": [
+        { "text": "Arithmetic sequences add the same amount each time. Geometric sequences multiply by the same number each time.", "math": "" },
+        { "text": "Check the differences: 3, 6, 12. They are not the same, so it is not arithmetic.", "math": "+3, +6, +12" },
+        { "text": "Check if you multiply by the same number each time.", "math": "3 × 2 = 6, 6 × 2 = 12, 12 × 2 = 24" },
+        { "text": "It is geometric. Multiply the last term by 2.", "math": "24 × 2 = 48" }
+      ],
+      "practice": [
+        { "q": "Find the next term: 2, 6, 18, 54, …", "answer": "162", "method": ["Each term is multiplied by 3.", "54 × 3 = 162."] },
+        { "q": "Find the next term: 80, 40, 20, 10, …", "answer": "5", "method": ["Each term is multiplied by ½ (halved).", "10 ÷ 2 = 5."] },
+        { "q": "Is 5, 9, 13, 17, … arithmetic or geometric?", "answer": "Arithmetic", "method": ["The difference is +4 every time.", "Adding the same amount means arithmetic."] },
+        { "q": "Find the next term: 1, 10, 100, …", "answer": "1000", "method": ["Each term is multiplied by 10.", "100 × 10 = 1000."] }
+      ]
+    },
+    {
+      "id": "ang-basic", "group": "Angles", "label": "Basic angle rules", "clip": "45, 121", "source": "booklet",
+      "example": "A triangle has angles of 50° and 70°. Find the third angle, x.",
+      "steps": [
+        { "text": "Angles in a triangle add up to 180°.", "math": "50 + 70 + x = 180" },
+        { "text": "Add the angles you know.", "math": "50 + 70 = 120" },
+        { "text": "Subtract from 180°.", "math": "180 − 120 = 60" },
+        { "text": "Write the answer with the degree sign.", "math": "x = 60°" }
+      ],
+      "practice": [
+        { "q": "Two angles on a straight line. One is 125°. Find the other.", "answer": "55°", "method": ["Angles on a straight line add up to 180°.", "180 − 125 = 55."] },
+        { "q": "Three angles around a point are 90°, 140° and x. Find x.", "answer": "130°", "method": ["Angles around a point add up to 360°.", "90 + 140 = 230.", "360 − 230 = 130."] },
+        { "q": "An isosceles triangle has a top angle of 40°. Find each base angle.", "answer": "70°", "method": ["180 − 40 = 140.", "The two base angles are equal.", "140 ÷ 2 = 70."] },
+        { "q": "A quadrilateral has angles 100°, 80°, 95° and x. Find x.", "answer": "85°", "method": ["Angles in a quadrilateral add up to 360°.", "100 + 80 + 95 = 275.", "360 − 275 = 85."] }
+      ]
+    },
+    {
+      "id": "ang-parallel", "group": "Angles", "label": "Angles in parallel lines", "clip": "120", "source": "booklet",
+      "example": "Two parallel lines are crossed by a line. One angle is 65°. Its alternate angle is x. Find x.",
+      "steps": [
+        { "text": "Find the shape. Alternate angles make a Z shape.", "math": "Z shape" },
+        { "text": "Alternate angles are equal.", "math": "x = 65°" },
+        { "text": "Give the reason in words. This earns marks.", "math": "Alternate angles are equal." }
+      ],
+      "practice": [
+        { "q": "Corresponding angles: one is 110°. Find the other.", "answer": "110°", "method": ["Corresponding angles (F shape) are equal."] },
+        { "q": "Co-interior angles: one is 70°. Find the other.", "answer": "110°", "method": ["Co-interior angles (C shape) add up to 180°.", "180 − 70 = 110."] },
+        { "q": "Alternate angles: one is 48°. Find the other.", "answer": "48°", "method": ["Alternate angles (Z shape) are equal."] },
+        { "q": "Co-interior angles: one is 95°. Find the other.", "answer": "85°", "method": ["Co-interior angles add up to 180°.", "180 − 95 = 85."] }
+      ]
+    },
+    {
+      "id": "ang-polygon", "group": "Angles", "label": "Interior and exterior angles", "clip": "123", "source": "booklet",
+      "example": "Find the interior angle of a regular hexagon.",
+      "steps": [
+        { "text": "A hexagon has 6 sides. Exterior angles add up to 360°.", "math": "360 ÷ 6 = 60" },
+        { "text": "So each exterior angle is 60°.", "math": "exterior = 60°" },
+        { "text": "Interior angle + exterior angle = 180°.", "math": "180 − 60 = 120" },
+        { "text": "Write the answer.", "math": "interior = 120°" }
+      ],
+      "practice": [
+        { "q": "Find the interior angle of a regular pentagon (5 sides).", "answer": "108°", "method": ["Exterior: 360 ÷ 5 = 72.", "Interior: 180 − 72 = 108."] },
+        { "q": "Find the sum of the interior angles of an octagon (8 sides).", "answer": "1080°", "method": ["Use (n − 2) × 180.", "(8 − 2) × 180 = 6 × 180.", "6 × 180 = 1080."] },
+        { "q": "A regular polygon has an exterior angle of 30°. How many sides does it have?", "answer": "12", "method": ["Exterior angles add up to 360°.", "360 ÷ 30 = 12."] },
+        { "q": "Find the interior angle of a regular decagon (10 sides).", "answer": "144°", "method": ["Exterior: 360 ÷ 10 = 36.", "Interior: 180 − 36 = 144."] }
+      ]
+    },
+    {
+      "id": "ang-bearings", "group": "Angles", "label": "Bearings", "clip": "124", "source": "booklet",
+      "example": "The bearing of B from A is 070°. Find the bearing of A from B.",
+      "steps": [
+        { "text": "Bearings are measured from north, clockwise, using 3 figures.", "math": "" },
+        { "text": "The way back is the opposite direction. Add 180° to go the other way.", "math": "070 + 180 = 250" },
+        { "text": "Write it with 3 figures.", "math": "250°" }
+      ],
+      "practice": [
+        { "q": "What is the bearing of due east?", "answer": "090°", "method": ["East is a quarter turn clockwise from north.", "A quarter turn is 90°. Write it as 090°."] },
+        { "q": "What is the bearing of south-west?", "answer": "225°", "method": ["South is 180°.", "South-west is halfway between south (180°) and west (270°).", "So it is 225°."] },
+        { "q": "The bearing of Q from P is 120°. Find the bearing of P from Q.", "answer": "300°", "method": ["Add 180° to find the way back.", "120 + 180 = 300."] },
+        { "q": "The bearing of Y from X is 300°. Find the bearing of X from Y.", "answer": "120°", "method": ["300 + 180 is more than 360, so subtract 180 instead.", "300 − 180 = 120."] }
+      ]
+    },
+    {
+      "id": "dec-ops", "group": "Decimals and Fractions", "label": "Four operations with decimals", "clip": "17–18, 66–67", "source": "booklet",
+      "example": "Work out 3.4 × 0.2",
+      "steps": [
+        { "text": "Ignore the decimal points and multiply the whole numbers.", "math": "34 × 2 = 68" },
+        { "text": "Count the digits after the decimal points in the question.", "math": "3.4 has 1, 0.2 has 1: 2 in total" },
+        { "text": "Put the same number of decimal places in the answer.", "math": "68 → 0.68" }
+      ],
+      "practice": [
+        { "q": "Work out 4.7 + 2.85", "answer": "7.55", "method": ["Line up the decimal points.", "4.70 + 2.85 = 7.55."] },
+        { "q": "Work out 6 − 2.38", "answer": "3.62", "method": ["Write 6 as 6.00.", "6.00 − 2.38 = 3.62."] },
+        { "q": "Work out 0.3 × 0.4", "answer": "0.12", "method": ["3 × 4 = 12.", "There are 2 decimal places in the question.", "So the answer is 0.12."] },
+        { "q": "Work out 7.2 ÷ 0.3", "answer": "24", "method": ["Multiply both numbers by 10 so you divide by a whole number.", "72 ÷ 3 = 24."] }
+      ]
+    },
+    {
+      "id": "frac-ops", "group": "Decimals and Fractions", "label": "Four operations with fractions", "clip": "71, 73–74", "source": "booklet",
+      "example": "Work out 2/3 + 1/4",
+      "steps": [
+        { "text": "Find a common denominator. 12 is in the 3 and 4 times tables.", "math": "denominator = 12" },
+        { "text": "Change each fraction to twelfths.", "math": "2/3 = 8/12 and 1/4 = 3/12" },
+        { "text": "Add the numerators. Keep the denominator.", "math": "8/12 + 3/12 = 11/12" }
+      ],
+      "practice": [
+        { "q": "Work out 3/5 − 1/3", "answer": "4/15", "method": ["Common denominator 15.", "3/5 = 9/15 and 1/3 = 5/15.", "9/15 − 5/15 = 4/15."] },
+        { "q": "Work out 2/3 × 3/4", "answer": "1/2", "method": ["Multiply the tops: 2 × 3 = 6.", "Multiply the bottoms: 3 × 4 = 12.", "6/12 simplifies to 1/2."] },
+        { "q": "Work out 3/4 ÷ 1/2", "answer": "1 1/2", "method": ["Keep, change, flip: 3/4 × 2/1.", "= 6/4.", "6/4 = 1 2/4 = 1 1/2."] },
+        { "q": "Work out 1 1/2 + 2 1/3", "answer": "3 5/6", "method": ["Make improper fractions: 3/2 + 7/3.", "Common denominator 6: 9/6 + 14/6 = 23/6.", "23/6 = 3 5/6."] }
+      ]
+    },
+    {
+      "id": "frac-dec", "group": "Decimals and Fractions", "label": "Convert between fractions and decimals", "clip": "84", "source": "booklet",
+      "example": "Write 0.35 as a fraction in its simplest form.",
+      "steps": [
+        { "text": "0.35 has 2 decimal places, so write it over 100.", "math": "0.35 = 35/100" },
+        { "text": "Find a number that divides into 35 and 100. Both are in the 5 times table.", "math": "35 ÷ 5 = 7, 100 ÷ 5 = 20" },
+        { "text": "Write the simplest form.", "math": "7/20" }
+      ],
+      "practice": [
+        { "q": "Write 1/4 as a decimal.", "answer": "0.25", "method": ["1/4 = 25/100.", "25/100 = 0.25."] },
+        { "q": "Write 0.6 as a fraction in its simplest form.", "answer": "3/5", "method": ["0.6 = 6/10.", "Divide top and bottom by 2: 3/5."] },
+        { "q": "Write 3/8 as a decimal.", "answer": "0.375", "method": ["Divide 3 by 8 using short division.", "3.000 ÷ 8 = 0.375."] },
+        { "q": "Write 0.125 as a fraction in its simplest form.", "answer": "1/8", "method": ["0.125 = 125/1000.", "Divide top and bottom by 125: 1/8."] }
+      ]
+    },
+    {
+      "id": "alg-expand", "group": "Algebra", "label": "Expand brackets (single, double and triple)", "clip": "93, 134, 178", "source": "booklet",
+      "example": "Expand (x + 2)(x + 5)",
+      "steps": [
+        { "text": "Multiply each term in the first bracket by each term in the second bracket.", "math": "x × x, x × 5, 2 × x, 2 × 5" },
+        { "text": "Write out the four results.", "math": "x² + 5x + 2x + 10" },
+        { "text": "Collect the like terms: 5x + 2x = 7x.", "math": "x² + 7x + 10" }
+      ],
+      "practice": [
+        { "q": "Expand 4(2x − 3)", "answer": "8x − 12", "method": ["4 × 2x = 8x.", "4 × −3 = −12."] },
+        { "q": "Expand (x + 3)(x − 2)", "answer": "x² + x − 6", "method": ["x² − 2x + 3x − 6.", "−2x + 3x = x.", "x² + x − 6."] },
+        { "q": "Expand (x − 4)(x − 5)", "answer": "x² − 9x + 20", "method": ["x² − 5x − 4x + 20.", "−5x − 4x = −9x.", "x² − 9x + 20."] },
+        { "q": "Expand (x + 1)(x + 1)(x + 2)", "answer": "x³ + 4x² + 5x + 2", "method": ["First two brackets: (x + 1)(x + 1) = x² + 2x + 1.", "Multiply by (x + 2): x³ + 2x² + 2x² + 4x + x + 2.", "Collect like terms: x³ + 4x² + 5x + 2."] }
+      ]
+    },
+    {
+      "id": "alg-factorise", "group": "Algebra", "label": "Factorise single brackets", "clip": "94", "source": "booklet",
+      "example": "Factorise 6x + 15",
+      "steps": [
+        { "text": "Find the highest common factor of 6 and 15.", "math": "HCF = 3" },
+        { "text": "Write the HCF outside a bracket.", "math": "3( … )" },
+        { "text": "Divide each term by 3 to find what goes inside.", "math": "6x ÷ 3 = 2x, 15 ÷ 3 = 5" },
+        { "text": "Write the answer. Check by expanding: 3 × 2x + 3 × 5 = 6x + 15.", "math": "3(2x + 5)" }
+      ],
+      "practice": [
+        { "q": "Factorise 4x + 8", "answer": "4(x + 2)", "method": ["HCF of 4 and 8 is 4.", "4x ÷ 4 = x, 8 ÷ 4 = 2."] },
+        { "q": "Factorise 10y − 15", "answer": "5(2y − 3)", "method": ["HCF of 10 and 15 is 5.", "10y ÷ 5 = 2y, 15 ÷ 5 = 3."] },
+        { "q": "Factorise x² + 7x", "answer": "x(x + 7)", "method": ["Both terms have x in them.", "x² ÷ x = x, 7x ÷ x = 7."] },
+        { "q": "Factorise 12a² − 8a fully", "answer": "4a(3a − 2)", "method": ["HCF of 12 and 8 is 4. Both terms have a.", "So take out 4a.", "12a² ÷ 4a = 3a, 8a ÷ 4a = 2."] }
+      ]
+    },
+    {
+      "id": "num-bidmas", "group": "Number/Indices", "label": "BIDMAS", "clip": "75", "source": "booklet",
+      "example": "Work out 3 + 4 × 2",
+      "steps": [
+        { "text": "BIDMAS says multiplication comes before addition.", "math": "Do 4 × 2 first" },
+        { "text": "Work out the multiplication.", "math": "4 × 2 = 8" },
+        { "text": "Now do the addition.", "math": "3 + 8 = 11" }
+      ],
+      "practice": [
+        { "q": "Work out (6 + 2) × 3", "answer": "24", "method": ["Brackets first: 6 + 2 = 8.", "8 × 3 = 24."] },
+        { "q": "Work out 20 − 12 ÷ 4", "answer": "17", "method": ["Division first: 12 ÷ 4 = 3.", "20 − 3 = 17."] },
+        { "q": "Work out 2 × 3²", "answer": "18", "say": "Work out 2 times 3 squared.", "method": ["Indices first: 3² = 9.", "2 × 9 = 18."] },
+        { "q": "Work out (10 − 4)² ÷ 3", "answer": "12", "say": "Work out 10 minus 4, in brackets, squared, divided by 3.", "method": ["Brackets: 10 − 4 = 6.", "Indices: 6² = 36.", "36 ÷ 3 = 12."] }
+      ]
+    },
+    {
+      "id": "num-hcf", "group": "Number/Indices", "label": "HCF and LCM", "clip": "79/80", "source": "booklet",
+      "example": "Find the HCF and LCM of 12 and 18.",
+      "steps": [
+        { "text": "List the factors of each number.", "math": "12: 1, 2, 3, 4, 6, 12. 18: 1, 2, 3, 6, 9, 18" },
+        { "text": "The highest factor in both lists is the HCF.", "math": "HCF = 6" },
+        { "text": "List multiples of each number.", "math": "12: 12, 24, 36, 48. 18: 18, 36, 54" },
+        { "text": "The lowest multiple in both lists is the LCM.", "math": "LCM = 36" }
+      ],
+      "practice": [
+        { "q": "Find the HCF of 8 and 12.", "answer": "4", "method": ["Factors of 8: 1, 2, 4, 8.", "Factors of 12: 1, 2, 3, 4, 6, 12.", "The highest in both is 4."] },
+        { "q": "Find the LCM of 4 and 6.", "answer": "12", "method": ["Multiples of 4: 4, 8, 12.", "Multiples of 6: 6, 12.", "The lowest in both is 12."] },
+        { "q": "Find the HCF of 24 and 36.", "answer": "12", "method": ["Factors of 24: 1, 2, 3, 4, 6, 8, 12, 24.", "12 also divides into 36.", "So the HCF is 12."] },
+        { "q": "Find the LCM of 6 and 10.", "answer": "30", "method": ["Multiples of 6: 6, 12, 18, 24, 30.", "Multiples of 10: 10, 20, 30.", "The lowest in both is 30."] }
+      ]
+    },
+    {
+      "id": "num-indices", "group": "Number/Indices", "label": "Index laws and negative indices", "clip": "131, 154", "source": "booklet",
+      "note": "Negative indices has no clip number in the booklet. It is part of the index laws.",
+      "example": "Simplify a³ × a⁴. Then work out 2⁻³.",
+      "example_say": "Simplify a cubed times a to the power 4. Then work out 2 to the power negative 3.",
+      "steps": [
+        { "text": "When you multiply, add the powers.", "math": "a³ × a⁴ = a⁷", "say": "When you multiply, add the powers. a cubed times a to the power 4 is a to the power 7." },
+        { "text": "A negative power means 1 over the positive power.", "math": "2⁻³ = 1/2³", "say": "A negative power means 1 over the positive power. 2 to the power negative 3 is 1 over 2 cubed." },
+        { "text": "Work out 2³.", "math": "2 × 2 × 2 = 8", "say": "2 cubed is 2 times 2 times 2, which is 8." },
+        { "text": "Write the answer.", "math": "2⁻³ = 1/8", "say": "So 2 to the power negative 3 is one eighth." }
+      ],
+      "practice": [
+        { "q": "Simplify x⁵ × x²", "say": "Simplify x to the power 5 times x squared.", "answer": "x⁷", "answer_say": "x to the power 7", "method": ["Multiplying: add the powers.", "5 + 2 = 7."] },
+        { "q": "Simplify y⁹ ÷ y⁴", "say": "Simplify y to the power 9 divided by y to the power 4.", "answer": "y⁵", "answer_say": "y to the power 5", "method": ["Dividing: subtract the powers.", "9 − 4 = 5."] },
+        { "q": "Simplify (m³)⁴", "say": "Simplify m cubed, all to the power 4.", "answer": "m¹²", "answer_say": "m to the power 12", "method": ["Power of a power: multiply the powers.", "3 × 4 = 12."] },
+        { "q": "Work out 5⁻²", "say": "Work out 5 to the power negative 2.", "answer": "1/25", "answer_say": "one twenty-fifth", "method": ["Negative power: 1 over 5².", "5² = 25.", "So the answer is 1/25."] },
+        { "q": "Work out 7⁰", "say": "Work out 7 to the power 0.", "answer": "1", "method": ["Anything to the power 0 is 1."] }
+      ]
+    },
+    {
+      "id": "seq-quad", "group": "Sequences", "label": "Quadratic sequences", "clip": "213", "sets12": true, "source": "booklet",
+      "example": "Find the nth term of 2, 5, 10, 17, 26, …",
+      "steps": [
+        { "text": "Find the first differences.", "math": "+3, +5, +7, +9" },
+        { "text": "Find the second differences (the differences of the differences).", "math": "+2, +2, +2" },
+        { "text": "Halve the second difference. This is the number in front of n².", "math": "2 ÷ 2 = 1, so 1n² = n²" },
+        { "text": "Write out n² and subtract it from the sequence.", "math": "2−1, 5−4, 10−9, 17−16 = 1, 1, 1, 1" },
+        { "text": "What is left is +1 each time.", "math": "nth term = n² + 1" }
+      ],
+      "practice": [
+        { "q": "Find the nth term of 3, 6, 11, 18, 27, …", "answer": "n² + 2", "method": ["First differences: 3, 5, 7, 9. Second difference: 2.", "2 ÷ 2 = 1, so start with n².", "Sequence − n²: 2, 2, 2, 2. So n² + 2."] },
+        { "q": "Find the nth term of 2, 8, 18, 32, 50, …", "answer": "2n²", "method": ["First differences: 6, 10, 14, 18. Second difference: 4.", "4 ÷ 2 = 2, so start with 2n².", "2n² gives 2, 8, 18, 32, 50. Nothing is left over."] },
+        { "q": "Find the nth term of 0, 3, 8, 15, 24, …", "answer": "n² − 1", "method": ["Second difference is 2, so start with n².", "Sequence − n²: −1, −1, −1, −1.", "So n² − 1."] },
+        { "q": "Find the next term of 4, 7, 12, 19, …", "answer": "28", "method": ["First differences: 3, 5, 7.", "The next difference is 9.", "19 + 9 = 28."] }
+      ]
+    },
+    {
+      "id": "dec-recurring", "group": "Decimals and Fractions", "label": "Recurring decimals to fractions", "clip": "177, 189", "sets12": true, "source": "booklet",
+      "example": "Write 0.777… as a fraction.",
+      "steps": [
+        { "text": "Call the number x.", "math": "x = 0.777…" },
+        { "text": "One digit repeats, so multiply by 10.", "math": "10x = 7.777…" },
+        { "text": "Subtract the first line from the second. The repeating part cancels.", "math": "10x − x = 7.777… − 0.777…, so 9x = 7" },
+        { "text": "Divide by 9.", "math": "x = 7/9" }
+      ],
+      "practice": [
+        { "q": "Write 0.333… as a fraction.", "answer": "1/3", "method": ["x = 0.333…, 10x = 3.333….", "9x = 3, x = 3/9.", "3/9 = 1/3."] },
+        { "q": "Write 0.4545… as a fraction in its simplest form.", "answer": "5/11", "method": ["Two digits repeat, so multiply by 100.", "100x = 45.4545…, so 99x = 45.", "x = 45/99 = 5/11."] },
+        { "q": "Write 1/3 as a decimal.", "answer": "0.333… (0.3 recurring)", "method": ["1 ÷ 3 = 0.333…", "The 3 repeats for ever."] },
+        { "q": "Write 0.1666… as a fraction.", "answer": "1/6", "method": ["x = 0.1666…. 10x = 1.666…. 100x = 16.666….", "100x − 10x = 15, so 90x = 15.", "x = 15/90 = 1/6."] }
+      ]
+    },
+    {
+      "id": "alg-quad", "group": "Algebra", "label": "Factorise quadratics", "clip": "157", "sets12": true, "source": "booklet",
+      "example": "Factorise x² + 7x + 12",
+      "example_say": "Factorise x squared plus 7x plus 12.",
+      "steps": [
+        { "text": "Find two numbers that multiply to make 12 and add to make 7.", "math": "3 × 4 = 12 and 3 + 4 = 7" },
+        { "text": "Put them in two brackets with x.", "math": "(x + 3)(x + 4)" },
+        { "text": "Check by expanding: x² + 4x + 3x + 12 = x² + 7x + 12.", "math": "Correct" }
+      ],
+      "practice": [
+        { "q": "Factorise x² + 5x + 6", "answer": "(x + 2)(x + 3)", "method": ["Multiply to 6, add to 5: 2 and 3."] },
+        { "q": "Factorise x² − x − 12", "answer": "(x − 4)(x + 3)", "method": ["Multiply to −12, add to −1: −4 and 3."] },
+        { "q": "Factorise x² − 9", "answer": "(x + 3)(x − 3)", "method": ["This is the difference of two squares.", "x² − 9 = x² − 3².", "So (x + 3)(x − 3)."] },
+        { "q": "Factorise x² − 8x + 15", "answer": "(x − 3)(x − 5)", "method": ["Multiply to 15, add to −8: −3 and −5."] }
+      ]
+    },
+    {
+      "id": "num-frac-ind", "group": "Number/Indices", "label": "Fractional indices", "clip": "188", "sets12": true, "source": "booklet",
+      "example": "Work out 8 to the power 2/3.",
+      "steps": [
+        { "text": "The bottom of the fraction is the root. 3 means cube root.", "math": "∛8 = 2" },
+        { "text": "The top of the fraction is the power. 2 means square it.", "math": "2² = 4" },
+        { "text": "Write the answer.", "math": "8 to the power 2/3 = 4" }
+      ],
+      "practice": [
+        { "q": "Work out 25 to the power 1/2", "answer": "5", "method": ["Power 1/2 means square root.", "√25 = 5."] },
+        { "q": "Work out 27 to the power 1/3", "answer": "3", "method": ["Power 1/3 means cube root.", "3 × 3 × 3 = 27, so the answer is 3."] },
+        { "q": "Work out 64 to the power 2/3", "answer": "16", "method": ["Cube root of 64 is 4.", "Square it: 4² = 16."] },
+        { "q": "Work out 9 to the power 3/2", "answer": "27", "method": ["Square root of 9 is 3.", "Cube it: 3³ = 27."] }
+      ]
+    }
+  ],
+  "quiz_sets": [
+    { "id": "number", "title": "Number and indices" },
+    { "id": "algebra", "title": "Algebra and sequences" },
+    { "id": "angles", "title": "Angles" },
+    { "id": "fractions", "title": "Decimals and fractions" },
+    { "id": "sets12", "title": "Sets 1–2 topics (only if your teacher has covered them)" }
+  ],
+  "quiz": [
+    { "id": "ma-q-01", "set": "number", "q": "Work out 5 + 3 × 4", "options": ["32", "17", "20", "12"], "answer": 1, "explain": "Multiply first: 3 × 4 = 12. Then 5 + 12 = 17.", "source": "generated" },
+    { "id": "ma-q-02", "set": "number", "q": "What is the HCF of 18 and 24?", "options": ["6", "3", "72", "12"], "answer": 0, "explain": "6 is the biggest number that divides into both 18 and 24.", "source": "generated" },
+    { "id": "ma-q-03", "set": "number", "q": "What is the LCM of 8 and 12?", "options": ["4", "96", "48", "24"], "answer": 3, "explain": "24 is the smallest number in both the 8 and 12 times tables.", "source": "generated" },
+    { "id": "ma-q-04", "set": "number", "q": "Simplify a⁴ × a³", "options": ["a¹²", "a⁷", "a¹", "2a⁷"], "answer": 1, "explain": "Multiplying: add the powers. 4 + 3 = 7.", "source": "generated" },
+    { "id": "ma-q-05", "set": "number", "q": "Work out 3⁻²", "options": ["−9", "−6", "1/9", "9"], "answer": 2, "explain": "3⁻² = 1/3² = 1/9.", "source": "generated" },
+    { "id": "ma-q-06", "set": "number", "q": "Simplify (b²)⁵", "options": ["b¹⁰", "b⁷", "b³", "2b⁵"], "answer": 0, "explain": "Power of a power: multiply. 2 × 5 = 10.", "source": "generated" },
+    { "id": "ma-q-07", "set": "number", "q": "Work out (8 − 2) × 5", "options": ["−2", "30", "38", "40"], "answer": 1, "explain": "Brackets first: 8 − 2 = 6. Then 6 × 5 = 30.", "source": "generated" },
+    { "id": "ma-q-08", "set": "algebra", "q": "Expand 5(x + 3)", "options": ["5x + 3", "x + 15", "5x + 8", "5x + 15"], "answer": 3, "explain": "Multiply both terms by 5: 5x and 15.", "source": "generated" },
+    { "id": "ma-q-09", "set": "algebra", "q": "Expand (x + 4)(x + 1)", "options": ["x² + 5x + 4", "x² + 4", "x² + 4x + 1", "2x + 5"], "answer": 0, "explain": "x² + x + 4x + 4 = x² + 5x + 4.", "source": "generated" },
+    { "id": "ma-q-10", "set": "algebra", "q": "Factorise 9x + 12", "options": ["9(x + 12)", "3(3x + 4)", "3(3x + 12)", "x(9 + 12)"], "answer": 1, "explain": "The HCF of 9 and 12 is 3.", "source": "generated" },
+    { "id": "ma-q-11", "set": "algebra", "q": "What is the nth term of 6, 10, 14, 18, …?", "options": ["6n", "4n + 6", "4n + 2", "n + 4"], "answer": 2, "explain": "Difference is 4, so 4n. 4n gives 4, 8, 12. Add 2.", "source": "generated" },
+    { "id": "ma-q-12", "set": "algebra", "q": "What is the next term of the Fibonacci sequence 1, 1, 2, 3, 5, 8, …?", "options": ["11", "16", "10", "13"], "answer": 3, "explain": "Add the last two terms: 5 + 8 = 13.", "source": "generated" },
+    { "id": "ma-q-13", "set": "algebra", "q": "Which sequence is geometric?", "options": ["3, 9, 27, 81", "3, 6, 9, 12", "1, 1, 2, 3", "10, 8, 6, 4"], "answer": 0, "explain": "You multiply by 3 each time.", "source": "generated" },
+    { "id": "ma-q-14", "set": "angles", "q": "Two angles on a straight line. One is 110°. What is the other?", "options": ["250°", "90°", "70°", "80°"], "answer": 2, "explain": "180 − 110 = 70.", "source": "generated" },
+    { "id": "ma-q-15", "set": "angles", "q": "Co-interior angles add up to…", "options": ["90°", "180°", "270°", "360°"], "answer": 1, "explain": "Co-interior angles (C shape) add up to 180°.", "source": "generated" },
+    { "id": "ma-q-16", "set": "angles", "q": "What is each exterior angle of a regular octagon (8 sides)?", "options": ["45°", "135°", "60°", "40°"], "answer": 0, "explain": "360 ÷ 8 = 45.", "source": "generated" },
+    { "id": "ma-q-17", "set": "angles", "q": "What is the bearing of due south?", "options": ["090°", "270°", "360°", "180°"], "answer": 3, "explain": "South is a half turn from north: 180°.", "source": "generated" },
+    { "id": "ma-q-18", "set": "angles", "q": "Alternate angles are…", "options": ["Equal", "Add up to 180°", "Add up to 90°", "Add up to 360°"], "answer": 0, "explain": "Alternate angles (Z shape) are equal.", "source": "generated" },
+    { "id": "ma-q-19", "set": "fractions", "q": "Work out 1/2 + 1/3", "options": ["2/5", "5/6", "1/6", "2/6"], "answer": 1, "explain": "3/6 + 2/6 = 5/6.", "source": "generated" },
+    { "id": "ma-q-20", "set": "fractions", "q": "Work out 2/5 × 1/2", "options": ["3/7", "2/7", "4/5", "1/5"], "answer": 3, "explain": "2 × 1 = 2, 5 × 2 = 10. 2/10 = 1/5.", "source": "generated" },
+    { "id": "ma-q-21", "set": "fractions", "q": "Write 3/4 as a decimal.", "options": ["0.75", "0.34", "0.43", "0.7"], "answer": 0, "explain": "3/4 = 75/100 = 0.75.", "source": "generated" },
+    { "id": "ma-q-22", "set": "fractions", "q": "Work out 0.2 × 0.3", "options": ["0.6", "6", "0.06", "0.5"], "answer": 2, "explain": "2 × 3 = 6, with 2 decimal places: 0.06.", "source": "generated" },
+    { "id": "ma-q-23", "set": "fractions", "q": "Work out 2/3 ÷ 1/3", "options": ["2/9", "2", "1/3", "3/2"], "answer": 1, "explain": "2/3 × 3/1 = 6/3 = 2.", "source": "generated" },
+    { "id": "ma-q-24", "set": "sets12", "q": "Factorise x² + 6x + 8", "options": ["(x + 6)(x + 8)", "(x + 1)(x + 8)", "(x + 2)(x + 4)", "(x + 3)(x + 3)"], "answer": 2, "explain": "2 × 4 = 8 and 2 + 4 = 6.", "source": "generated" },
+    { "id": "ma-q-25", "set": "sets12", "q": "Work out 16 to the power 1/2", "options": ["8", "4", "32", "256"], "answer": 1, "explain": "Power 1/2 means square root. √16 = 4.", "source": "generated" },
+    { "id": "ma-q-26", "set": "sets12", "q": "Write 0.555… as a fraction.", "options": ["5/9", "1/2", "5/10", "55/100"], "answer": 0, "explain": "x = 0.555…, 10x = 5.555…, so 9x = 5 and x = 5/9.", "source": "generated" },
+    { "id": "ma-q-27", "set": "sets12", "q": "What is the nth term of 1, 4, 9, 16, …?", "options": ["3n + 1", "n + 3", "2n", "n²"], "answer": 3, "explain": "These are the square numbers.", "source": "generated" }
+  ],
+  "resources": [
+    { "label": "Mathswatch", "url": "https://vle.mathswatch.co.uk/", "note": "Your teacher has set an extended revision task. Tap Videos, then type the topic or clip number in the search box.", "source": "booklet" },
+    { "label": "CorbettMaths", "url": "https://corbettmaths.com/", "note": "Videos and practice questions.", "source": "booklet" },
+    { "label": "BBC Bitesize", "url": "https://www.bbc.co.uk/bitesize", "note": "Search for KS3 Maths and the topic.", "source": "booklet" },
+    { "label": "Your exercise book", "url": null, "note": "Look back at the lessons you have had since September.", "source": "booklet" }
+  ],
+  "rag_topics": [
+    { "id": "seq-nth", "group": "Sequences", "label": "Nth term of linear sequence", "detail": "Mathswatch clip 102–103", "source": "booklet" },
+    { "id": "seq-fib", "group": "Sequences", "label": "Fibonacci Sequences", "detail": "Mathswatch clip 141", "source": "booklet" },
+    { "id": "seq-geo", "group": "Sequences", "label": "Geometric Sequences (and arithmetic)", "detail": "Mathswatch clip 163", "source": "booklet" },
+    { "id": "ang-basic", "group": "Angles", "label": "Basic Angle rules", "detail": "Mathswatch clip 45, 121", "source": "booklet" },
+    { "id": "ang-parallel", "group": "Angles", "label": "Angles in Parallel Lines", "detail": "Mathswatch clip 120", "source": "booklet" },
+    { "id": "ang-polygon", "group": "Angles", "label": "Interior/Exterior Angles", "detail": "Mathswatch clip 123", "source": "booklet" },
+    { "id": "ang-bearings", "group": "Angles", "label": "Bearings", "detail": "Mathswatch clip 124", "source": "booklet" },
+    { "id": "dec-ops", "group": "Decimals and Fractions", "label": "Four operations with decimals", "detail": "Mathswatch clip 17–18, 66–67", "source": "booklet" },
+    { "id": "frac-ops", "group": "Decimals and Fractions", "label": "Four operations with fractions", "detail": "Mathswatch clip 71, 73–74", "source": "booklet" },
+    { "id": "frac-dec", "group": "Decimals and Fractions", "label": "Convert between fractions and decimals", "detail": "Mathswatch clip 84", "source": "booklet" },
+    { "id": "alg-expand", "group": "Algebra", "label": "Expand brackets (single, double, triple)", "detail": "Mathswatch clip 93, 134, 178", "source": "booklet" },
+    { "id": "alg-factorise", "group": "Algebra", "label": "Factorise single brackets", "detail": "Mathswatch clip 94", "source": "booklet" },
+    { "id": "num-bidmas", "group": "Number/Indices", "label": "BIDMAS", "detail": "Mathswatch clip 75", "source": "booklet" },
+    { "id": "num-hcf", "group": "Number/Indices", "label": "HCF/LCM", "detail": "Mathswatch clip 79/80", "source": "booklet" },
+    { "id": "num-indices", "group": "Number/Indices", "label": "Index Laws (including negative indices)", "detail": "Mathswatch clip 131, 154", "source": "booklet" },
+    { "id": "seq-quad", "group": "Only if your teacher has covered this (sets 1–2)", "label": "Quadratic Sequences", "detail": "Mathswatch clip 213", "source": "booklet" },
+    { "id": "dec-recurring", "group": "Only if your teacher has covered this (sets 1–2)", "label": "Recurring decimals to fractions", "detail": "Mathswatch clip 177, 189", "source": "booklet" },
+    { "id": "alg-quad", "group": "Only if your teacher has covered this (sets 1–2)", "label": "Factorise Quadratics", "detail": "Mathswatch clip 157", "source": "booklet" },
+    { "id": "num-frac-ind", "group": "Only if your teacher has covered this (sets 1–2)", "label": "Fractional Indices", "detail": "Mathswatch clip 188", "source": "booklet" }
+  ]
+}

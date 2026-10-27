@@ -1,0 +1,104 @@
+{
+  "id": "history",
+  "name": "History",
+  "paper_note": "You will be assessed on the following topics.",
+  "scope": [
+    { "heading": "Topics", "items": ["Weimar Germany", "Rise of Hitler (Munich Putsch)", "Nazi Control over Germany", "Treaty of Versailles (aims of the leaders, Germany's punishments)"], "source": "booklet" }
+  ],
+  "flashcard_sets": [
+    { "id": "booklet", "title": "Key terms from page 14" },
+    { "id": "versailles", "title": "Treaty of Versailles" },
+    { "id": "weimar", "title": "Weimar Germany" },
+    { "id": "rise", "title": "Rise of Hitler" },
+    { "id": "control", "title": "Nazi control" }
+  ],
+  "flashcards": [
+    { "id": "his-fc-01", "set": "booklet", "key": true, "front": "Weimar", "back": "The name for Germany's democratic government from 1919 to 1933. It is named after the town of Weimar, where its constitution was written.", "source": "generated" },
+    { "id": "his-fc-02", "set": "booklet", "key": true, "front": "Dictatorship", "back": "A government where one person or one party has total power. People cannot vote them out.", "source": "generated" },
+    { "id": "his-fc-03", "set": "booklet", "key": true, "front": "Democracy", "back": "A system where people vote to choose their government.", "source": "generated" },
+    { "id": "his-fc-04", "set": "booklet", "key": true, "front": "Gestapo", "back": "The Nazi secret police. They spied on people and arrested opponents without a trial.", "source": "generated" },
+    { "id": "his-fc-05", "set": "booklet", "key": true, "front": "Kaiser", "back": "The German emperor. Kaiser Wilhelm II gave up the throne in November 1918, at the end of the First World War.", "source": "generated" },
+    { "id": "his-fc-06", "set": "versailles", "key": true, "front": "Treaty of Versailles", "back": "The peace treaty between Germany and the Allies after the First World War. It was signed in June 1919.", "source": "generated" },
+    { "id": "his-fc-07", "set": "versailles", "front": "The Big Three", "back": "The leaders who decided the treaty: Clemenceau (France), Lloyd George (Britain) and Woodrow Wilson (USA).", "source": "generated" },
+    { "id": "his-fc-08", "set": "versailles", "front": "Clemenceau's aim", "back": "To punish Germany harshly and make sure it could never attack France again.", "source": "generated" },
+    { "id": "his-fc-09", "set": "versailles", "front": "Lloyd George's aim", "back": "To punish Germany, but not too harshly, so Germany could still trade with Britain and would not want revenge.", "source": "generated" },
+    { "id": "his-fc-10", "set": "versailles", "front": "Woodrow Wilson's aim", "back": "A fair peace based on his Fourteen Points, and a League of Nations to keep peace.", "source": "generated" },
+    { "id": "his-fc-11", "set": "versailles", "key": true, "front": "War Guilt Clause", "back": "Article 231 of the treaty. Germany had to accept the blame for starting the war.", "source": "generated" },
+    { "id": "his-fc-12", "set": "versailles", "key": true, "front": "Reparations", "back": "Money Germany had to pay for war damage. In 1921 the amount was set at £6.6 billion.", "source": "generated" },
+    { "id": "his-fc-13", "set": "versailles", "front": "LAMB: Germany's punishments", "back": "Land, Army, Money and Blame.", "source": "generated" },
+    { "id": "his-fc-14", "set": "versailles", "front": "Land taken from Germany", "back": "Germany lost about 13% of its land, including Alsace-Lorraine to France, and all of its colonies.", "source": "generated" },
+    { "id": "his-fc-15", "set": "versailles", "front": "Limits on Germany's army", "back": "Only 100,000 soldiers, no conscription, no tanks, no air force, no submarines and only 6 battleships. The Rhineland had to be demilitarised.", "source": "generated" },
+    { "id": "his-fc-16", "set": "versailles", "front": "Diktat", "back": "A dictated peace. Germans called the treaty a diktat because they were forced to sign it.", "source": "generated" },
+    { "id": "his-fc-17", "set": "weimar", "key": true, "front": "Article 48", "back": "Part of the Weimar constitution. It let the President make laws in an emergency without the Reichstag.", "source": "generated" },
+    { "id": "his-fc-18", "set": "weimar", "front": "Reichstag", "back": "The German parliament.", "source": "generated" },
+    { "id": "his-fc-19", "set": "weimar", "front": "Proportional representation", "back": "Parties got seats in the same proportion as their votes. This led to many small parties and weak coalition governments.", "source": "generated" },
+    { "id": "his-fc-20", "set": "weimar", "key": true, "front": "Hyperinflation (1923)", "back": "Prices rose so fast that money became worthless. The government printed more and more money after French and Belgian troops took over the Ruhr.", "source": "generated" },
+    { "id": "his-fc-21", "set": "weimar", "front": "Occupation of the Ruhr (1923)", "back": "French and Belgian troops took over the Ruhr industrial area because Germany missed a reparations payment.", "source": "generated" },
+    { "id": "his-fc-22", "set": "weimar", "front": "Spartacist Uprising (1919)", "back": "A communist revolt in Berlin. It was crushed by the Freikorps (ex-soldiers).", "source": "generated" },
+    { "id": "his-fc-23", "set": "weimar", "front": "Gustav Stresemann", "back": "A Weimar leader who helped Germany recover. He brought in a new currency and the Dawes Plan (American loans) in 1924.", "source": "generated" },
+    { "id": "his-fc-24", "set": "rise", "key": true, "front": "Munich Putsch (Beer Hall Putsch), November 1923", "back": "Hitler's failed attempt to take power by force in Munich. He was arrested and sent to prison.", "source": "generated" },
+    { "id": "his-fc-25", "set": "rise", "front": "Mein Kampf", "back": "'My Struggle'. The book Hitler wrote in prison after the Munich Putsch, setting out his ideas.", "source": "generated" },
+    { "id": "his-fc-26", "set": "rise", "front": "What did Hitler learn from the Munich Putsch?", "back": "That he should try to win power legally, through elections, not by force.", "source": "generated" },
+    { "id": "his-fc-27", "set": "rise", "front": "The Great Depression", "back": "A world economic crisis that started with the Wall Street Crash in 1929. By 1932 about 6 million Germans were unemployed.", "source": "generated" },
+    { "id": "his-fc-28", "set": "rise", "front": "30 January 1933", "back": "Hitler was appointed Chancellor of Germany.", "source": "generated" },
+    { "id": "his-fc-29", "set": "control", "front": "Reichstag Fire (February 1933)", "back": "The parliament building burned down. Hitler blamed the communists and used it to arrest opponents.", "source": "generated" },
+    { "id": "his-fc-30", "set": "control", "key": true, "front": "Enabling Act (March 1933)", "back": "A law that let Hitler make laws without the Reichstag. It gave him the power of a dictator.", "source": "generated" },
+    { "id": "his-fc-31", "set": "control", "key": true, "front": "Night of the Long Knives (June 1934)", "back": "Hitler had Ernst Röhm, the leader of the SA, and other rivals killed.", "source": "generated" },
+    { "id": "his-fc-32", "set": "control", "front": "Führer", "back": "'Leader'. Hitler's title from August 1934, when he combined the jobs of Chancellor and President.", "source": "generated" },
+    { "id": "his-fc-33", "set": "control", "front": "SS", "back": "Hitler's elite guard, led by Heinrich Himmler. It ran the police and the concentration camps.", "source": "generated" },
+    { "id": "his-fc-34", "set": "control", "front": "Propaganda", "back": "Information used to control what people think. Joseph Goebbels was in charge of Nazi propaganda.", "source": "generated" },
+    { "id": "his-fc-35", "set": "control", "front": "Censorship", "back": "Controlling what people can read, hear and see. The Nazis banned books, newspapers and films they did not like.", "source": "generated" }
+  ],
+  "quiz_sets": [
+    { "id": "versailles", "title": "Treaty of Versailles" },
+    { "id": "weimar", "title": "Weimar Germany" },
+    { "id": "rise", "title": "Rise of Hitler" },
+    { "id": "control", "title": "Nazi control" }
+  ],
+  "quiz": [
+    { "id": "his-q-01", "set": "versailles", "q": "When was the Treaty of Versailles signed?", "options": ["November 1918", "June 1919", "January 1933", "September 1939"], "answer": 1, "explain": "It was signed in June 1919 in the Palace of Versailles, near Paris.", "source": "generated" },
+    { "id": "his-q-02", "set": "versailles", "q": "Which leader wanted to punish Germany the most harshly?", "options": ["Clemenceau", "Wilson", "Lloyd George", "Stresemann"], "answer": 0, "explain": "Clemenceau of France wanted revenge and security for France.", "source": "generated" },
+    { "id": "his-q-03", "set": "versailles", "q": "What was the War Guilt Clause?", "options": ["Germany had to leave the League of Nations", "Germany had to accept blame for the war", "Germany had to pay for new roads", "Germany had to choose a new Kaiser"], "answer": 1, "explain": "Article 231 made Germany accept the blame for starting the war.", "source": "generated" },
+    { "id": "his-q-04", "set": "versailles", "q": "How big could the German army be after the treaty?", "options": ["1 million soldiers", "500,000 soldiers", "250,000 soldiers", "100,000 soldiers"], "answer": 3, "explain": "The army was limited to 100,000 soldiers, with no conscription.", "source": "generated" },
+    { "id": "his-q-05", "set": "versailles", "q": "What did Woodrow Wilson want?", "options": ["A fair peace and a League of Nations", "To take all German land", "To make Germany pay double", "To bring back the Kaiser"], "answer": 0, "explain": "Wilson's Fourteen Points aimed for a fair, lasting peace.", "source": "generated" },
+    { "id": "his-q-06", "set": "versailles", "q": "Which area did Germany lose to France?", "options": ["Bavaria", "The Ruhr", "Alsace-Lorraine", "Berlin"], "answer": 2, "explain": "Alsace-Lorraine was returned to France.", "source": "generated" },
+    { "id": "his-q-07", "set": "weimar", "q": "What did Article 48 allow?", "options": ["Women to vote", "The President to make laws in an emergency", "The Kaiser to return", "The army to grow"], "answer": 1, "explain": "Article 48 gave the President emergency powers.", "source": "generated" },
+    { "id": "his-q-08", "set": "weimar", "q": "In which year did hyperinflation hit Germany?", "options": ["1919", "1929", "1933", "1923"], "answer": 3, "explain": "In 1923 money became almost worthless.", "source": "generated" },
+    { "id": "his-q-09", "set": "weimar", "q": "Why did French and Belgian troops occupy the Ruhr in 1923?", "options": ["Germany missed a reparations payment", "To stop the Munich Putsch", "To help German workers", "To build factories"], "answer": 0, "explain": "They took goods instead when Germany did not pay.", "source": "generated" },
+    { "id": "his-q-10", "set": "weimar", "q": "Why did proportional representation make Weimar governments weak?", "options": ["Only one party could win", "Nobody could vote", "Many small parties had to form coalitions", "The Kaiser chose the government"], "answer": 2, "explain": "Coalitions often disagreed and fell apart.", "source": "generated" },
+    { "id": "his-q-11", "set": "weimar", "q": "Who helped Germany recover after 1923?", "options": ["Hitler", "Stresemann", "Röhm", "Goebbels"], "answer": 1, "explain": "Stresemann brought in a new currency and the Dawes Plan.", "source": "generated" },
+    { "id": "his-q-12", "set": "rise", "q": "Where did the 1923 Putsch take place?", "options": ["Munich", "Berlin", "Hamburg", "Weimar"], "answer": 0, "explain": "It started in a beer hall in Munich, Bavaria.", "source": "generated" },
+    { "id": "his-q-13", "set": "rise", "q": "What happened to Hitler after the Munich Putsch?", "options": ["He became Chancellor", "He left Germany", "He was put on trial and sent to prison", "He joined the army"], "answer": 2, "explain": "He was sentenced to five years but served about nine months.", "source": "generated" },
+    { "id": "his-q-14", "set": "rise", "q": "What book did Hitler write in prison?", "options": ["The Fourteen Points", "Das Kapital", "The Enabling Act", "Mein Kampf"], "answer": 3, "explain": "Mein Kampf means 'My Struggle'.", "source": "generated" },
+    { "id": "his-q-15", "set": "rise", "q": "What event in 1929 led to the Great Depression?", "options": ["The Reichstag Fire", "The Wall Street Crash", "The Munich Putsch", "The Treaty of Versailles"], "answer": 1, "explain": "The Wall Street Crash in the USA caused a world economic crisis.", "source": "generated" },
+    { "id": "his-q-16", "set": "rise", "q": "When did Hitler become Chancellor?", "options": ["January 1933", "November 1923", "June 1919", "August 1934"], "answer": 0, "explain": "President Hindenburg appointed him on 30 January 1933.", "source": "generated" },
+    { "id": "his-q-17", "set": "control", "q": "What did the Enabling Act do?", "options": ["Gave women the vote", "Ended the Treaty of Versailles", "Let Hitler make laws without the Reichstag", "Made the Kaiser leader again"], "answer": 2, "explain": "It gave Hitler the power of a dictator.", "source": "generated" },
+    { "id": "his-q-18", "set": "control", "q": "Who was killed on the Night of the Long Knives?", "options": ["Stresemann", "Hindenburg", "Goebbels", "Ernst Röhm and other rivals"], "answer": 3, "explain": "Hitler removed Röhm, the SA leader, and others in June 1934.", "source": "generated" },
+    { "id": "his-q-19", "set": "control", "q": "What was the Gestapo?", "options": ["The secret police", "The German parliament", "A youth group", "A newspaper"], "answer": 0, "explain": "The Gestapo spied on people and arrested opponents.", "source": "generated" },
+    { "id": "his-q-20", "set": "control", "q": "Who ran Nazi propaganda?", "options": ["Himmler", "Goebbels", "Röhm", "Stresemann"], "answer": 1, "explain": "Joseph Goebbels controlled the radio, films, newspapers and rallies.", "source": "generated" },
+    { "id": "his-q-21", "set": "control", "q": "Who did Hitler blame for the Reichstag Fire?", "options": ["The French", "The army", "The communists", "The Kaiser"], "answer": 2, "explain": "He used it as an excuse to arrest communists.", "source": "generated" }
+  ],
+  "writing": [],
+  "booklet_tasks_title": "Bigger picture (optional)",
+  "practise_heading": "Practise writing",
+  "bigger_picture": {
+    "intro": "These are the five questions on page 14 of your booklet. Read the paragraph on page 14 first. Stalin and Mussolini are background only. They are not the main test topics.",
+    "questions": [
+      { "q": "What role did the Treaty of Versailles play in the rise of dictatorships in Europe?", "a": "Its harsh terms made many Germans angry and humiliated. Extremist leaders like Hitler used this anger to win support.", "source": "booklet", "answer_source": "generated" },
+      { "q": "How did the Great Depression contribute to the rise of extremist movements?", "a": "It caused mass unemployment and poverty. Desperate people turned to extreme parties that promised to fix things.", "source": "booklet", "answer_source": "generated" },
+      { "q": "Why did many people support authoritarian leaders in post-World War I Europe?", "a": "Democratic governments seemed weak. People wanted strong leaders who promised order, jobs and national pride.", "source": "booklet", "answer_source": "generated" },
+      { "q": "How did Mussolini and Hitler exploit fears of communism to gain support?", "a": "They said they would protect the country from a communist revolution. This won support from business owners, the middle classes and the army.", "source": "booklet", "answer_source": "generated" },
+      { "q": "What methods did Stalin use to consolidate power in the Soviet Union?", "a": "Purges of rivals, propaganda, and a command economy where the state controlled industry and farming.", "source": "booklet", "answer_source": "generated" }
+    ]
+  },
+  "resources": [
+    { "label": "QR codes on page 13", "url": null, "note": "The QR codes on page 13 of your booklet link to revision resources: Weimar Republic, The Treaty of Versailles, and The Beer Hall Putsch. Scan them with the tablet camera.", "source": "booklet" }
+  ],
+  "rag_topics": [
+    { "id": "weimar", "label": "Weimar Germany", "source": "booklet" },
+    { "id": "putsch", "label": "Rise of Hitler (Munich Putsch)", "source": "booklet" },
+    { "id": "control", "label": "Nazi Control over Germany", "source": "booklet" },
+    { "id": "versailles", "label": "Treaty of Versailles (aims of the leaders, Germany's punishments)", "source": "booklet" },
+    { "id": "keyterms", "label": "Key terms: Weimar, Dictatorship, Democracy, Gestapo, Kaiser", "source": "booklet" }
+  ]
+}
