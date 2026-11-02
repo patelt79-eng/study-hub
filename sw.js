@@ -1,8 +1,9 @@
-// Offline support. Serves the cached copy straight away, then refreshes the
-// cache in the background so content edits appear on the next visit.
+// Offline support. When online, every file is fetched fresh (so updates show
+// on the first visit) and the copy is saved. When offline, or if the network
+// takes more than 4 seconds, the saved copy is used.
 // Change VERSION when files are added or removed.
 
-const VERSION = 'study-hub-v6';
+const VERSION = 'study-hub-v7';
 const FILES = [
   './',
   './index.html',
@@ -47,7 +48,12 @@ const FILES = [
 ];
 
 self.addEventListener('install', event => {
-  event.waitUntil(caches.open(VERSION).then(cache => cache.addAll(FILES)).then(() => self.skipWaiting()));
+  // cache: 'reload' skips the browser's HTTP cache, so the saved copy is the latest one.
+  event.waitUntil(
+    caches.open(VERSION)
+      .then(cache => cache.addAll(FILES.map(f => new Request(f, { cache: 'reload' }))))
+      .then(() => self.skipWaiting())
+  );
 });
 
 self.addEventListener('activate', event => {
@@ -61,14 +67,18 @@ self.addEventListener('activate', event => {
 self.addEventListener('fetch', event => {
   const req = event.request;
   if (req.method !== 'GET' || new URL(req.url).origin !== self.location.origin) return;
-  event.respondWith(
-    caches.open(VERSION).then(async cache => {
-      const cached = await cache.match(req, { ignoreSearch: true });
-      const network = fetch(req).then(res => {
-        if (res && res.ok) cache.put(req, res.clone());
-        return res;
-      }).catch(() => cached);
-      return cached || network;
-    })
-  );
+  event.respondWith((async () => {
+    const cache = await caches.open(VERSION);
+    const fromCache = () => cache.match(req, { ignoreSearch: true });
+    try {
+      const res = await Promise.race([
+        fetch(req, { cache: 'no-cache' }),
+        new Promise((_, reject) => setTimeout(() => reject(new Error('slow')), 4000)),
+      ]);
+      if (res && res.ok) cache.put(req, res.clone());
+      return res;
+    } catch (e) {
+      return (await fromCache()) || Response.error();
+    }
+  })());
 });

@@ -151,6 +151,14 @@ window.addEventListener('hashchange', route);
 route();
 
 if ('serviceWorker' in navigator) {
+  // If a newer version takes over just after opening, reload once to show it.
+  // After the first few seconds, the new version simply applies next time,
+  // so a reload never interrupts an activity.
+  const openedAt = Date.now();
+  const hadController = !!navigator.serviceWorker.controller;
+  navigator.serviceWorker.addEventListener('controllerchange', () => {
+    if (hadController && Date.now() - openedAt < 8000) location.reload();
+  });
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('./sw.js').catch(() => { /* offline support is optional */ });
   });
