@@ -5,6 +5,7 @@ import { getSubject } from '../data.js';
 import { todayISO, shortDate } from '../dates.js';
 import { esc, sayRow, plural, markSessionFromParams } from '../ui.js';
 import { icon } from '../meta.js';
+import { renderVisual } from '../visuals.js';
 
 const LETTERS = ['A', 'B', 'C', 'D'];
 const STEPS = [['learn', 'Learn'], ['cards', 'Flashcards'], ['quiz', 'Quiz']];
@@ -96,6 +97,7 @@ export async function topicView({ main, params }, subjectId, topicId) {
         <article class="learn-card">
           ${sayRow(`<h2>${esc(card.title)}</h2>`, `${card.title}. ${card.text}`)}
           <p class="learn-text">${esc(card.text)}</p>
+          ${renderVisual(card.visual)}
         </article>
         <div class="actions">
           ${i > 0 ? '<button type="button" class="btn" id="prev">Back</button>' : ''}

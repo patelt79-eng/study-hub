@@ -2,7 +2,7 @@
 // cache in the background so content edits appear on the next visit.
 // Change VERSION when files are added or removed.
 
-const VERSION = 'study-hub-v2';
+const VERSION = 'study-hub-v3';
 const FILES = [
   './',
   './index.html',
@@ -21,6 +21,7 @@ const FILES = [
   './js/plan.js',
   './js/theme.js',
   './js/meta.js',
+  './js/visuals.js',
   './js/views/topic.js',
   './js/views/today.js',
   './js/views/schedule.js',

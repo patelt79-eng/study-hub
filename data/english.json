@@ -683,17 +683,65 @@
         {
           "title": "The play",
           "text": "Blood Brothers is a musical play by Willy Russell, set in Liverpool. Mrs Johnstone, a poor mother, gives one of her newborn twins to Mrs Lyons, a rich woman she cleans for.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "flow",
+            "items": [
+              "Mrs Johnstone has twins",
+              "She is poor",
+              "She gives one twin to Mrs Lyons"
+            ],
+            "caption": "How the play begins (Liverpool)"
+          }
         },
         {
           "title": "The twins",
           "text": "Mickey grows up poor with Mrs Johnstone. Eddie grows up rich with the Lyons family. They meet at seven and become 'blood brothers', without knowing they are twins.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "compare",
+            "columns": [
+              {
+                "title": "Mickey",
+                "points": [
+                  "Stays with Mrs Johnstone",
+                  "Grows up poor"
+                ]
+              },
+              {
+                "title": "Eddie",
+                "points": [
+                  "Given to Mrs Lyons",
+                  "Grows up rich"
+                ]
+              }
+            ],
+            "caption": "Twins, but they do not know it",
+            "link": "twins"
+          }
         },
         {
           "title": "The others",
           "text": "Linda is a friend to both twins and marries Mickey. Sammy is Mickey's older brother, who leads him into crime. The Narrator keeps reminding the audience how the story will end.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "facts",
+            "items": [
+              {
+                "k": "Friend to both",
+                "v": "Linda (marries Mickey)"
+              },
+              {
+                "k": "Mickey's brother",
+                "v": "Sammy (crime)"
+              },
+              {
+                "k": "Speaks to us",
+                "v": "The Narrator"
+              }
+            ],
+            "caption": "The other characters"
+          }
         }
       ]
     },
@@ -704,17 +752,67 @@
         {
           "title": "Class",
           "text": "Money shapes the twins' lives. Eddie goes to university and gets a good job. Mickey loses his job, goes to prison and becomes depressed.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "compare",
+            "columns": [
+              {
+                "title": "Eddie (rich)",
+                "points": [
+                  "University",
+                  "Good job"
+                ]
+              },
+              {
+                "title": "Mickey (poor)",
+                "points": [
+                  "Loses his job",
+                  "Prison",
+                  "Depression"
+                ]
+              }
+            ],
+            "caption": "Class shapes their lives"
+          }
         },
         {
           "title": "Nature vs nurture",
           "text": "The twins are born the same (nature) but grow up in different homes (nurture). The play suggests that upbringing shapes who you become.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "equation",
+            "parts": [
+              "Same nature (twins)",
+              "Different nurture (homes)"
+            ],
+            "result": "Different lives",
+            "caption": "Nature vs nurture"
+          }
         },
         {
           "title": "Hope and gender",
           "text": "Characters hope for a better life, but class and money crush those hopes. Women such as Mrs Johnstone and Linda have few choices and depend on men and money.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "compare",
+            "columns": [
+              {
+                "title": "Hope",
+                "points": [
+                  "Dreams of a better life",
+                  "Crushed by class and money"
+                ]
+              },
+              {
+                "title": "Gender",
+                "points": [
+                  "Women have few choices",
+                  "Depend on men and money"
+                ]
+              }
+            ],
+            "caption": "Hope and gender"
+          }
         }
       ]
     },
@@ -725,17 +823,71 @@
         {
           "title": "Repetition and emotive language",
           "text": "Repetition uses the same word more than once to make it stand out. Emotive language uses words chosen to make us feel something strongly, such as sadness or anger.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "compare",
+            "columns": [
+              {
+                "title": "Repetition",
+                "points": [
+                  "\"Never, never, never give up.\""
+                ]
+              },
+              {
+                "title": "Emotive language",
+                "points": [
+                  "\"The heartbroken child sobbed alone.\""
+                ]
+              }
+            ],
+            "caption": "Made-up examples"
+          }
         },
         {
           "title": "Metaphor and simile",
           "text": "A metaphor says something is something else: 'The classroom was a zoo.' A simile compares using 'like' or 'as': 'as cold as ice'.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "compare",
+            "columns": [
+              {
+                "title": "Metaphor (is)",
+                "points": [
+                  "\"The classroom was a zoo.\""
+                ]
+              },
+              {
+                "title": "Simile (like / as)",
+                "points": [
+                  "\"as cold as ice\""
+                ]
+              }
+            ],
+            "caption": "Made-up examples"
+          }
         },
         {
           "title": "Direct address and ellipsis",
           "text": "Direct address speaks straight to someone, often using 'you'. An ellipsis (…) shows words left out or a thought trailing off.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "compare",
+            "columns": [
+              {
+                "title": "Direct address",
+                "points": [
+                  "\"You know how it feels.\""
+                ]
+              },
+              {
+                "title": "Ellipsis (…)",
+                "points": [
+                  "\"I thought he would come back…\""
+                ]
+              }
+            ],
+            "caption": "Made-up examples"
+          }
         }
       ]
     },
@@ -746,12 +898,49 @@
         {
           "title": "Foreshadowing",
           "text": "Foreshadowing is a hint early in a story about what will happen later. In Blood Brothers, the Narrator tells us how it ends at the very start.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "timeline",
+            "events": [
+              {
+                "d": "Start",
+                "t": "The Narrator hints at how it ends"
+              },
+              {
+                "d": "Middle",
+                "t": "The twins grow up"
+              },
+              {
+                "d": "End",
+                "t": "The hint comes true"
+              }
+            ],
+            "caption": "Foreshadowing"
+          }
         },
         {
           "title": "Dramatic irony",
           "text": "Dramatic irony is when the audience knows something a character does not. We know Mickey and Eddie are twins, but they do not.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "compare",
+            "columns": [
+              {
+                "title": "The audience knows",
+                "points": [
+                  "Mickey and Eddie are twins"
+                ],
+                "hl": true
+              },
+              {
+                "title": "Mickey and Eddie know",
+                "points": [
+                  "Nothing about it"
+                ]
+              }
+            ],
+            "caption": "Dramatic irony"
+          }
         }
       ]
     },
@@ -762,17 +951,79 @@
         {
           "title": "The scene",
           "text": "In the extract on page 5, Mrs Johnstone enters pushing a pram. She sings about money, debts and things that can be taken back, and about a baby she must not get attached to.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "facts",
+            "items": [
+              {
+                "k": "She enters",
+                "v": "Pushing a pram"
+              },
+              {
+                "k": "She worries about",
+                "v": "Money and debts"
+              },
+              {
+                "k": "She must not",
+                "v": "Get attached to the baby"
+              }
+            ],
+            "caption": "The page 5 extract"
+          }
         },
         {
           "title": "Sympathy",
           "text": "Sympathy means feeling sorry for a character. Russell makes us feel for Mrs Johnstone through her money worries, her love for the baby, repetition, direct address and the ellipsis at the end.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "facts",
+            "items": [
+              {
+                "k": "Way 1",
+                "v": "Money worries"
+              },
+              {
+                "k": "Way 2",
+                "v": "Love for the baby"
+              },
+              {
+                "k": "Way 3",
+                "v": "Repetition"
+              },
+              {
+                "k": "Way 4",
+                "v": "Direct address"
+              },
+              {
+                "k": "Way 5",
+                "v": "Ellipsis"
+              }
+            ],
+            "caption": "How Russell creates sympathy"
+          }
         },
         {
           "title": "PEA paragraphs",
           "text": "Point: answer the question. Evidence: copy a short quote from the extract. Analysis: name the technique and say what one word suggests. Use the writing builder to practise the page 5 question.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "flow",
+            "items": [
+              {
+                "t": "Point",
+                "s": "answer the question"
+              },
+              {
+                "t": "Evidence",
+                "s": "a short quote"
+              },
+              {
+                "t": "Analysis",
+                "s": "technique + what a word suggests"
+              }
+            ],
+            "caption": "A PEA paragraph"
+          }
         }
       ]
     }

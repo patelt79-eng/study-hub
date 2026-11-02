@@ -953,17 +953,83 @@
         {
           "title": "What is a superpower?",
           "text": "A superpower is a country with power and influence all over the world. The power comes from four things: a big economy, a strong military, political influence and a culture that spreads abroad.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "facts",
+            "items": [
+              {
+                "k": "Power 1",
+                "v": "Big economy"
+              },
+              {
+                "k": "Power 2",
+                "v": "Strong military"
+              },
+              {
+                "k": "Power 3",
+                "v": "Political influence"
+              },
+              {
+                "k": "Power 4",
+                "v": "Culture abroad"
+              }
+            ],
+            "caption": "What makes a superpower"
+          }
         },
         {
           "title": "The USA",
           "text": "The USA has the largest economy in the world and spends the most on its military. Its films, music and brands are known everywhere. It leads alliances such as NATO.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "facts",
+            "items": [
+              {
+                "k": "Economy",
+                "v": "Largest in the world"
+              },
+              {
+                "k": "Military",
+                "v": "Biggest spending"
+              },
+              {
+                "k": "Culture",
+                "v": "Films, music, brands"
+              },
+              {
+                "k": "Alliances",
+                "v": "Leads NATO"
+              }
+            ],
+            "caption": "The USA as a superpower"
+          }
         },
         {
           "title": "Hegemony",
           "text": "From the late 1940s to 1991 the USA and the USSR were rivals in the Cold War. When the USSR broke up, the USA was the only superpower left. This is called global hegemony.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "timeline",
+            "events": [
+              {
+                "d": "1945",
+                "t": "Second World War ends"
+              },
+              {
+                "d": "Late 1940s to 1991",
+                "t": "Cold War: USA against the USSR"
+              },
+              {
+                "d": "1991",
+                "t": "USSR breaks up"
+              },
+              {
+                "d": "After 1991",
+                "t": "The USA is the only superpower"
+              }
+            ],
+            "caption": "From two superpowers to one"
+          }
         }
       ]
     },
@@ -974,17 +1040,88 @@
         {
           "title": "Three types of country",
           "text": "Developed countries, like the UK, have high incomes and good services. Emerging countries, like Brazil, India and China, are growing fast. Developing countries have lower incomes and fewer services.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "compare",
+            "columns": [
+              {
+                "title": "Developed",
+                "points": [
+                  "High incomes",
+                  "Good services",
+                  "e.g. UK"
+                ]
+              },
+              {
+                "title": "Emerging",
+                "points": [
+                  "Growing fast",
+                  "e.g. Brazil, India, China"
+                ],
+                "hl": true
+              },
+              {
+                "title": "Developing",
+                "points": [
+                  "Lower incomes",
+                  "Fewer services"
+                ]
+              }
+            ],
+            "caption": "Three types of country"
+          }
         },
         {
           "title": "Poverty and deprivation",
           "text": "Poverty means not having enough money for basic needs. Deprivation means missing things most people have, such as a good home, healthcare or school.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "compare",
+            "columns": [
+              {
+                "title": "Poverty",
+                "points": [
+                  "Not enough money",
+                  "for basic needs"
+                ]
+              },
+              {
+                "title": "Deprivation",
+                "points": [
+                  "Missing what most",
+                  "people have"
+                ]
+              }
+            ],
+            "caption": "Two key words"
+          }
         },
         {
           "title": "Big cities",
           "text": "A megacity has more than 10 million people, like Mumbai or São Paulo. A primate city is much bigger than any other city in its country, like London in the UK.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "bars",
+            "items": [
+              {
+                "label": "London",
+                "value": 9,
+                "text": "about 9 million",
+                "hl": true
+              },
+              {
+                "label": "Birmingham",
+                "value": 1.2,
+                "text": "about 1.2 million"
+              },
+              {
+                "label": "Glasgow",
+                "value": 0.6,
+                "text": "about 0.6 million"
+              }
+            ],
+            "caption": "London is a primate city: far bigger than other UK cities"
+          }
         }
       ]
     },
@@ -995,17 +1132,69 @@
         {
           "title": "Brazil",
           "text": "Brazil is the largest country in South America. Its capital is Brasília and its biggest city is São Paulo. People speak Portuguese. Rio de Janeiro is famous for Christ the Redeemer and Copacabana beach.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "facts",
+            "items": [
+              {
+                "k": "Capital",
+                "v": "Brasília"
+              },
+              {
+                "k": "Biggest city",
+                "v": "São Paulo"
+              },
+              {
+                "k": "Language",
+                "v": "Portuguese"
+              },
+              {
+                "k": "Famous for",
+                "v": "Christ the Redeemer"
+              }
+            ],
+            "caption": "Brazil key facts"
+          }
         },
         {
           "title": "The Amazon",
           "text": "Most of the Amazon rainforest is in Brazil. It has more kinds of plants and animals than anywhere else, and many tribes live there. Cattle ranching, logging, mining and soya farming are destroying parts of it.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "equation",
+            "parts": [
+              "Cattle ranching",
+              "Logging",
+              "Mining",
+              "Soya farming"
+            ],
+            "result": "Deforestation",
+            "caption": "Threats to the Amazon"
+          }
         },
         {
           "title": "Favelas",
           "text": "Favelas are informal settlements in Brazilian cities. Rocinha in Rio is one of the largest. Many have poor services and problems with crime, but they also have strong communities.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "compare",
+            "columns": [
+              {
+                "title": "Problems",
+                "points": [
+                  "Poor services",
+                  "Crime"
+                ]
+              },
+              {
+                "title": "Strengths",
+                "points": [
+                  "Strong communities"
+                ]
+              }
+            ],
+            "caption": "Life in a favela such as Rocinha"
+          }
         }
       ]
     },
@@ -1016,23 +1205,80 @@
         {
           "title": "Russia",
           "text": "Russia is the largest country in the world by area. Its capital is Moscow. Much of it is cold, with tundra in the far north and taiga, a huge conifer forest, further south.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "facts",
+            "items": [
+              {
+                "k": "Capital",
+                "v": "Moscow"
+              },
+              {
+                "k": "Size",
+                "v": "Largest country by area"
+              },
+              {
+                "k": "Far north",
+                "v": "Tundra"
+              },
+              {
+                "k": "Further south",
+                "v": "Taiga forest"
+              }
+            ],
+            "caption": "Russia key facts"
+          }
         },
         {
           "title": "The end of the USSR",
           "text": "Russia was the biggest part of the USSR, a communist country. The USSR broke up in 1991 because of economic problems, the cost of the arms race and republics wanting independence.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "equation",
+            "parts": [
+              "Economic problems",
+              "Cost of the arms race",
+              "Republics want independence"
+            ],
+            "result": "USSR breaks up (1991)",
+            "caption": "Why the USSR collapsed"
+          }
         },
         {
           "title": "Chernobyl",
           "text": "In April 1986 a reactor at Chernobyl in Ukraine exploded during a badly run safety test. Radiation spread across Europe. The town of Pripyat was evacuated and an exclusion zone was set up.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "flow",
+            "items": [
+              "April 1986: safety test",
+              "Reactor explodes",
+              "Radiation spreads",
+              "Pripyat evacuated",
+              "Exclusion zone"
+            ],
+            "caption": "The Chernobyl disaster"
+          }
         },
         {
           "title": "Ukraine, 2022",
           "text": "Ukraine became independent when the USSR broke up. In February 2022 Russia launched a full-scale invasion of Ukraine. The war has caused many deaths and forced millions of people from their homes.",
           "source": "generated",
-          "needs_parent_check": true
+          "needs_parent_check": true,
+          "visual": {
+            "type": "timeline",
+            "events": [
+              {
+                "d": "1991",
+                "t": "Ukraine becomes independent"
+              },
+              {
+                "d": "February 2022",
+                "t": "Russia launches a full-scale invasion of Ukraine"
+              }
+            ],
+            "caption": "Ukraine and Russia"
+          }
         }
       ]
     },
@@ -1043,22 +1289,96 @@
         {
           "title": "India",
           "text": "India's capital is New Delhi and its biggest city is Mumbai. It has the Himalayas in the north, the Thar Desert and tropical coasts. The Taj Mahal in Agra is its most famous sight.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "facts",
+            "items": [
+              {
+                "k": "Capital",
+                "v": "New Delhi"
+              },
+              {
+                "k": "Biggest city",
+                "v": "Mumbai"
+              },
+              {
+                "k": "Landscapes",
+                "v": "Himalayas, Thar Desert"
+              },
+              {
+                "k": "Famous for",
+                "v": "Taj Mahal, Agra"
+              }
+            ],
+            "caption": "India key facts"
+          }
         },
         {
           "title": "Colonial history",
           "text": "Britain ruled India until 1947. This period is called the British Raj. India won independence in 1947 after a long campaign led by people such as Gandhi.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "timeline",
+            "events": [
+              {
+                "d": "Before 1947",
+                "t": "Britain rules India (the British Raj)"
+              },
+              {
+                "d": "1947",
+                "t": "India becomes independent"
+              }
+            ],
+            "caption": "Colonial history"
+          }
         },
         {
           "title": "Dharavi",
           "text": "Dharavi in Mumbai is one of Asia's largest slums. Push factors drive people out of villages, such as a lack of work. Pull factors draw them to the city, such as jobs.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "compare",
+            "columns": [
+              {
+                "title": "Push factors (village)",
+                "points": [
+                  "Not enough work"
+                ]
+              },
+              {
+                "title": "Pull factors (city)",
+                "points": [
+                  "Jobs in Mumbai"
+                ],
+                "hl": true
+              }
+            ],
+            "caption": "Why people move to Dharavi",
+            "link": "→"
+          }
         },
         {
           "title": "Street scams",
           "text": "Busy tourist areas in Mumbai and New Delhi have street scammers. Common tricks include fake guides, taxis that take the long way and people who say your hotel has closed.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "facts",
+            "items": [
+              {
+                "k": "Trick 1",
+                "v": "Fake guides"
+              },
+              {
+                "k": "Trick 2",
+                "v": "Taxis taking the long way"
+              },
+              {
+                "k": "Trick 3",
+                "v": "\"Your hotel has closed\""
+              }
+            ],
+            "caption": "Street scams to watch for"
+          }
         }
       ]
     },
@@ -1069,18 +1389,72 @@
         {
           "title": "China",
           "text": "China's capital is Beijing and its largest city is Shanghai. It has the Gobi Desert, the Himalayas and huge river plains. Tourists visit the Great Wall, the Forbidden City and the Terracotta Army.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "facts",
+            "items": [
+              {
+                "k": "Capital",
+                "v": "Beijing"
+              },
+              {
+                "k": "Largest city",
+                "v": "Shanghai"
+              },
+              {
+                "k": "Landscapes",
+                "v": "Gobi Desert, Himalayas"
+              },
+              {
+                "k": "Famous for",
+                "v": "The Great Wall"
+              }
+            ],
+            "caption": "China key facts"
+          }
         },
         {
           "title": "A new superpower",
           "text": "China's economy has grown very fast since the 1980s. It now has the second largest economy in the world, and its factories make goods sold everywhere.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "timeline",
+            "events": [
+              {
+                "d": "1980s",
+                "t": "Economy starts growing very fast"
+              },
+              {
+                "d": "Today",
+                "t": "Second largest economy in the world"
+              }
+            ],
+            "caption": "China's rise"
+          }
         },
         {
           "title": "Foxconn",
           "text": "Foxconn is a transnational corporation that makes electronics, such as phones for Apple, in huge factories in China. It has been criticised for long hours, low pay and strict rules for workers.",
           "source": "generated",
-          "needs_parent_check": true
+          "needs_parent_check": true,
+          "visual": {
+            "type": "flow",
+            "items": [
+              {
+                "t": "Foxconn",
+                "s": "a TNC"
+              },
+              {
+                "t": "Makes electronics",
+                "s": "e.g. phones for Apple"
+              },
+              {
+                "t": "Criticised",
+                "s": "long hours, low pay, strict rules"
+              }
+            ],
+            "caption": "Foxconn in China"
+          }
         }
       ]
     },
@@ -1091,17 +1465,75 @@
         {
           "title": "South Africa",
           "text": "South Africa has three capitals: Pretoria, Cape Town and Bloemfontein. Its largest city is Johannesburg. Tourists visit Table Mountain and Kruger National Park.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "facts",
+            "items": [
+              {
+                "k": "Capital 1",
+                "v": "Pretoria"
+              },
+              {
+                "k": "Capital 2",
+                "v": "Cape Town"
+              },
+              {
+                "k": "Capital 3",
+                "v": "Bloemfontein"
+              },
+              {
+                "k": "Largest city",
+                "v": "Johannesburg"
+              }
+            ],
+            "caption": "South Africa has three capitals"
+          }
         },
         {
           "title": "Compared with the rest of Africa",
           "text": "South Africa has one of the largest and most industrial economies in Africa. But the gap between rich and poor people there is one of the biggest in the world.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "compare",
+            "columns": [
+              {
+                "title": "Strength",
+                "points": [
+                  "One of Africa's largest economies"
+                ]
+              },
+              {
+                "title": "Problem",
+                "points": [
+                  "Huge gap between rich and poor"
+                ]
+              }
+            ],
+            "caption": "South Africa compared with the rest of Africa"
+          }
         },
         {
           "title": "Apartheid",
           "text": "From 1948, laws kept people apart by race. Black South Africans had worse schools, jobs and homes, and could not vote. Apartheid ended with free elections in 1994, when Nelson Mandela became president.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "timeline",
+            "events": [
+              {
+                "d": "1948",
+                "t": "Apartheid laws begin"
+              },
+              {
+                "d": "1990",
+                "t": "Nelson Mandela is released from prison"
+              },
+              {
+                "d": "1994",
+                "t": "Free elections. Mandela becomes president"
+              }
+            ],
+            "caption": "The end of apartheid"
+          }
         }
       ]
     }

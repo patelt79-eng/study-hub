@@ -715,17 +715,38 @@
         {
           "title": "The path of air",
           "text": "Air goes in through your nose or mouth, down the trachea (windpipe), into two bronchi, then into smaller bronchioles. It ends in tiny air sacs called alveoli.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "diagram",
+            "name": "lungs",
+            "caption": "The path air takes into your lungs"
+          }
         },
         {
           "title": "Breathing in",
           "text": "Your diaphragm contracts and flattens. The muscles between your ribs pull them up and out. Your chest gets bigger, the pressure inside falls and air moves in. Breathing out is the reverse.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "flow",
+            "items": [
+              "Diaphragm contracts and flattens",
+              "Ribs move up and out",
+              "Chest gets bigger",
+              "Pressure falls",
+              "Air moves in"
+            ],
+            "caption": "Breathing in"
+          }
         },
         {
           "title": "Gas exchange",
           "text": "In the alveoli, oxygen diffuses into the blood and carbon dioxide diffuses out. Alveoli are good at this because they have a large surface area, very thin walls and a good blood supply.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "diagram",
+            "name": "alveolus",
+            "caption": "Gas exchange in an alveolus"
+          }
         }
       ]
     },
@@ -736,17 +757,53 @@
         {
           "title": "What is respiration?",
           "text": "Respiration is a chemical reaction in every living cell. It releases energy from glucose. It is not the same as breathing.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "flow",
+            "items": [
+              "Glucose",
+              "Respiration in every cell",
+              "Energy released"
+            ],
+            "caption": "Respiration releases energy"
+          }
         },
         {
           "title": "Aerobic respiration",
           "text": "Aerobic respiration uses oxygen and happens in the mitochondria. glucose + oxygen → carbon dioxide + water.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "equation",
+            "parts": [
+              "glucose",
+              "oxygen"
+            ],
+            "result": "carbon dioxide + water",
+            "caption": "Aerobic respiration"
+          }
         },
         {
           "title": "Anaerobic respiration",
           "text": "Anaerobic respiration happens without oxygen, for example in your muscles during hard exercise. glucose → lactic acid. It releases less energy. In yeast it makes ethanol and carbon dioxide.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "compare",
+            "columns": [
+              {
+                "title": "In muscles",
+                "points": [
+                  "glucose → lactic acid"
+                ]
+              },
+              {
+                "title": "In yeast",
+                "points": [
+                  "glucose → ethanol + carbon dioxide"
+                ]
+              }
+            ],
+            "caption": "Anaerobic respiration: no oxygen"
+          }
         }
       ]
     },
@@ -757,17 +814,47 @@
         {
           "title": "Groups and periods",
           "text": "The periodic table lists all the elements. Columns are called groups and rows are called periods. Elements in the same group react in similar ways.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "diagram",
+            "name": "periodic",
+            "caption": "Groups and periods",
+            "mode": "groups"
+          }
         },
         {
           "title": "Metals and non-metals",
           "text": "Metals are on the left and in the middle. They are shiny and conduct heat and electricity. Non-metals are on the right. They are dull, brittle when solid and poor conductors.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "diagram",
+            "name": "periodic",
+            "caption": "Where metals and non-metals are",
+            "mode": "metals"
+          }
         },
         {
           "title": "Mendeleev",
           "text": "In 1869 Dmitri Mendeleev put the elements in order and left gaps for elements nobody had found yet. Elements discovered later fitted his gaps.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "timeline",
+            "events": [
+              {
+                "d": "1869",
+                "t": "Mendeleev leaves gaps in his table"
+              },
+              {
+                "d": "1875",
+                "t": "Gallium is found. It fits a gap"
+              },
+              {
+                "d": "1886",
+                "t": "Germanium is found. It fits a gap"
+              }
+            ],
+            "caption": "Mendeleev's gaps were filled"
+          }
         }
       ]
     },
@@ -778,12 +865,50 @@
         {
           "title": "Group 1: alkali metals",
           "text": "Lithium, sodium and potassium are in group 1. They are soft and react with water to make hydrogen and an alkali. They get more reactive as you go down the group, so they are stored in oil.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "column",
+            "items": [
+              {
+                "sym": "Li",
+                "name": "Lithium"
+              },
+              {
+                "sym": "Na",
+                "name": "Sodium"
+              },
+              {
+                "sym": "K",
+                "name": "Potassium"
+              }
+            ],
+            "arrow": "More reactive going down",
+            "caption": "Group 1: the alkali metals"
+          }
         },
         {
           "title": "Group 0: noble gases",
           "text": "Helium, neon and argon are in group 0. They are very unreactive because their outer shell of electrons is full. Their boiling points go up as you go down the group.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "column",
+            "items": [
+              {
+                "sym": "He",
+                "name": "Helium"
+              },
+              {
+                "sym": "Ne",
+                "name": "Neon"
+              },
+              {
+                "sym": "Ar",
+                "name": "Argon"
+              }
+            ],
+            "arrow": "Boiling point goes up going down",
+            "caption": "Group 0: the noble gases"
+          }
         }
       ]
     },
@@ -794,12 +919,22 @@
         {
           "title": "Poles",
           "text": "Every magnet has a north pole and a south pole. Like poles repel and unlike poles attract. Iron, nickel and cobalt are magnetic.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "diagram",
+            "name": "poles",
+            "caption": "Poles attract and repel"
+          }
         },
         {
           "title": "Magnetic fields",
           "text": "A magnetic field is the area around a magnet where it pushes or pulls. Field lines go from north to south. The field is strongest at the poles, where the lines are closest together.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "diagram",
+            "name": "field",
+            "caption": "The magnetic field of a bar magnet"
+          }
         }
       ]
     },
@@ -810,17 +945,62 @@
         {
           "title": "Making an electromagnet",
           "text": "Wrap a coil of wire around an iron core and pass a current through it. It becomes a magnet. Switch the current off and the magnetism stops.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "diagram",
+            "name": "electromagnet",
+            "caption": "How an electromagnet works"
+          }
         },
         {
           "title": "Making it stronger",
           "text": "There are three ways: add more turns to the coil, increase the current, and use an iron core.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "facts",
+            "items": [
+              {
+                "k": "Way 1",
+                "v": "More turns of wire"
+              },
+              {
+                "k": "Way 2",
+                "v": "More current"
+              },
+              {
+                "k": "Way 3",
+                "v": "An iron core"
+              }
+            ],
+            "caption": "Three ways to make it stronger"
+          }
         },
         {
           "title": "Uses",
           "text": "Electromagnets can be switched on and off, so they are used in scrapyard cranes, electric bells, door locks and relays.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "facts",
+            "items": [
+              {
+                "k": "Use",
+                "v": "Scrapyard cranes"
+              },
+              {
+                "k": "Use",
+                "v": "Electric bells"
+              },
+              {
+                "k": "Use",
+                "v": "Door locks"
+              },
+              {
+                "k": "Use",
+                "v": "Relays"
+              }
+            ],
+            "caption": "They can be switched on and off"
+          }
         }
       ]
     }

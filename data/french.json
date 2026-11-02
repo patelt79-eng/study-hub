@@ -1460,12 +1460,57 @@
         {
           "title": "Talking about TV",
           "text": "A TV programme is une émission. To say what you watch, use je regarde: je regarde les infos means 'I watch the news'.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "words",
+            "tiles": [
+              {
+                "t": "je regarde",
+                "en": "I watch"
+              },
+              {
+                "t": "les infos",
+                "en": "the news"
+              }
+            ],
+            "meaning": "I watch the news",
+            "caption": "Say what you watch"
+          }
         },
         {
           "title": "Types of programme",
           "text": "un dessin animé (a cartoon), un documentaire (a documentary), un jeu télévisé (a game show), une série (a series), les infos (the news), la météo (the weather forecast).",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "vocab",
+            "pairs": [
+              {
+                "fr": "un dessin animé",
+                "en": "a cartoon"
+              },
+              {
+                "fr": "un documentaire",
+                "en": "a documentary"
+              },
+              {
+                "fr": "un jeu télévisé",
+                "en": "a game show"
+              },
+              {
+                "fr": "une série",
+                "en": "a series"
+              },
+              {
+                "fr": "les infos",
+                "en": "the news"
+              },
+              {
+                "fr": "la météo",
+                "en": "the weather"
+              }
+            ],
+            "caption": "Types of programme"
+          }
         }
       ]
     },
@@ -1476,12 +1521,61 @@
         {
           "title": "Types of film",
           "text": "un film d'action, un film d'horreur, un film de science-fiction, une comédie, un film d'amour (a romantic film), un film fantastique (a fantasy film).",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "vocab",
+            "pairs": [
+              {
+                "fr": "un film d'action",
+                "en": "an action film"
+              },
+              {
+                "fr": "un film d'horreur",
+                "en": "a horror film"
+              },
+              {
+                "fr": "un film de science-fiction",
+                "en": "a sci-fi film"
+              },
+              {
+                "fr": "une comédie",
+                "en": "a comedy"
+              },
+              {
+                "fr": "un film d'amour",
+                "en": "a romantic film"
+              },
+              {
+                "fr": "un film fantastique",
+                "en": "a fantasy film"
+              }
+            ],
+            "caption": "Types of film"
+          }
         },
         {
           "title": "Saying what you like",
           "text": "After j'aime, j'adore and je déteste, use les: j'adore les films d'action, je déteste les films d'horreur.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "words",
+            "tiles": [
+              {
+                "t": "j'adore",
+                "en": "I love"
+              },
+              {
+                "t": "les",
+                "en": "the"
+              },
+              {
+                "t": "films d'action",
+                "en": "action films"
+              }
+            ],
+            "meaning": "I love action films",
+            "caption": "Use les after an opinion"
+          }
         }
       ]
     },
@@ -1492,12 +1586,60 @@
         {
           "title": "Reading",
           "text": "La lecture means reading. un livre (a book), une BD (a comic book), un magazine, un journal (a newspaper), un roman (a novel).",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "vocab",
+            "pairs": [
+              {
+                "fr": "un livre",
+                "en": "a book"
+              },
+              {
+                "fr": "une BD",
+                "en": "a comic book"
+              },
+              {
+                "fr": "un magazine",
+                "en": "a magazine"
+              },
+              {
+                "fr": "un journal",
+                "en": "a newspaper"
+              },
+              {
+                "fr": "un roman",
+                "en": "a novel"
+              }
+            ],
+            "caption": "Things to read"
+          }
         },
         {
           "title": "Free time",
           "text": "je lis (I read), je regarde la télé (I watch TV), je vais au cinéma (I go to the cinema), j'écoute de la musique (I listen to music).",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "vocab",
+            "pairs": [
+              {
+                "fr": "je lis",
+                "en": "I read"
+              },
+              {
+                "fr": "je regarde la télé",
+                "en": "I watch TV"
+              },
+              {
+                "fr": "je vais au cinéma",
+                "en": "I go to the cinema"
+              },
+              {
+                "fr": "j'écoute de la musique",
+                "en": "I listen to music"
+              }
+            ],
+            "caption": "Free time"
+          }
         }
       ]
     },
@@ -1508,12 +1650,55 @@
         {
           "title": "Eyes",
           "text": "J'ai les yeux bleus, verts or marron. Marron never changes its ending.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "words",
+            "tiles": [
+              {
+                "t": "j'ai",
+                "en": "I have"
+              },
+              {
+                "t": "les yeux",
+                "en": "the eyes"
+              },
+              {
+                "t": "marron",
+                "en": "brown: never changes",
+                "hl": true
+              }
+            ],
+            "meaning": "I have brown eyes",
+            "caption": "Eyes"
+          }
         },
         {
           "title": "Hair",
           "text": "J'ai les cheveux courts, longs, noirs, blonds or roux. Cheveux is masculine plural, so the adjective ends in -s: les cheveux longs. The booklet says 'long', but the correct spelling is 'longs'.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "words",
+            "tiles": [
+              {
+                "t": "j'ai",
+                "en": "I have"
+              },
+              {
+                "t": "les cheveux",
+                "en": "hair (plural)"
+              },
+              {
+                "t": "long"
+              },
+              {
+                "t": "s",
+                "en": "plural ending",
+                "hl": true
+              }
+            ],
+            "meaning": "I have long hair",
+            "caption": "Cheveux is plural, so add -s"
+          }
         }
       ]
     },
@@ -1524,12 +1709,54 @@
         {
           "title": "Adjective endings",
           "text": "Adjectives change to match the noun. For feminine, add -e. For plural, add -s. For feminine plural, add -es. un film intéressant, une série intéressante.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "table",
+            "rows": [
+              [
+                "",
+                "Singular",
+                "Plural"
+              ],
+              [
+                "Masculine",
+                "intéressant",
+                "intéressants"
+              ],
+              [
+                "Feminine",
+                "intéressante",
+                "intéressantes"
+              ]
+            ],
+            "caption": "Adjective endings: add -e and -s"
+          }
         },
         {
           "title": "Nationalities",
           "text": "Nationalities follow the same rule: il est anglais, elle est anglaise. In French they do not start with a capital letter.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "compare",
+            "columns": [
+              {
+                "title": "Il est…",
+                "points": [
+                  "anglais",
+                  "français"
+                ]
+              },
+              {
+                "title": "Elle est…",
+                "points": [
+                  "anglaise",
+                  "française"
+                ],
+                "hl": true
+              }
+            ],
+            "caption": "Feminine nationalities add -e"
+          }
         }
       ]
     },
@@ -1540,12 +1767,64 @@
         {
           "title": "Opinion verbs",
           "text": "j'aime (I like), j'adore (I love), je n'aime pas (I don't like), je déteste (I hate), je préfère (I prefer).",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "scale",
+            "left": "Hate",
+            "right": "Love",
+            "markers": [
+              {
+                "t": "je déteste",
+                "pos": 3,
+                "lang": "fr"
+              },
+              {
+                "t": "je n'aime pas",
+                "pos": 30,
+                "lang": "fr"
+              },
+              {
+                "t": "j'aime",
+                "pos": 68,
+                "lang": "fr"
+              },
+              {
+                "t": "j'adore",
+                "pos": 97,
+                "lang": "fr"
+              }
+            ],
+            "caption": "From hate to love"
+          }
         },
         {
           "title": "Giving a reason",
           "text": "Add a reason with parce que c'est (because it's): génial (great), nul (rubbish), ennuyeux (boring), marrant (funny), intéressant, effrayant (scary).",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "words",
+            "tiles": [
+              {
+                "t": "j'aime",
+                "en": "I like"
+              },
+              {
+                "t": "les comédies",
+                "en": "comedies"
+              },
+              {
+                "t": "parce que c'est",
+                "en": "because it's"
+              },
+              {
+                "t": "marrant",
+                "en": "funny",
+                "hl": true
+              }
+            ],
+            "meaning": "I like comedies because they are funny",
+            "caption": "Add a reason"
+          }
         }
       ]
     },
@@ -1556,12 +1835,81 @@
         {
           "title": "Four key verbs",
           "text": "avoir (to have): j'ai. être (to be): je suis. aller (to go): je vais. faire (to do): je fais. Learn all six forms of each one.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "table",
+            "rows": [
+              [
+                "Verb",
+                "Meaning",
+                "I…"
+              ],
+              [
+                "avoir",
+                "to have",
+                "j'ai"
+              ],
+              [
+                "être",
+                "to be",
+                "je suis"
+              ],
+              [
+                "aller",
+                "to go",
+                "je vais"
+              ],
+              [
+                "faire",
+                "to do",
+                "je fais"
+              ]
+            ],
+            "caption": "Four key verbs",
+            "lang": "fr",
+            "langCol": 2
+          }
         },
         {
           "title": "Regular -er verbs",
           "text": "Take off -er and add -e, -es, -e, -ons, -ez, -ent. regarder becomes je regarde, nous regardons, ils regardent.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "table",
+            "rows": [
+              [
+                "Who",
+                "regarder (to watch)"
+              ],
+              [
+                "je",
+                "regarde"
+              ],
+              [
+                "tu",
+                "regardes"
+              ],
+              [
+                "il / elle",
+                "regarde"
+              ],
+              [
+                "nous",
+                "regardons"
+              ],
+              [
+                "vous",
+                "regardez"
+              ],
+              [
+                "ils / elles",
+                "regardent"
+              ]
+            ],
+            "caption": "Regular -er verb endings",
+            "lang": "fr",
+            "langCol": 1
+          }
         }
       ]
     },
@@ -1572,17 +1920,85 @@
         {
           "title": "Making the past tense",
           "text": "Use avoir + a past participle. For -er verbs, change -er to -é. regarder becomes j'ai regardé (I watched).",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "words",
+            "tiles": [
+              {
+                "t": "j'ai",
+                "en": "I have"
+              },
+              {
+                "t": "regard",
+                "en": "watch"
+              },
+              {
+                "t": "é",
+                "en": "past ending",
+                "hl": true
+              }
+            ],
+            "meaning": "I watched",
+            "caption": "avoir + past participle"
+          }
         },
         {
           "title": "Irregular past participles",
           "text": "Some are irregular. lire becomes j'ai lu (I read). voir becomes j'ai vu (I saw). faire becomes j'ai fait (I did).",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "table",
+            "rows": [
+              [
+                "Verb",
+                "Past",
+                "Meaning"
+              ],
+              [
+                "lire",
+                "j'ai lu",
+                "I read"
+              ],
+              [
+                "voir",
+                "j'ai vu",
+                "I saw"
+              ],
+              [
+                "faire",
+                "j'ai fait",
+                "I did"
+              ]
+            ],
+            "caption": "Irregular past participles",
+            "lang": "fr",
+            "langCol": 1
+          }
         },
         {
           "title": "Aller uses être",
           "text": "Aller uses être, not avoir: je suis allé (I went). Add -e if you are female: je suis allée.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "compare",
+            "columns": [
+              {
+                "title": "Most verbs use avoir",
+                "points": [
+                  "j'ai regardé"
+                ]
+              },
+              {
+                "title": "Aller uses être",
+                "points": [
+                  "je suis allé",
+                  "je suis allée (female)"
+                ],
+                "hl": true
+              }
+            ],
+            "caption": "Which helper verb?"
+          }
         }
       ]
     },
@@ -1593,12 +2009,51 @@
         {
           "title": "How often",
           "text": "souvent (often), rarement (rarely), une fois par semaine (once a week), de temps en temps (from time to time), tous les week-ends (every weekend), le soir (in the evening).",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "scale",
+            "left": "Rarely",
+            "right": "Often",
+            "markers": [
+              {
+                "t": "rarement",
+                "pos": 5,
+                "lang": "fr"
+              },
+              {
+                "t": "de temps en temps",
+                "pos": 35,
+                "lang": "fr"
+              },
+              {
+                "t": "une fois par semaine",
+                "pos": 60,
+                "lang": "fr"
+              },
+              {
+                "t": "souvent",
+                "pos": 92,
+                "lang": "fr"
+              }
+            ],
+            "caption": "How often"
+          }
         },
         {
           "title": "Telling a story",
           "text": "These put past events in order: samedi dernier (last Saturday), samedi matin (on Saturday morning), puis (then), ensuite (next), après (afterwards).",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "flow",
+            "items": [
+              "samedi dernier",
+              "samedi matin",
+              "puis",
+              "ensuite",
+              "après"
+            ],
+            "caption": "Words to order a story"
+          }
         }
       ]
     }

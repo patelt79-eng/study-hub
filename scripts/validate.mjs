@@ -13,6 +13,7 @@ import { join, relative, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildPlan } from '../js/plan.js';
 import { addDays } from '../js/dates.js';
+import { renderVisual } from '../js/visuals.js';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const args = new Set(process.argv.slice(2));
@@ -120,6 +121,8 @@ for (const id of SUBJECTS) {
     if (!t.learn || t.learn.length < 1 || t.learn.length > 4) fail(`${f}: topic ${t.id} needs 1 to 4 learn cards`);
     (t.learn || []).forEach((l, j) => {
       needSource(f, `topic ${t.id} learn card ${j + 1}`, l);
+      if (!l.visual) fail(`${f}: topic ${t.id} learn card ${j + 1} has no picture ("visual")`);
+      else if (!renderVisual(l.visual)) fail(`${f}: topic ${t.id} learn card ${j + 1} picture does not draw (type "${l.visual.type}"${l.visual.name ? `, name "${l.visual.name}"` : ''})`);
       const words = `${l.title} ${l.text}`.split(/\s+/).length;
       if (words > 60) warnings.push(`${f}: topic ${t.id} learn card ${j + 1} has ${words} words`);
     });

@@ -1050,19 +1050,62 @@
           "title": "Genesis 1",
           "text": "Genesis 1 is the first creation story. God makes the world in six days and rests on the seventh. Humans are made last, male and female, and God calls creation very good.",
           "source": "generated",
-          "needs_parent_check": true
+          "needs_parent_check": true,
+          "visual": {
+            "type": "flow",
+            "items": [
+              "Day 1: light",
+              "Day 2: sky",
+              "Day 3: land and plants",
+              "Day 4: sun, moon, stars",
+              "Day 5: birds and fish",
+              "Day 6: animals and humans",
+              "Day 7: God rests"
+            ],
+            "caption": "Genesis 1: creation in seven days"
+          }
         },
         {
           "title": "Imago Dei",
           "text": "Genesis 1:27 says God made humans in his own image. Catholics call this imago Dei. Every person shares something of God: they can think, choose and love.",
           "source": "generated",
-          "needs_parent_check": true
+          "needs_parent_check": true,
+          "visual": {
+            "type": "facts",
+            "items": [
+              {
+                "k": "People can",
+                "v": "Think"
+              },
+              {
+                "k": "People can",
+                "v": "Choose"
+              },
+              {
+                "k": "People can",
+                "v": "Love"
+              }
+            ],
+            "caption": "Imago Dei: made in God's image, every person shares something of God"
+          }
         },
         {
           "title": "Sanctity of life",
           "text": "Because every person is made in God's image, Catholics believe all human life is sacred. Every person has a dignity that can never be taken away, from conception to natural death.",
           "source": "generated",
-          "needs_parent_check": true
+          "needs_parent_check": true,
+          "visual": {
+            "type": "flow",
+            "items": [
+              "Conception",
+              "Birth",
+              "Childhood",
+              "Adult life",
+              "Old age",
+              "Natural death"
+            ],
+            "caption": "Every stage of life is sacred"
+          }
         }
       ]
     },
@@ -1074,19 +1117,60 @@
           "title": "Genesis 2",
           "text": "The second creation story. God forms Adam from the dust of the ground and breathes life into him. He puts Adam in the Garden of Eden to look after it.",
           "source": "generated",
-          "needs_parent_check": true
+          "needs_parent_check": true,
+          "visual": {
+            "type": "flow",
+            "items": [
+              "Dust of the ground",
+              "God breathes life",
+              "Adam lives",
+              "He looks after Eden"
+            ],
+            "caption": "Genesis 2: how Adam is made"
+          }
         },
         {
           "title": "Made for relationships",
           "text": "God says it is not good for the man to be alone, so he makes Eve as a partner. Catholics learn from this that humans are made to live in relationship with God and with each other.",
           "source": "generated",
-          "needs_parent_check": true
+          "needs_parent_check": true,
+          "visual": {
+            "type": "compare",
+            "columns": [
+              {
+                "title": "God",
+                "points": [
+                  "Made us",
+                  "Loves us"
+                ]
+              },
+              {
+                "title": "Adam and Eve",
+                "points": [
+                  "Partners",
+                  "Not alone"
+                ]
+              }
+            ],
+            "link": "⇄",
+            "caption": "Made for relationships with God and each other"
+          }
         },
         {
           "title": "Morality",
           "text": "God gives Adam one rule: do not eat from the tree of the knowledge of good and evil. Humans have free will, so they must choose how to act. Choosing what is right is morality.",
           "source": "generated",
-          "needs_parent_check": true
+          "needs_parent_check": true,
+          "visual": {
+            "type": "flow",
+            "items": [
+              "God gives one rule",
+              "Humans have free will",
+              "They choose how to act",
+              "Choosing right is morality"
+            ],
+            "caption": "Free will makes morality possible"
+          }
         }
       ]
     },
@@ -1098,19 +1182,62 @@
           "title": "What is a sacrament?",
           "text": "A sacrament is a special sign through which Catholics believe God gives his grace. There are seven sacraments. Matrimony (marriage) is one of them.",
           "source": "generated",
-          "needs_parent_check": true
+          "needs_parent_check": true,
+          "visual": {
+            "type": "grid",
+            "items": [
+              "Baptism",
+              "Confirmation",
+              "Eucharist",
+              "Reconciliation",
+              "Anointing of the Sick",
+              "Holy Orders",
+              "Matrimony"
+            ],
+            "hl": [
+              6
+            ],
+            "caption": "The seven sacraments"
+          }
         },
         {
           "title": "Matrimony",
           "text": "A baptised man and woman make vows before God. They promise to be faithful to each other for life and to be open to having children. The couple give the sacrament to each other.",
           "source": "generated",
-          "needs_parent_check": true
+          "needs_parent_check": true,
+          "visual": {
+            "type": "facts",
+            "items": [
+              {
+                "k": "Promise 1",
+                "v": "Faithful"
+              },
+              {
+                "k": "Promise 2",
+                "v": "For life"
+              },
+              {
+                "k": "Promise 3",
+                "v": "Open to children"
+              }
+            ],
+            "caption": "The promises of Matrimony"
+          }
         },
         {
           "title": "The link to Genesis 2",
           "text": "Genesis 2:24 says a man and his wife become 'one flesh'. Catholics see this as God's plan for marriage from the very beginning.",
           "source": "generated",
-          "needs_parent_check": true
+          "needs_parent_check": true,
+          "visual": {
+            "type": "equation",
+            "parts": [
+              "Husband",
+              "Wife"
+            ],
+            "result": "One flesh",
+            "caption": "Genesis 2:24: God's plan for marriage"
+          }
         }
       ]
     },
@@ -1122,19 +1249,72 @@
           "title": "Literal and allegorical",
           "text": "A literal reading takes a story word for word. An allegorical reading looks for a deeper meaning. Catholics do not have to read Genesis as a science report. It teaches truths about God and people.",
           "source": "generated",
-          "needs_parent_check": true
+          "needs_parent_check": true,
+          "visual": {
+            "type": "compare",
+            "columns": [
+              {
+                "title": "Literal reading",
+                "points": [
+                  "Word for word",
+                  "Exactly as written"
+                ]
+              },
+              {
+                "title": "Allegorical reading",
+                "points": [
+                  "Looks for a deeper meaning",
+                  "Truths about God and people"
+                ],
+                "hl": true
+              }
+            ],
+            "caption": "Two ways to read the Bible"
+          }
         },
         {
           "title": "Typology",
           "text": "Typology means finding people and events in the Old Testament that point forward to Jesus. For example, Catholics call Jesus the 'new Adam'.",
           "source": "generated",
-          "needs_parent_check": true
+          "needs_parent_check": true,
+          "visual": {
+            "type": "flow",
+            "items": [
+              {
+                "t": "Adam",
+                "s": "Old Testament"
+              },
+              {
+                "t": "Jesus, the new Adam",
+                "s": "New Testament"
+              }
+            ],
+            "caption": "Typology: the Old Testament points to Jesus"
+          }
         },
         {
           "title": "Protoevangelium",
           "text": "In Genesis 3:15 God tells the serpent that the woman's offspring will crush its head. Catholics call this the Protoevangelium, or 'first Gospel', because it is the first promise of a Saviour.",
           "source": "generated",
-          "needs_parent_check": true
+          "needs_parent_check": true,
+          "visual": {
+            "type": "flow",
+            "items": [
+              {
+                "t": "Genesis 3:15",
+                "s": "God speaks to the serpent"
+              },
+              {
+                "t": "A promise",
+                "s": "evil will be defeated"
+              },
+              {
+                "t": "A Saviour",
+                "s": "Jesus"
+              }
+            ],
+            "caption": "The Protoevangelium: the first Gospel"
+          }
         }
       ]
     },
@@ -1146,19 +1326,60 @@
           "title": "Who was Hannah?",
           "text": "Her story is in 1 Samuel. Hannah could not have children and was very upset. She prayed at the temple and promised that if God gave her a son, he would serve God.",
           "source": "generated",
-          "needs_parent_check": true
+          "needs_parent_check": true,
+          "visual": {
+            "type": "flow",
+            "items": [
+              "Hannah has no children",
+              "She prays at the temple",
+              "She promises her son to God"
+            ],
+            "caption": "Hannah's prayer in 1 Samuel"
+          }
         },
         {
           "title": "God answers",
           "text": "God answered her prayer and she had a son, Samuel. Hannah kept her promise and brought him to the temple. Samuel grew up to be a great prophet.",
           "source": "generated",
-          "needs_parent_check": true
+          "needs_parent_check": true,
+          "visual": {
+            "type": "flow",
+            "items": [
+              "Samuel is born",
+              "Hannah keeps her promise",
+              "Samuel serves God",
+              "He becomes a prophet"
+            ],
+            "caption": "God answers Hannah"
+          }
         },
         {
           "title": "Why Hannah matters",
           "text": "Hannah shows faithful prayer and trust in God. After Samuel was born she sang a song of praise. Mary's Magnificat is very like it, so Catholics see Hannah as pointing forward to Mary.",
           "source": "generated",
-          "needs_parent_check": true
+          "needs_parent_check": true,
+          "visual": {
+            "type": "compare",
+            "columns": [
+              {
+                "title": "Hannah's song",
+                "points": [
+                  "1 Samuel 2",
+                  "Praises God for her son"
+                ]
+              },
+              {
+                "title": "Mary's Magnificat",
+                "points": [
+                  "Luke 1",
+                  "Praises God for Jesus"
+                ],
+                "hl": true
+              }
+            ],
+            "caption": "Hannah points forward to Mary",
+            "link": "→"
+          }
         }
       ]
     },
@@ -1170,25 +1391,97 @@
           "title": "Mary",
           "text": "Mary is the mother of Jesus. Catholics honour her more than any other saint. She has many titles, and each one says something about her.",
           "source": "generated",
-          "needs_parent_check": true
+          "needs_parent_check": true,
+          "visual": {
+            "type": "grid",
+            "items": [
+              "Mother of God",
+              "New Eve",
+              "Our Lady",
+              "Immaculate Conception"
+            ],
+            "hl": [],
+            "caption": "Some of Mary's titles"
+          }
         },
         {
           "title": "Mother of God and New Eve",
           "text": "Jesus is truly God, so Mary is the Mother of God. She is also called the New Eve. Eve said no to God, but Mary said yes when the angel Gabriel came to her.",
           "source": "generated",
-          "needs_parent_check": true
+          "needs_parent_check": true,
+          "visual": {
+            "type": "compare",
+            "columns": [
+              {
+                "title": "Eve",
+                "points": [
+                  "Said no to God"
+                ]
+              },
+              {
+                "title": "Mary, the New Eve",
+                "points": [
+                  "Said yes to God"
+                ],
+                "hl": true
+              }
+            ],
+            "caption": "Why Mary is called the New Eve",
+            "link": "→"
+          }
         },
         {
           "title": "Immaculate Conception",
           "text": "Catholics believe Mary was kept free from original sin from the start of her life. This is the Immaculate Conception. It is about Mary's conception, not about Jesus' birth.",
           "source": "generated",
-          "needs_parent_check": true
+          "needs_parent_check": true,
+          "visual": {
+            "type": "compare",
+            "columns": [
+              {
+                "title": "Immaculate Conception",
+                "points": [
+                  "About Mary",
+                  "Free from original sin from the start"
+                ],
+                "hl": true
+              },
+              {
+                "title": "Virgin Birth",
+                "points": [
+                  "About Jesus",
+                  "Born of Mary"
+                ]
+              }
+            ],
+            "caption": "Two different beliefs. Do not mix them up."
+          }
         },
         {
           "title": "Praying with Mary",
           "text": "The Magnificat is the song of praise Mary sings in Luke 1. The Rosary is a prayer said with beads while thinking about events in the lives of Jesus and Mary.",
           "source": "generated",
-          "needs_parent_check": true
+          "needs_parent_check": true,
+          "visual": {
+            "type": "compare",
+            "columns": [
+              {
+                "title": "Magnificat",
+                "points": [
+                  "Mary's song of praise",
+                  "Luke 1"
+                ]
+              },
+              {
+                "title": "Rosary",
+                "points": [
+                  "A prayer with beads",
+                  "Thinks about Jesus and Mary"
+                ]
+              }
+            ],
+            "caption": "Praying with Mary"
+          }
         }
       ]
     }

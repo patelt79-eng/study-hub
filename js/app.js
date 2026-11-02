@@ -3,6 +3,7 @@
 import { supported as speechSupported, speak, stop } from './speech.js';
 import { initThemeButton } from './theme.js';
 import { icon } from './meta.js';
+import { playVisual } from './visuals.js';
 import { getSubject } from './data.js';
 import { esc } from './ui.js';
 import { todayView } from './views/today.js';
@@ -137,6 +138,8 @@ document.addEventListener('click', e => {
   }
   const ragBtn = e.target.closest('.rag-btn');
   if (ragBtn) handleRagClick(ragBtn);
+  const playBtn = e.target.closest('.vis-play');
+  if (playBtn) playVisual(playBtn);
 });
 
 // Theme: the top-bar button switches between light and dark.

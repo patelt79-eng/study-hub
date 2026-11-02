@@ -746,17 +746,67 @@
         {
           "title": "The treaty",
           "text": "The First World War ended in November 1918. In 1919 the winners met in Paris to decide Germany's punishment. The Treaty of Versailles was signed in June 1919.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "timeline",
+            "events": [
+              {
+                "d": "November 1918",
+                "t": "First World War ends"
+              },
+              {
+                "d": "January 1919",
+                "t": "Peace talks begin in Paris"
+              },
+              {
+                "d": "June 1919",
+                "t": "Treaty of Versailles signed"
+              }
+            ],
+            "caption": "From war to treaty"
+          }
         },
         {
           "title": "Clemenceau (France)",
           "text": "France had suffered most in the war. Clemenceau wanted to punish Germany harshly and make sure it could never attack France again.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "scale",
+            "left": "Fair",
+            "right": "Harsh",
+            "markers": [
+              {
+                "t": "Clemenceau (France)",
+                "pos": 95
+              }
+            ],
+            "caption": "How harshly Clemenceau wanted to punish Germany"
+          }
         },
         {
           "title": "Lloyd George and Wilson",
           "text": "Lloyd George (Britain) wanted Germany punished, but not so much that it would want revenge or stop trading. Wilson (USA) wanted a fair peace and a League of Nations.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "scale",
+            "left": "Fair",
+            "right": "Harsh",
+            "markers": [
+              {
+                "t": "Wilson (USA)",
+                "pos": 10
+              },
+              {
+                "t": "Lloyd George (Britain)",
+                "pos": 55
+              },
+              {
+                "t": "Clemenceau (France)",
+                "pos": 95
+              }
+            ],
+            "caption": "The Big Three compared"
+          }
         }
       ]
     },
@@ -767,17 +817,74 @@
         {
           "title": "LAMB",
           "text": "Remember the punishments with LAMB: Land, Army, Money, Blame.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "facts",
+            "items": [
+              {
+                "k": "Land",
+                "v": "Land lost",
+                "letter": "L"
+              },
+              {
+                "k": "Army",
+                "v": "Army cut",
+                "letter": "A"
+              },
+              {
+                "k": "Money",
+                "v": "Reparations",
+                "letter": "M"
+              },
+              {
+                "k": "Blame",
+                "v": "War Guilt",
+                "letter": "B"
+              }
+            ],
+            "caption": "LAMB"
+          }
         },
         {
           "title": "Land and Army",
           "text": "Germany lost about 13% of its land and all its colonies. Alsace-Lorraine went to France. The army was cut to 100,000 men, with no tanks, air force or submarines. The Rhineland was demilitarised.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "compare",
+            "columns": [
+              {
+                "title": "Land",
+                "points": [
+                  "About 13% of land lost",
+                  "All colonies lost",
+                  "Alsace-Lorraine to France"
+                ]
+              },
+              {
+                "title": "Army",
+                "points": [
+                  "100,000 men only",
+                  "No tanks, air force, submarines",
+                  "Rhineland demilitarised"
+                ]
+              }
+            ],
+            "caption": "Land and Army"
+          }
         },
         {
           "title": "Money and Blame",
           "text": "Article 231, the War Guilt Clause, made Germany accept the blame for the war. Germany had to pay reparations, set in 1921 at £6.6 billion. Germans called the treaty a 'diktat'.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "flow",
+            "items": [
+              "Article 231: Germany to blame",
+              "Must pay reparations",
+              "£6.6 billion (set in 1921)"
+            ],
+            "caption": "Blame leads to Money"
+          }
         }
       ]
     },
@@ -788,22 +895,87 @@
         {
           "title": "A new democracy",
           "text": "In November 1918 Kaiser Wilhelm II gave up the throne. Germany became a democracy, called the Weimar Republic. People voted for the Reichstag, the German parliament.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "timeline",
+            "events": [
+              {
+                "d": "November 1918",
+                "t": "Kaiser Wilhelm II gives up the throne"
+              },
+              {
+                "d": "1919",
+                "t": "Germany becomes a democracy: the Weimar Republic"
+              },
+              {
+                "d": "From 1919",
+                "t": "People vote for the Reichstag"
+              }
+            ],
+            "caption": "A new democracy"
+          }
         },
         {
           "title": "Weaknesses",
           "text": "Proportional representation meant many small parties and weak coalition governments. Article 48 let the President rule by emergency decree. Many Germans blamed the new government for signing the treaty.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "facts",
+            "items": [
+              {
+                "k": "Weakness 1",
+                "v": "Many parties, weak coalitions"
+              },
+              {
+                "k": "Weakness 2",
+                "v": "Article 48: rule by decree"
+              },
+              {
+                "k": "Weakness 3",
+                "v": "Blamed for the treaty"
+              }
+            ],
+            "caption": "Why Weimar was weak"
+          }
         },
         {
           "title": "1923: hyperinflation",
           "text": "Germany missed a reparations payment, so French and Belgian troops took over the Ruhr. Workers went on strike and the government printed more money. Prices rose so fast that money became worthless.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "flow",
+            "items": [
+              "Payment missed",
+              "Ruhr occupied",
+              "Workers strike",
+              "Money printed",
+              "Money worthless"
+            ],
+            "caption": "1923: hyperinflation"
+          }
         },
         {
           "title": "Recovery",
           "text": "Gustav Stresemann brought in a new currency and, in 1924, the Dawes Plan, which gave Germany American loans. The economy recovered for a few years.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "timeline",
+            "events": [
+              {
+                "d": "1923",
+                "t": "Stresemann brings in a new currency"
+              },
+              {
+                "d": "1924",
+                "t": "Dawes Plan: American loans"
+              },
+              {
+                "d": "1924 to 1929",
+                "t": "A few years of recovery"
+              }
+            ],
+            "caption": "Recovery"
+          }
         }
       ]
     },
@@ -814,17 +986,65 @@
         {
           "title": "The Munich Putsch",
           "text": "In November 1923 Hitler and the Nazis tried to seize power in Munich by force. It failed. Hitler was put on trial and sent to prison.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "flow",
+            "items": [
+              "November 1923: Nazis try to seize Munich",
+              "The Putsch fails",
+              "Hitler on trial",
+              "Prison"
+            ],
+            "caption": "The Munich Putsch"
+          }
         },
         {
           "title": "Lessons from prison",
           "text": "In prison Hitler wrote Mein Kampf. He decided the Nazis should win power through elections, not violence.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "compare",
+            "columns": [
+              {
+                "title": "Before prison",
+                "points": [
+                  "Seize power by force"
+                ]
+              },
+              {
+                "title": "After prison",
+                "points": [
+                  "Win power through elections"
+                ],
+                "hl": true
+              }
+            ],
+            "caption": "What Hitler changed",
+            "link": "→"
+          }
         },
         {
           "title": "The Depression",
           "text": "The Wall Street Crash in 1929 caused the Great Depression. By 1932 about 6 million Germans were unemployed, and many turned to the Nazis. On 30 January 1933 Hitler became Chancellor.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "timeline",
+            "events": [
+              {
+                "d": "1929",
+                "t": "Wall Street Crash"
+              },
+              {
+                "d": "1932",
+                "t": "About 6 million Germans unemployed"
+              },
+              {
+                "d": "30 January 1933",
+                "t": "Hitler becomes Chancellor"
+              }
+            ],
+            "caption": "From crash to Chancellor"
+          }
         }
       ]
     },
@@ -835,17 +1055,67 @@
         {
           "title": "Removing opponents",
           "text": "In February 1933 the Reichstag building burned down. Hitler blamed the communists and arrested many of them. In March the Enabling Act let him make laws without the Reichstag.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "timeline",
+            "events": [
+              {
+                "d": "February 1933",
+                "t": "Reichstag fire. Communists blamed"
+              },
+              {
+                "d": "March 1933",
+                "t": "Enabling Act: Hitler can make laws alone"
+              }
+            ],
+            "caption": "Removing opponents"
+          }
         },
         {
           "title": "The Night of the Long Knives",
           "text": "In June 1934 Hitler had Ernst Röhm, the SA leader, and other rivals killed. In August President Hindenburg died, and Hitler made himself Führer.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "timeline",
+            "events": [
+              {
+                "d": "June 1934",
+                "t": "Night of the Long Knives: Röhm killed"
+              },
+              {
+                "d": "August 1934",
+                "t": "Hindenburg dies. Hitler becomes Führer"
+              }
+            ],
+            "caption": "Total power"
+          }
         },
         {
           "title": "A police state",
           "text": "The Gestapo and the SS arrested opponents without trial. Goebbels ran propaganda, and censorship controlled what people could read, hear and see. Germany was now a dictatorship.",
-          "source": "generated"
+          "source": "generated",
+          "visual": {
+            "type": "facts",
+            "items": [
+              {
+                "k": "Secret police",
+                "v": "Gestapo"
+              },
+              {
+                "k": "Elite guard",
+                "v": "SS"
+              },
+              {
+                "k": "Propaganda",
+                "v": "Goebbels"
+              },
+              {
+                "k": "Censorship",
+                "v": "Books, films, radio"
+              }
+            ],
+            "caption": "How the Nazis kept control"
+          }
         }
       ]
     }
