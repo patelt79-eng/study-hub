@@ -3,7 +3,7 @@
 import * as store from '../store.js';
 import { getJSON, classChoice, isDefaultClass } from '../data.js';
 import { supported as speechSupported, speak, voicesFor, quality, QUALITY_LABEL, savedVoiceKey, onVoicesChanged, isRobotic, displayName } from '../speech.js';
-import { savedTheme, applyTheme } from '../theme.js';
+import { savedTheme, applyTheme, SKINS, savedSkin, applySkin } from '../theme.js';
 import { esc } from '../ui.js';
 
 const SAMPLE = {
@@ -55,8 +55,20 @@ export async function settingsView({ main }) {
   const isDefault = isDefaultClass(sched, choice);
 
   main.innerHTML = `<h1>Settings</h1>
-    <fieldset><legend>Colours</legend>
-      ${radios('theme', [['auto', 'Same as the tablet'], ['light', 'Light'], ['dark', 'Dark']], savedTheme())}
+    <fieldset><legend>Look</legend>
+      <p>Pick a look. It changes the colours only. Everything stays in the same place.</p>
+      <div class="skin-grid" role="radiogroup" aria-label="Look">
+        ${SKINS.map(k => `<label class="skin-card">
+          <input type="radio" name="skin" value="${k.id}" ${k.id === savedSkin() ? 'checked' : ''}>
+          <span class="skin-swatch ${k.id}" aria-hidden="true"></span>
+          <span class="skin-name">${esc(k.name)}</span>
+          <span class="skin-blurb">${esc(k.blurb)}</span>
+        </label>`).join('')}
+      </div>
+      <div id="classic-mode"${savedSkin() === 'classic' ? '' : ' hidden'}>
+        <p class="group-heading">Classic: light or dark</p>
+        ${radios('theme', [['auto', 'Same as the tablet'], ['light', 'Light'], ['dark', 'Dark']], savedTheme())}
+      </div>
     </fieldset>
     ${speechSupported ? `<fieldset><legend>Read-aloud speed</legend>
       ${radios('speed', [['slow', 'Slow'], ['normal', 'Normal']], speed)}
@@ -91,6 +103,10 @@ export async function settingsView({ main }) {
     </details>`;
 
   main.querySelectorAll('input[name="theme"]').forEach(r => r.addEventListener('change', () => applyTheme(r.value)));
+  main.querySelectorAll('input[name="skin"]').forEach(r => r.addEventListener('change', () => {
+    applySkin(r.value);
+    main.querySelector('#classic-mode').hidden = r.value !== 'classic';
+  }));
   main.querySelectorAll('input[name="speed"]').forEach(r => r.addEventListener('change', () => store.set('speechSpeed', r.value)));
   if (speechSupported) {
     const draw = () => {

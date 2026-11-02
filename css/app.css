@@ -29,7 +29,7 @@
 [data-subject="geography"] { --subj: #15803d; --subj-deep: #14532d; --subj-tint: #e3f5e8; }
 [data-subject="science"] { --subj: #0e7490; --subj-deep: #164e63; --subj-tint: #ddf3f8; }
 [data-subject="maths"] { --subj: #c2410c; --subj-deep: #7c2d12; --subj-tint: #ffeadb; }
-[data-subject="history"] { --subj: #a16207; --subj-deep: #713f12; --subj-tint: #fbf0d6; }
+[data-subject="history"] { --subj: #965a06; --subj-deep: #713f12; --subj-tint: #fbf0d6; }
 [data-subject="french"] { --subj: #1d4ed8; --subj-deep: #1e3a8a; --subj-tint: #e3ebfd; }
 [data-subject="english"] { --subj: #be185d; --subj-deep: #831843; --subj-tint: #fce4ef; }
 [data-subject="spanish"] { --subj: #b91c1c; --subj-deep: #7f1d1d; --subj-tint: #fde4e4; }
@@ -508,6 +508,95 @@ legend { font-weight: 800; padding: 0 6px; }
 .voice-row input { width: 24px; height: 24px; flex: none; accent-color: var(--subj); }
 .voice-heading { margin-top: 18px; }
 .voice-more, .voice-help { margin-top: 8px; }
+
+/* ---------- Skins (Settings → Look) ----------
+   Classic is the default above. Each skin only swaps surface colours and a few
+   shapes; layout, wording and subject colours stay the same. Nothing moves. */
+
+/* Space: dark navy with fixed stars. Uses the dark subject colours (data-theme="dark"). */
+:root[data-skin="space"] {
+  --bg: #0d1330; --surface: #172046; --surface-2: #212b58; --border: #33407a; --shadow: #060a1f;
+  --text: #eef1ff; --muted: #b6bfe8;
+}
+:root[data-skin="space"]:not([data-subject]) { --subj: #9cc4ff; --subj-deep: #3b6fd8; --subj-tint: #1d2a5c; --on-subj: #0b1230; }
+[data-skin="space"] body {
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(1.5px 1.5px at 40px 60px, #ffffffcc, transparent),
+    radial-gradient(1px 1px at 130px 160px, #cfe0ffaa, transparent),
+    radial-gradient(2px 2px at 220px 40px, #ffffffaa, transparent),
+    radial-gradient(1px 1px at 300px 210px, #ffffff99, transparent),
+    radial-gradient(ellipse at 15% 0%, #23307a 0%, transparent 55%),
+    radial-gradient(ellipse at 90% 100%, #2b1d5e 0%, transparent 50%);
+  background-size: 340px 260px, 340px 260px, 340px 260px, 340px 260px, 100% 100%, 100% 100%;
+  background-attachment: scroll;
+}
+[data-skin="space"] .topbar { background: #0a0f28ee; border-bottom-color: var(--border); }
+[data-skin="space"] .tabs a { background: var(--surface-2); }
+[data-skin="space"] .tabs a[aria-current="page"] { background: #9cc4ff; color: #0b1230; }
+
+/* Paper: flat, neutral, no ledges or tints behind headings. */
+:root[data-skin="paper"] {
+  --bg: #f6f6f4; --surface: #ffffff; --surface-2: #eeeeeb; --border: #dcdcd6; --shadow: transparent;
+  --text: #1c1c1e; --muted: #55555c;
+}
+[data-skin="paper"] body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+[data-skin="paper"] .btn, [data-skin="paper"] .option, [data-skin="paper"] .subject-tile,
+[data-skin="paper"] .card, [data-skin="paper"] .panel, [data-skin="paper"] .learn-card, [data-skin="paper"] .flash,
+[data-skin="paper"] .btn.primary, [data-skin="paper"] .hero { box-shadow: none; }
+[data-skin="paper"] .tabs a[aria-current="page"] { background: #1c1c1e; color: #fff; }
+[data-skin="paper"] .hero { border-radius: 16px; }
+
+/* Football: mown-stripe pitch, white pitch lines, scoreboard top bar. */
+:root[data-skin="football"] {
+  --bg: #2c8a45; --surface: #ffffff; --surface-2: #eef4ee; --border: #d3e2d4; --shadow: #b9cdb9;
+  --text: #13261a; --muted: #46584b;
+}
+:root[data-skin="football"]:not([data-subject]) { --subj: #15803d; --subj-deep: #0f5a2b; --subj-tint: #e3f3e7; }
+[data-skin="football"] body {
+  background-color: #2c8a45;
+  background-image:
+    radial-gradient(circle at 50% 420px, transparent 118px, #ffffffb3 119px, #ffffffb3 122px, transparent 123px),
+    linear-gradient(#ffffffb3, #ffffffb3),
+    repeating-linear-gradient(90deg, #2f9149 0 90px, #2a8240 90px 180px);
+  background-size: 100% 100%, 100% 3px, 100% 100%;
+  background-position: 0 0, 0 420px, 0 0;
+  background-repeat: no-repeat, no-repeat, repeat;
+}
+[data-skin="football"] main {
+  background: var(--surface); border-radius: 26px; margin: 18px auto 32px; max-width: 848px;
+  box-shadow: 0 6px 0 #1f6a33; padding-top: 22px;
+}
+@media (max-width: 880px) { [data-skin="football"] main { margin-left: 12px; margin-right: 12px; } }
+[data-skin="football"] .topbar { background: #0b1f3a; border-bottom: 4px solid #ffd400; }
+[data-skin="football"] .brand { color: #fff; display: inline-flex; align-items: center; gap: 8px; }
+[data-skin="football"] .brand-badge {
+  width: 26px; height: 26px; flex: none;
+  background: no-repeat center / contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='11' fill='%23fff' stroke='%230b1f3a' stroke-width='1.5'/%3E%3Cpath d='M12 7.2l4.6 3.3-1.8 5.4H9.2l-1.8-5.4z' fill='%230b1f3a'/%3E%3Cpath d='M12 7.2V2.5M16.6 10.5l4.3-1.6M14.8 15.9l2.8 3.9M9.2 15.9l-2.8 3.9M7.4 10.5L3.1 8.9' stroke='%230b1f3a' stroke-width='1.3'/%3E%3C/svg%3E");
+}
+[data-skin="football"] .topbar .btn { background: transparent; color: #fff; border-color: #ffffff55; }
+[data-skin="football"] .tabs a { background: #16335a; color: #fff; }
+[data-skin="football"] .tabs a[aria-current="page"] { background: #ffd400; color: #0b1f3a; }
+[data-skin="football"] .hero {
+  background-image: radial-gradient(circle at 100% 50%, transparent 58px, #ffffff40 59px, #ffffff40 62px, transparent 63px);
+}
+[data-skin="football"] .topic-num { border-radius: 12px 12px 16px 16px; }
+.brand-badge { display: none; }
+[data-skin="football"] .brand-badge { display: inline-block; }
+
+/* Look picker in Settings */
+.skin-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin: 8px 0; }
+.skin-card { display: flex; flex-direction: column; gap: 8px; margin: 0; padding: 10px; border: 3px solid var(--border); border-radius: 18px; background: var(--surface); cursor: pointer; font-weight: 600; }
+.skin-card:has(input:checked) { border-color: var(--subj); }
+.skin-card input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.skin-card:focus-within { outline: 3px solid var(--focus); outline-offset: 3px; }
+.skin-swatch { height: 70px; border-radius: 12px; border: 1px solid #0002; }
+.skin-swatch.classic { background: linear-gradient(135deg, #fff8ef 0 55%, #6d28d9 55% 70%, #15803d 70% 85%, #c2410c 85%); }
+.skin-swatch.space { background: radial-gradient(1.5px 1.5px at 20px 20px, #fff, transparent), radial-gradient(1.5px 1.5px at 70px 45px, #fff, transparent), radial-gradient(1px 1px at 120px 15px, #fff, transparent), linear-gradient(135deg, #0d1330, #23307a); }
+.skin-swatch.paper { background: linear-gradient(#f6f6f4, #f6f6f4); box-shadow: inset 0 -18px 0 #fff, inset 0 -19px 0 #dcdcd6; }
+.skin-swatch.football { background: radial-gradient(circle at 50% 50%, transparent 18px, #fff 19px, #fff 21px, transparent 22px), linear-gradient(90deg, transparent calc(50% - 1px), #fff calc(50% - 1px), #fff calc(50% + 1px), transparent calc(50% + 1px)), repeating-linear-gradient(90deg, #2f9149 0 22px, #2a8240 22px 44px); }
+.skin-name { font-weight: 800; font-size: 1.05rem; }
+.skin-blurb { font-size: 0.9rem; color: var(--muted); line-height: 1.35; }
 
 @media (max-width: 520px) {
   body { font-size: 17px; }

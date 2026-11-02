@@ -15,10 +15,15 @@
   <meta name="apple-mobile-web-app-title" content="Study Hub">
   <link rel="stylesheet" href="css/app.css">
   <script>
-    // Apply the saved theme before the first paint, so the page does not flash.
+    // Apply the saved look before the first paint, so the page does not flash.
     try {
+      var root = document.documentElement;
+      var skin = JSON.parse(localStorage.getItem('sh:skin') || '"classic"');
+      var fixed = { space: 'dark', paper: 'light', football: 'light' }[skin];
       var t = localStorage.getItem('sh:theme');
-      if (t) document.documentElement.setAttribute('data-theme', JSON.parse(t));
+      root.setAttribute('data-skin', skin);
+      if (fixed) root.setAttribute('data-theme', fixed);
+      else if (t) root.setAttribute('data-theme', JSON.parse(t));
     } catch (e) {}
   </script>
 </head>
@@ -27,7 +32,7 @@
   <header class="topbar">
     <div class="topbar-row">
       <a id="back" class="btn back" href="#/today" hidden>&larr; Back</a>
-      <span class="brand">Study Hub</span>
+      <span class="brand"><span class="brand-badge" aria-hidden="true"></span>Study Hub</span>
       <a href="#/settings" class="btn theme-toggle">Settings</a>
       <button id="theme" class="btn theme-toggle" type="button" aria-pressed="false">Dark mode</button>
     </div>

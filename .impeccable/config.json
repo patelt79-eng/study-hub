@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "low-contrast",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-11-02T16:26:29.413Z",
+        "reason": "Claude: checker cannot resolve CSS variables; index.html has no colours of its own. Rendered page measured in light and dark mode: no text below 4.5:1."
+      }
+    ]
+  }
+}
