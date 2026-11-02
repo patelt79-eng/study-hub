@@ -2,12 +2,14 @@
 
 import { supported as speechSupported, speak, stop } from './speech.js';
 import { initThemeButton } from './theme.js';
+import { icon } from './meta.js';
 import { getSubject } from './data.js';
 import { esc } from './ui.js';
 import { todayView } from './views/today.js';
 import { scheduleView } from './views/schedule.js';
 import { subjectsView } from './views/subjects.js';
 import { subjectView } from './views/subject.js';
+import { topicView } from './views/topic.js';
 import { flashcardsView } from './views/flashcards.js';
 import { quizView } from './views/quiz.js';
 import { workedView, practiceView } from './views/maths.js';
@@ -27,6 +29,7 @@ const ROUTES = [
   [/^#\/schedule$/, m => scheduleView],
   [/^#\/subjects$/, m => subjectsView],
   [/^#\/subject\/(\w+)$/, m => ctx => subjectView(ctx, m[1])],
+  [/^#\/subject\/(\w+)\/topic\/([\w-]+)$/, m => ctx => topicView(ctx, m[1], m[2])],
   [/^#\/subject\/(\w+)\/flashcards\/([\w-]+)$/, m => ctx => flashcardsView(ctx, m[1], m[2])],
   [/^#\/subject\/(\w+)\/quiz\/([\w-]+)$/, m => ctx => quizView(ctx, m[1], m[2])],
   [/^#\/subject\/maths\/worked\/([\w-]+)$/, m => ctx => workedView(ctx, m[1])],
@@ -84,6 +87,10 @@ async function route() {
   if (!view) { location.replace('#/today'); return; }
 
   setActiveTab(path);
+  // Subject screens take on that subject's colour.
+  const subj = path.match(/^#\/subject\/(\w+)/);
+  if (subj) document.documentElement.dataset.subject = subj[1];
+  else delete document.documentElement.dataset.subject;
   const parent = await parentOf(path, params);
   if (token !== routeToken) return;
   if (parent) {
@@ -134,6 +141,8 @@ document.addEventListener('click', e => {
 
 // Theme: the top-bar button switches between light and dark.
 initThemeButton();
+
+document.querySelectorAll('.tabs a').forEach(a => a.insertAdjacentHTML('afterbegin', icon(a.dataset.tab)));
 
 window.addEventListener('hashchange', route);
 route();

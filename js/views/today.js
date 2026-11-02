@@ -3,6 +3,7 @@ import { getJSON, activePapers, subjectName } from '../data.js';
 import { todayISO, longDate, inDays, addDays } from '../dates.js';
 import { buildPlan } from '../plan.js';
 import { esc, sayRow, speakBtn, plural } from '../ui.js';
+import { icon } from '../meta.js';
 
 export async function todayPlan() {
   const [rules, papers] = await Promise.all([getJSON('plan-rules'), activePapers()]);
@@ -19,26 +20,25 @@ export async function todayView({ main }) {
   const ticks = store.get('ticks', {});
   const doneToday = ticks[today] || {};
 
-  let html = `<h1>Today</h1>`;
-  html += sayRow(`<p class="lead">${esc(longDate(today))}</p>`, `Today is ${longDate(today)}.`);
+  let html = `<p class="eyebrow">Today</p>`;
+  html += sayRow(`<h1>${esc(longDate(today))}</h1>`, `Today is ${longDate(today)}.`);
 
   // Assessments today and the next one.
   const todayNames = await Promise.all(plan.todayPapers.map(subjectName));
   const next = papers.find(p => p.date > today);
-  let nextText = '';
+  if (todayNames.length) {
+    const t = `Today you have your ${todayNames.join(' and ')} ${todayNames.length > 1 ? 'assessments' : 'assessment'}.`;
+    html += `<section class="next-paper" data-subject="${esc(plan.todayPapers[0])}">${icon(plan.todayPapers[0])}${sayRow(`<p><strong>${esc(t)}</strong></p>`, t)}</section>`;
+  }
   if (next) {
     const sameDay = papers.filter(p => p.date === next.date);
     const names = await Promise.all(sameDay.map(p => subjectName(p.subject)));
-    nextText = `Next assessment: ${names.join(' and ')}, ${longDate(next.date)} (${inDays(today, next.date)}).`;
+    const t = `Next assessment: ${names.join(' and ')}, ${longDate(next.date)} (${inDays(today, next.date)}).`;
+    html += `<section class="next-paper" data-subject="${esc(next.subject)}">${icon(next.subject)}
+      ${sayRow(`<p><span class="small">Next assessment</span><br><strong>${esc(names.join(' and '))}</strong> · ${esc(longDate(next.date))} (${esc(inDays(today, next.date))})</p>`, t)}</section>`;
+  } else if (!todayNames.length) {
+    html += `<section class="next-paper">${sayRow('<p><strong>All assessments finished.</strong></p>', 'All assessments finished.')}</section>`;
   }
-  html += `<section class="card">`;
-  if (todayNames.length) {
-    const t = `Today you have your ${todayNames.join(' and ')} ${todayNames.length > 1 ? 'assessments' : 'assessment'}.`;
-    html += sayRow(`<p><strong>${esc(t)}</strong></p>`, t);
-  }
-  if (nextText) html += sayRow(`<p>${esc(nextText)}</p>`, nextText);
-  if (!next && !todayNames.length) html += sayRow('<p>All assessments finished.</p>', 'All assessments finished.');
-  html += `</section>`;
 
   html += `<section class="card"><h2>Today's plan</h2>`;
   if (plan.kind === 'before') {
@@ -58,19 +58,30 @@ export async function todayView({ main }) {
     } else if (plan.light) {
       intro = `There ${n === 1 ? 'is' : 'are'} ${plural(n, 'light session')} today. ${n === 1 ? 'It goes' : 'They go'} over key terms only. There is nothing new.`;
     } else {
-      intro = `There are ${n} sessions today. Each one takes about 20 minutes. Tap a session to start it. When you finish, it is ticked for you.`;
+      intro = `There are ${n} sessions today, each about ${plan.sessions[0].minutes} minutes. Tap Start. When you finish a session, it is ticked for you.`;
     }
     if (plan.message) intro += ' ' + plan.message;
     html += sayRow(`<p${allDone ? ' class="big-text"' : ''}>${esc(intro)}</p>`, intro);
 
     html += `<ol class="sessions">`;
+    const names = await Promise.all(plan.sessions.map(s => subjectName(s.subject)));
     plan.sessions.forEach((s, i) => {
-      const label = `Session ${i + 1}: ${s.label}, about ${s.minutes} min`;
+      const spoken = `Session ${i + 1}. ${names[i]}. ${s.label}. About ${s.minutes} minutes.`;
       const done = !!doneToday[i];
-      html += `<li>
-        <a class="btn block${done ? '' : ' primary'}" href="${esc(sessionHref(s))}">${esc(label)}</a>
-        <button type="button" class="btn tick" data-idx="${i}" data-subject="${esc(s.subject)}" aria-pressed="${done}">${done ? '✓ Done' : 'Mark as done'}</button>
-        ${speakBtn(label)}
+      html += `<li class="session${done ? ' is-done' : ''}" data-subject="${esc(s.subject)}">
+        <div class="session-main">
+          <span class="session-icon">${done ? icon('check') : icon(s.subject)}</span>
+          <div>
+            <p class="eyebrow">Session ${i + 1} · ${esc(names[i])}</p>
+            <p class="session-title">${esc(s.label)}</p>
+            <p class="small muted">About ${s.minutes} minutes</p>
+          </div>
+        </div>
+        <div class="session-actions">
+          <a class="btn${done ? '' : ' primary'}" href="${esc(sessionHref(s))}">${done ? 'Do it again' : 'Start'}</a>
+          <button type="button" class="btn tick" data-idx="${i}" data-subject="${esc(s.subject)}" aria-pressed="${done}">${done ? 'Done' : 'Mark as done'}</button>
+          ${speakBtn(spoken)}
+        </div>
       </li>`;
     });
     html += `</ol>`;

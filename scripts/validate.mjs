@@ -112,8 +112,34 @@ for (const id of SUBJECTS) {
   if (s.bigger_picture) s.bigger_picture.questions.forEach((q, j) => needSource(f, `bigger_picture.questions[${j}]`, q));
   if (s.booklet_tasks) needSource(f, 'booklet_tasks', s.booklet_tasks);
 
+  // Topics: learn → flashcards → quiz, kept short so a topic is one sitting.
+  if (!Array.isArray(s.topics) || !s.topics.length) fail(`${f}: needs a "topics" list`);
+  const topicIds = new Set((s.topics || []).map(t => t.id));
+  (s.topics || []).forEach(t => {
+    if (!t.title) fail(`${f}: topic ${t.id} has no title`);
+    if (!t.learn || t.learn.length < 1 || t.learn.length > 4) fail(`${f}: topic ${t.id} needs 1 to 4 learn cards`);
+    (t.learn || []).forEach((l, j) => {
+      needSource(f, `topic ${t.id} learn card ${j + 1}`, l);
+      const words = `${l.title} ${l.text}`.split(/\s+/).length;
+      if (words > 60) warnings.push(`${f}: topic ${t.id} learn card ${j + 1} has ${words} words`);
+    });
+    const nc = s.flashcards.filter(c => c.topic === t.id).length;
+    const nq = s.quiz.filter(q => q.topic === t.id).length;
+    if (nc > 11) fail(`${f}: topic ${t.id} has ${nc} flashcards (keep it to 11 or fewer)`);
+    if (nq < 2 || nq > 8) fail(`${f}: topic ${t.id} has ${nq} quiz questions (keep it between 2 and 8)`);
+  });
+  for (const x of [...s.flashcards, ...s.quiz]) {
+    if (!x.topic) fail(`${f}: ${x.id} is not in any topic`);
+    else if (!topicIds.has(x.topic)) fail(`${f}: ${x.id} uses unknown topic "${x.topic}"`);
+  }
+  if (s.topics) {
+    const firstSets = s.topics.findIndex(t => t.sets12);
+    if (firstSets >= 0 && s.topics.slice(firstSets).some(t => !t.sets12)) fail(`${f}: sets 1–2 topics must come last`);
+  }
+
   // RE: every generated item must be flagged for a parent to check.
   if (id === 're') {
+    for (const t of s.topics || []) for (const l of t.learn) if (l.needs_parent_check !== true) fail(`${f}: topic ${t.id} learn card "${l.title}" is not marked needs_parent_check`);
     for (const list of [s.flashcards, s.quiz]) {
       for (const x of list) if (x.source === 'generated' && x.needs_parent_check !== true) fail(`${f}: ${x.id} is generated but not marked "needs_parent_check": true`);
     }
@@ -128,7 +154,7 @@ if (rules) {
   for (const [subj, t] of Object.entries(rules.light || {})) routes.push([subj, t.route, t.label]);
   for (const [subj, route, label] of routes) {
     const [path] = route.split('?');
-    const m = path.match(/^#\/subject\/(\w+)\/(flashcards|quiz|write|worked|practice|task)\/([\w-]+)$/);
+    const m = path.match(/^#\/subject\/(\w+)\/(flashcards|quiz|write|worked|practice|task|topic)\/([\w-]+)$/);
     const s = m && data[m[1]];
     if (!m || !s) { fail(`plan-rules: bad route ${route}`); continue; }
     const [, , kind, target] = m;
@@ -137,7 +163,8 @@ if (rules) {
       (kind === 'quiz' && s.quiz_sets.some(x => x.id === target)) ||
       (kind === 'write' && (s.writing || []).some(x => x.id === target)) ||
       ((kind === 'worked' || kind === 'practice') && (s.skills || []).some(x => x.id === target)) ||
-      (kind === 'task' && s.tasks && s.tasks[target]);
+      (kind === 'task' && s.tasks && s.tasks[target]) ||
+      (kind === 'topic' && (s.topics || []).some(x => x.id === target));
     if (!ok) fail(`plan-rules: "${label}" points at ${route}, which does not exist`);
     if (!label) fail(`plan-rules: route ${route} has no label`);
   }
@@ -202,6 +229,7 @@ if (args.has('--review')) {
   for (const id of SUBJECTS) {
     const s = data[id];
     const items = [];
+    for (const t of s.topics || []) for (const l of t.learn) if (l.needs_parent_check) items.push(`- **${t.id}** (learn card) **${l.title}**: ${l.text}`);
     for (const c of s.flashcards) if (c.needs_parent_check) items.push(`- **${c.id}** (flashcard) **${c.front ?? c.fr}**: ${c.back ?? c.en}`);
     for (const q of s.quiz) if (q.needs_parent_check) items.push(`- **${q.id}** (quiz) ${q.q} Answer: **${q.options[q.answer]}**. ${q.explain}`);
     for (const w of s.writing || []) if (w.needs_parent_check) items.push(`- **${w.id}** (writing hints for "${w.question}"): ${w.hints.join(' / ')}`);

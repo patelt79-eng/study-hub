@@ -5,6 +5,9 @@ import { allSubjects, activePapers } from '../data.js';
 import { todayISO, longDate, shortDate } from '../dates.js';
 import { esc, sayRow, plural } from '../ui.js';
 import { ragList, ragCounts } from './rag.js';
+import { topicProgress } from './topic.js';
+
+const scoreText = r => (r.total ? `${r.score}/${r.total}` : 'done');
 
 function sessionsDone(subjectId) {
   const ticks = store.get('ticks', {});
@@ -13,11 +16,12 @@ function sessionsDone(subjectId) {
   return n;
 }
 
+// Finished topics with their quiz score, in topic order.
 function quizLines(s) {
-  const h = store.get('quizHistory', {});
-  return s.quiz_sets
-    .map(set => ({ set, r: h[`${s.id}:${set.id}`] }))
-    .filter(x => x.r);
+  const prog = topicProgress(s.id);
+  return s.topics
+    .filter(t => prog[t.id] && prog[t.id].done)
+    .map(t => ({ set: { title: t.title }, r: { score: prog[t.id].score, total: prog[t.id].total, date: prog[t.id].done } }));
 }
 
 async function summaryText() {
@@ -27,11 +31,12 @@ async function summaryText() {
     const p = papers.find(x => x.subject === s.id);
     const c = ragCounts(s.id, s.rag_topics);
     lines.push(`${s.name}${p ? ` (assessment ${longDate(p.date)})` : ''}`);
-    lines.push(`Sessions done: ${sessionsDone(s.id)}`);
-    lines.push(`Topics: Green ${c.G}, Amber ${c.A}, Red ${c.R}, not rated ${c.none}`);
-    lines.push(`Topics marked Red: ${c.red.length ? c.red.join('; ') : 'none'}`);
     const q = quizLines(s);
-    lines.push(`Last quiz scores: ${q.length ? q.map(x => `${x.set.title} ${x.r.score}/${x.r.total} (${shortDate(x.r.date)})`).join('; ') : 'none yet'}`);
+    lines.push(`Sessions done: ${sessionsDone(s.id)}`);
+    lines.push(`Topics finished: ${q.length} of ${s.topics.length}`);
+    lines.push(`RAG ratings: Green ${c.G}, Amber ${c.A}, Red ${c.R}, not rated ${c.none}`);
+    lines.push(`Marked Red: ${c.red.length ? c.red.join('; ') : 'none'}`);
+    lines.push(`Topic quiz scores: ${q.length ? q.map(x => `${x.set.title} ${scoreText(x.r)} (${shortDate(x.r.date)})`).join('; ') : 'none yet'}`);
     lines.push('');
   }
   return lines.join('\n');
@@ -49,10 +54,10 @@ export async function progressView({ main }) {
   for (const s of subjects) {
     const c = ragCounts(s.id, s.rag_topics);
     const q = quizLines(s);
-    html += `<details><summary>${esc(s.name)}: Green ${c.G}, Amber ${c.A}, Red ${c.R}, not rated ${c.none}</summary>
-      <p>Sessions done: ${sessionsDone(s.id)}</p>
-      <h3>Quiz scores</h3>
-      ${q.length ? `<ul>${q.map(x => `<li>${esc(x.set.title)}: ${x.r.score} out of ${x.r.total} on ${esc(shortDate(x.r.date))}</li>`).join('')}</ul>` : '<p>No quizzes yet.</p>'}
+    html += `<details data-subject="${s.id}"><summary>${esc(s.name)}: ${q.length} of ${s.topics.length} topics done</summary>
+      <p>Sessions done: ${sessionsDone(s.id)}. RAG: Green ${c.G}, Amber ${c.A}, Red ${c.R}, not rated ${c.none}.</p>
+      <h3>Topic quiz scores</h3>
+      ${q.length ? `<ul>${q.map(x => `<li>${esc(x.set.title)}: ${x.r.total ? `${x.r.score} out of ${x.r.total}` : 'done'} on ${esc(shortDate(x.r.date))}</li>`).join('')}</ul>` : '<p>No topics finished yet.</p>'}
       <h3>My RAG check</h3>
       ${ragList(s.id, s.rag_topics)}
     </details>`;
