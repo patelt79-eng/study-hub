@@ -378,8 +378,8 @@ button, .btn { font: inherit; color: inherit; }
 .v-col ul { margin: 0; padding-left: 1.1em; }
 .v-col li { margin: 0 0 4px; line-height: 1.35; }
 .v-link { align-self: center; font-weight: 800; color: var(--subj); padding: 0 4px; }
-.v-timeline { list-style: none; padding: 0 0 0 10px; margin: 0; position: relative; }
-.v-timeline::before { content: ''; position: absolute; left: 0; top: 6px; bottom: 6px; width: 4px; background: color-mix(in srgb, var(--subj) 40%, transparent); }
+.v-timeline { list-style: none; padding: 0 0 0 10px; margin: 0;
+  background: linear-gradient(color-mix(in srgb, var(--subj) 40%, transparent), color-mix(in srgb, var(--subj) 40%, transparent)) no-repeat 0 6px / 4px calc(100% - 12px); }
 .v-timeline li { position: relative; padding: 4px 0 10px 22px; margin: 0; display: flex; flex-direction: column; line-height: 1.35; }
 .v-dot { position: absolute; left: -17px; top: 8px; width: 18px; height: 18px; border-radius: 50%; background: var(--subj); border: 3px solid var(--surface); }
 .v-date { font-weight: 800; color: var(--subj); }
@@ -415,8 +415,7 @@ button, .btn { font: inherit; color: inherit; }
 .v-bar.hl { background: var(--subj); }
 .v-scale { padding: 4px 4px 0; }
 .v-scale-track { display: flex; justify-content: space-between; font-weight: 800; font-size: 0.9rem; color: var(--muted);
-  padding-bottom: 12px; position: relative; }
-.v-scale-track::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 6px; background: var(--subj); }
+  padding-bottom: 12px; background: linear-gradient(var(--subj), var(--subj)) no-repeat left bottom / 100% 6px; }
 .v-scale-marks { list-style: none; padding: 0; margin: 0; position: relative; height: 96px; }
 .v-scale-marks li { position: absolute; left: var(--pos); top: 0; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; margin: 0; width: 110px; text-align: center; }
 .v-scale-marks li:nth-child(even) { top: 40px; }
