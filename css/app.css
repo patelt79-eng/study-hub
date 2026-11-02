@@ -195,7 +195,7 @@ button, .btn { font: inherit; color: inherit; }
 .next-paper p { margin: 0; }
 .sessions { list-style: none; padding: 0; margin: 16px 0 0; }
 .session {
-  border: 2px solid var(--border); border-left: 10px solid var(--subj); border-radius: 18px;
+  border: 2px solid color-mix(in srgb, var(--subj) 35%, var(--border)); border-radius: 18px;
   padding: 14px 16px; margin-bottom: 14px; background: var(--surface);
 }
 .session.is-done { background: var(--surface-2); }
@@ -212,7 +212,7 @@ button, .btn { font: inherit; color: inherit; }
 .subject-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
 .subject-tile {
   display: flex; flex-direction: column; gap: 6px; text-decoration: none; color: var(--text);
-  background: var(--surface); border: 2px solid var(--border); border-top: 10px solid var(--subj);
+  background: var(--surface); border: 2px solid color-mix(in srgb, var(--subj) 35%, var(--border));
   border-radius: 22px; padding: 18px; box-shadow: 0 5px 0 var(--shadow);
 }
 .subject-tile:active { transform: translateY(3px); box-shadow: 0 2px 0 var(--shadow); }
@@ -281,7 +281,7 @@ button, .btn { font: inherit; color: inherit; }
 .step-pill.done { background: var(--subj-tint); color: var(--text); }
 .step-pill.done .step-num { background: var(--subj); color: var(--on-subj); }
 .learn-card {
-  background: var(--surface); border: 2px solid var(--border); border-top: 10px solid var(--subj);
+  background: var(--surface); border: 2px solid color-mix(in srgb, var(--subj) 35%, var(--border));
   border-radius: 22px; padding: 22px; box-shadow: 0 5px 0 var(--shadow); margin-bottom: 8px;
 }
 .learn-card h2 { font-size: 1.5rem; color: var(--subj); }
