@@ -57,9 +57,8 @@ function updateThemeButton() {
   if (!btn) return;
   // Only Classic has a light and dark mode, so the button only shows for Classic.
   btn.hidden = savedSkin() !== 'classic';
-  const dark = currentTheme() === 'dark';
-  btn.setAttribute('aria-pressed', String(dark));
-  btn.textContent = dark ? 'Light mode' : 'Dark mode';
+  // A switch: the label stays "Dark mode" and the switch shows whether it is on.
+  btn.setAttribute('aria-checked', String(currentTheme() === 'dark'));
 }
 
 export function initThemeButton() {

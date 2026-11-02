@@ -48,7 +48,8 @@ export async function topicView({ main, params }, subjectId, topicId) {
   const steps = STEPS.filter(([k]) => k === 'learn' || (k === 'cards' && cards.length) || (k === 'quiz' && quiz.length));
   const next = s.topics[tIndex + 1];
 
-  let step = 'intro';
+  // Started from Today's plan: skip the overview and go straight to the first card.
+  let step = params.get('session') ? 'learn' : 'intro';
   let i = 0;
   let shown = false;
   let deck = cards;

@@ -17,6 +17,7 @@ export const ICONS = {
   progress: svg('<path d="M3 21h18"/><path d="M7 17v-5M12 17V7M17 17v-8"/>'),
   check: svg('<path d="M20 6 9 17l-5-5"/>'),
   arrow: svg('<path d="M5 12h14M13 6l6 6-6 6"/>'),
+  flame: svg('<path d="M12 2c1 3.5 5 5.5 5 10a5 5 0 0 1-10 0c0-2.5 1.5-4 2.5-5 .3 2 1.3 3 2.5 3.5C12 8 11 5 12 2z"/>'),
 };
 
 export const icon = name => `<span class="icon">${ICONS[name] || ''}</span>`;
