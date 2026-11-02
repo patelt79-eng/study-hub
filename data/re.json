@@ -1054,13 +1054,34 @@
           "visual": {
             "type": "flow",
             "items": [
-              "Day 1: light",
-              "Day 2: sky",
-              "Day 3: land and plants",
-              "Day 4: sun, moon, stars",
-              "Day 5: birds and fish",
-              "Day 6: animals and humans",
-              "Day 7: God rests"
+              {
+                "t": "Day 1: light",
+                "icon": "sun"
+              },
+              {
+                "t": "Day 2: sky",
+                "icon": "sky"
+              },
+              {
+                "t": "Day 3: land and plants",
+                "icon": "plant"
+              },
+              {
+                "t": "Day 4: sun, moon, stars",
+                "icon": "moonstar"
+              },
+              {
+                "t": "Day 5: birds and fish",
+                "icon": "fish"
+              },
+              {
+                "t": "Day 6: animals and humans",
+                "icon": "people"
+              },
+              {
+                "t": "Day 7: God rests",
+                "icon": "candle"
+              }
             ],
             "caption": "Genesis 1: creation in seven days"
           }
@@ -1075,15 +1096,18 @@
             "items": [
               {
                 "k": "People can",
-                "v": "Think"
+                "v": "Think",
+                "icon": "brain"
               },
               {
                 "k": "People can",
-                "v": "Choose"
+                "v": "Choose",
+                "icon": "signpost"
               },
               {
                 "k": "People can",
-                "v": "Love"
+                "v": "Love",
+                "icon": "heart"
               }
             ],
             "caption": "Imago Dei: made in God's image, every person shares something of God"
@@ -1097,12 +1121,30 @@
           "visual": {
             "type": "flow",
             "items": [
-              "Conception",
-              "Birth",
-              "Childhood",
-              "Adult life",
-              "Old age",
-              "Natural death"
+              {
+                "t": "Conception",
+                "icon": "heart"
+              },
+              {
+                "t": "Birth",
+                "icon": "baby"
+              },
+              {
+                "t": "Childhood",
+                "icon": "child"
+              },
+              {
+                "t": "Adult life",
+                "icon": "person"
+              },
+              {
+                "t": "Old age",
+                "icon": "elder"
+              },
+              {
+                "t": "Natural death",
+                "icon": "candle"
+              }
             ],
             "caption": "Every stage of life is sacred"
           }
@@ -1121,10 +1163,22 @@
           "visual": {
             "type": "flow",
             "items": [
-              "Dust of the ground",
-              "God breathes life",
-              "Adam lives",
-              "He looks after Eden"
+              {
+                "t": "Dust of the ground",
+                "icon": "dust"
+              },
+              {
+                "t": "God breathes life",
+                "icon": "breath"
+              },
+              {
+                "t": "Adam lives",
+                "icon": "person"
+              },
+              {
+                "t": "He looks after Eden",
+                "icon": "tree"
+              }
             ],
             "caption": "Genesis 2: how Adam is made"
           }
@@ -1139,6 +1193,7 @@
             "columns": [
               {
                 "title": "God",
+                "icon": "sun",
                 "points": [
                   "Made us",
                   "Loves us"
@@ -1146,14 +1201,15 @@
               },
               {
                 "title": "Adam and Eve",
+                "icon": "couple",
                 "points": [
                   "Partners",
                   "Not alone"
                 ]
               }
             ],
-            "link": "⇄",
-            "caption": "Made for relationships with God and each other"
+            "caption": "Made for relationships with God and each other",
+            "link": "⇄"
           }
         },
         {
@@ -1164,10 +1220,22 @@
           "visual": {
             "type": "flow",
             "items": [
-              "God gives one rule",
-              "Humans have free will",
-              "They choose how to act",
-              "Choosing right is morality"
+              {
+                "t": "God gives one rule",
+                "icon": "apple"
+              },
+              {
+                "t": "Humans have free will",
+                "icon": "signpost"
+              },
+              {
+                "t": "They choose how to act",
+                "icon": "scales"
+              },
+              {
+                "t": "Choosing right is morality",
+                "icon": "check"
+              }
             ],
             "caption": "Free will makes morality possible"
           }
@@ -1186,13 +1254,34 @@
           "visual": {
             "type": "grid",
             "items": [
-              "Baptism",
-              "Confirmation",
-              "Eucharist",
-              "Reconciliation",
-              "Anointing of the Sick",
-              "Holy Orders",
-              "Matrimony"
+              {
+                "t": "Baptism",
+                "icon": "water"
+              },
+              {
+                "t": "Confirmation",
+                "icon": "dove"
+              },
+              {
+                "t": "Eucharist",
+                "icon": "chalice"
+              },
+              {
+                "t": "Reconciliation",
+                "icon": "key"
+              },
+              {
+                "t": "Anointing of the Sick",
+                "icon": "oil"
+              },
+              {
+                "t": "Holy Orders",
+                "icon": "church"
+              },
+              {
+                "t": "Matrimony",
+                "icon": "rings"
+              }
             ],
             "hl": [
               6
@@ -1210,15 +1299,18 @@
             "items": [
               {
                 "k": "Promise 1",
-                "v": "Faithful"
+                "v": "Faithful",
+                "icon": "heart"
               },
               {
                 "k": "Promise 2",
-                "v": "For life"
+                "v": "For life",
+                "icon": "infinity"
               },
               {
                 "k": "Promise 3",
-                "v": "Open to children"
+                "v": "Open to children",
+                "icon": "family"
               }
             ],
             "caption": "The promises of Matrimony"
@@ -1232,10 +1324,17 @@
           "visual": {
             "type": "equation",
             "parts": [
-              "Husband",
-              "Wife"
+              {
+                "t": "Husband",
+                "icon": "person"
+              },
+              {
+                "t": "Wife",
+                "icon": "person"
+              }
             ],
             "result": "One flesh",
+            "resultIcon": "rings",
             "caption": "Genesis 2:24: God's plan for marriage"
           }
         }
@@ -1255,6 +1354,7 @@
             "columns": [
               {
                 "title": "Literal reading",
+                "icon": "book",
                 "points": [
                   "Word for word",
                   "Exactly as written"
@@ -1262,6 +1362,7 @@
               },
               {
                 "title": "Allegorical reading",
+                "icon": "magnifier",
                 "points": [
                   "Looks for a deeper meaning",
                   "Truths about God and people"
@@ -1282,10 +1383,12 @@
             "items": [
               {
                 "t": "Adam",
+                "icon": "person",
                 "s": "Old Testament"
               },
               {
                 "t": "Jesus, the new Adam",
+                "icon": "cross",
                 "s": "New Testament"
               }
             ],
@@ -1302,14 +1405,17 @@
             "items": [
               {
                 "t": "Genesis 3:15",
+                "icon": "serpent",
                 "s": "God speaks to the serpent"
               },
               {
                 "t": "A promise",
+                "icon": "scroll",
                 "s": "evil will be defeated"
               },
               {
                 "t": "A Saviour",
+                "icon": "cross",
                 "s": "Jesus"
               }
             ],
@@ -1330,9 +1436,18 @@
           "visual": {
             "type": "flow",
             "items": [
-              "Hannah has no children",
-              "She prays at the temple",
-              "She promises her son to God"
+              {
+                "t": "Hannah has no children",
+                "icon": "person"
+              },
+              {
+                "t": "She prays at the temple",
+                "icon": "temple"
+              },
+              {
+                "t": "She promises her son to God",
+                "icon": "hands"
+              }
             ],
             "caption": "Hannah's prayer in 1 Samuel"
           }
@@ -1345,10 +1460,22 @@
           "visual": {
             "type": "flow",
             "items": [
-              "Samuel is born",
-              "Hannah keeps her promise",
-              "Samuel serves God",
-              "He becomes a prophet"
+              {
+                "t": "Samuel is born",
+                "icon": "baby"
+              },
+              {
+                "t": "Hannah keeps her promise",
+                "icon": "hands"
+              },
+              {
+                "t": "Samuel serves God",
+                "icon": "temple"
+              },
+              {
+                "t": "He becomes a prophet",
+                "icon": "scroll"
+              }
             ],
             "caption": "God answers Hannah"
           }
@@ -1363,6 +1490,7 @@
             "columns": [
               {
                 "title": "Hannah's song",
+                "icon": "music",
                 "points": [
                   "1 Samuel 2",
                   "Praises God for her son"
@@ -1370,6 +1498,7 @@
               },
               {
                 "title": "Mary's Magnificat",
+                "icon": "music",
                 "points": [
                   "Luke 1",
                   "Praises God for Jesus"
@@ -1395,10 +1524,22 @@
           "visual": {
             "type": "grid",
             "items": [
-              "Mother of God",
-              "New Eve",
-              "Our Lady",
-              "Immaculate Conception"
+              {
+                "t": "Mother of God",
+                "icon": "heart"
+              },
+              {
+                "t": "New Eve",
+                "icon": "apple"
+              },
+              {
+                "t": "Our Lady",
+                "icon": "crown"
+              },
+              {
+                "t": "Immaculate Conception",
+                "icon": "lily"
+              }
             ],
             "hl": [],
             "caption": "Some of Mary's titles"
@@ -1414,12 +1555,14 @@
             "columns": [
               {
                 "title": "Eve",
+                "icon": "no",
                 "points": [
                   "Said no to God"
                 ]
               },
               {
                 "title": "Mary, the New Eve",
+                "icon": "check",
                 "points": [
                   "Said yes to God"
                 ],
@@ -1440,6 +1583,7 @@
             "columns": [
               {
                 "title": "Immaculate Conception",
+                "icon": "lily",
                 "points": [
                   "About Mary",
                   "Free from original sin from the start"
@@ -1448,6 +1592,7 @@
               },
               {
                 "title": "Virgin Birth",
+                "icon": "baby",
                 "points": [
                   "About Jesus",
                   "Born of Mary"
@@ -1467,6 +1612,7 @@
             "columns": [
               {
                 "title": "Magnificat",
+                "icon": "music",
                 "points": [
                   "Mary's song of praise",
                   "Luke 1"
@@ -1474,6 +1620,7 @@
               },
               {
                 "title": "Rosary",
+                "icon": "beads",
                 "points": [
                   "A prayer with beads",
                   "Thinks about Jesus and Mary"

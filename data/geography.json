@@ -959,19 +959,23 @@
             "items": [
               {
                 "k": "Power 1",
-                "v": "Big economy"
+                "v": "Big economy",
+                "icon": "coins"
               },
               {
                 "k": "Power 2",
-                "v": "Strong military"
+                "v": "Strong military",
+                "icon": "shield"
               },
               {
                 "k": "Power 3",
-                "v": "Political influence"
+                "v": "Political influence",
+                "icon": "parliament"
               },
               {
                 "k": "Power 4",
-                "v": "Culture abroad"
+                "v": "Culture abroad",
+                "icon": "film"
               }
             ],
             "caption": "What makes a superpower"
@@ -982,26 +986,22 @@
           "text": "The USA has the largest economy in the world and spends the most on its military. Its films, music and brands are known everywhere. It leads alliances such as NATO.",
           "source": "generated",
           "visual": {
-            "type": "facts",
-            "items": [
-              {
-                "k": "Economy",
-                "v": "Largest in the world"
-              },
-              {
-                "k": "Military",
-                "v": "Biggest spending"
-              },
-              {
-                "k": "Culture",
-                "v": "Films, music, brands"
-              },
-              {
-                "k": "Alliances",
-                "v": "Leads NATO"
-              }
-            ],
-            "caption": "The USA as a superpower"
+            "type": "diagram",
+            "name": "country",
+            "caption": "The USA: largest economy, biggest military spending, leads NATO",
+            "country": "usa",
+            "places": [
+              [
+                "washington",
+                "Washington DC (capital)",
+                "capital"
+              ],
+              [
+                "nyc",
+                "New York",
+                "city"
+              ]
+            ]
           }
         },
         {
@@ -1013,19 +1013,23 @@
             "events": [
               {
                 "d": "1945",
-                "t": "Second World War ends"
+                "t": "Second World War ends",
+                "icon": "dove"
               },
               {
                 "d": "Late 1940s to 1991",
-                "t": "Cold War: USA against the USSR"
+                "t": "Cold War: USA against the USSR",
+                "icon": "snowflake"
               },
               {
                 "d": "1991",
-                "t": "USSR breaks up"
+                "t": "USSR breaks up",
+                "icon": "broken"
               },
               {
                 "d": "After 1991",
-                "t": "The USA is the only superpower"
+                "t": "The USA is the only superpower",
+                "icon": "star"
               }
             ],
             "caption": "From two superpowers to one"
@@ -1046,6 +1050,7 @@
             "columns": [
               {
                 "title": "Developed",
+                "icon": "skyline",
                 "points": [
                   "High incomes",
                   "Good services",
@@ -1054,6 +1059,7 @@
               },
               {
                 "title": "Emerging",
+                "icon": "growth",
                 "points": [
                   "Growing fast",
                   "e.g. Brazil, India, China"
@@ -1062,6 +1068,7 @@
               },
               {
                 "title": "Developing",
+                "icon": "hut",
                 "points": [
                   "Lower incomes",
                   "Fewer services"
@@ -1080,6 +1087,7 @@
             "columns": [
               {
                 "title": "Poverty",
+                "icon": "wallet",
                 "points": [
                   "Not enough money",
                   "for basic needs"
@@ -1087,6 +1095,7 @@
               },
               {
                 "title": "Deprivation",
+                "icon": "houses",
                 "points": [
                   "Missing what most",
                   "people have"
@@ -1134,26 +1143,32 @@
           "text": "Brazil is the largest country in South America. Its capital is Brasília and its biggest city is São Paulo. People speak Portuguese. Rio de Janeiro is famous for Christ the Redeemer and Copacabana beach.",
           "source": "generated",
           "visual": {
-            "type": "facts",
-            "items": [
-              {
-                "k": "Capital",
-                "v": "Brasília"
-              },
-              {
-                "k": "Biggest city",
-                "v": "São Paulo"
-              },
-              {
-                "k": "Language",
-                "v": "Portuguese"
-              },
-              {
-                "k": "Famous for",
-                "v": "Christ the Redeemer"
-              }
-            ],
-            "caption": "Brazil key facts"
+            "type": "diagram",
+            "name": "country",
+            "caption": "Brazil. People speak Portuguese.",
+            "country": "brazil",
+            "places": [
+              [
+                "brasilia",
+                "Brasília (capital)",
+                "capital"
+              ],
+              [
+                "saopaulo",
+                "São Paulo",
+                "city"
+              ],
+              [
+                "rio",
+                "Rio de Janeiro",
+                "city"
+              ],
+              [
+                "amazon",
+                "Amazon rainforest",
+                "city"
+              ]
+            ]
           }
         },
         {
@@ -1163,12 +1178,25 @@
           "visual": {
             "type": "equation",
             "parts": [
-              "Cattle ranching",
-              "Logging",
-              "Mining",
-              "Soya farming"
+              {
+                "t": "Cattle ranching",
+                "icon": "cow"
+              },
+              {
+                "t": "Logging",
+                "icon": "axe"
+              },
+              {
+                "t": "Mining",
+                "icon": "pickaxe"
+              },
+              {
+                "t": "Soya farming",
+                "icon": "soy"
+              }
             ],
             "result": "Deforestation",
+            "resultIcon": "stump",
             "caption": "Threats to the Amazon"
           }
         },
@@ -1181,6 +1209,7 @@
             "columns": [
               {
                 "title": "Problems",
+                "icon": "warning",
                 "points": [
                   "Poor services",
                   "Crime"
@@ -1188,6 +1217,7 @@
               },
               {
                 "title": "Strengths",
+                "icon": "handshake",
                 "points": [
                   "Strong communities"
                 ]
@@ -1207,26 +1237,17 @@
           "text": "Russia is the largest country in the world by area. Its capital is Moscow. Much of it is cold, with tundra in the far north and taiga, a huge conifer forest, further south.",
           "source": "generated",
           "visual": {
-            "type": "facts",
-            "items": [
-              {
-                "k": "Capital",
-                "v": "Moscow"
-              },
-              {
-                "k": "Size",
-                "v": "Largest country by area"
-              },
-              {
-                "k": "Far north",
-                "v": "Tundra"
-              },
-              {
-                "k": "Further south",
-                "v": "Taiga forest"
-              }
-            ],
-            "caption": "Russia key facts"
+            "type": "diagram",
+            "name": "country",
+            "caption": "Russia: the largest country. Tundra in the far north, taiga forest further south.",
+            "country": "russia",
+            "places": [
+              [
+                "moscow",
+                "Moscow (capital)",
+                "capital"
+              ]
+            ]
           }
         },
         {
@@ -1236,11 +1257,21 @@
           "visual": {
             "type": "equation",
             "parts": [
-              "Economic problems",
-              "Cost of the arms race",
-              "Republics want independence"
+              {
+                "t": "Economic problems",
+                "icon": "decline"
+              },
+              {
+                "t": "Cost of the arms race",
+                "icon": "rocket"
+              },
+              {
+                "t": "Republics want independence",
+                "icon": "flag"
+              }
             ],
             "result": "USSR breaks up (1991)",
+            "resultIcon": "broken",
             "caption": "Why the USSR collapsed"
           }
         },
@@ -1251,11 +1282,26 @@
           "visual": {
             "type": "flow",
             "items": [
-              "April 1986: safety test",
-              "Reactor explodes",
-              "Radiation spreads",
-              "Pripyat evacuated",
-              "Exclusion zone"
+              {
+                "t": "April 1986: safety test",
+                "icon": "clipboard"
+              },
+              {
+                "t": "Reactor explodes",
+                "icon": "burst"
+              },
+              {
+                "t": "Radiation spreads",
+                "icon": "radiation"
+              },
+              {
+                "t": "Pripyat evacuated",
+                "icon": "bus"
+              },
+              {
+                "t": "Exclusion zone",
+                "icon": "noentry"
+              }
             ],
             "caption": "The Chernobyl disaster"
           }
@@ -1270,11 +1316,13 @@
             "events": [
               {
                 "d": "1991",
-                "t": "Ukraine becomes independent"
+                "t": "Ukraine becomes independent",
+                "icon": "flag"
               },
               {
                 "d": "February 2022",
-                "t": "Russia launches a full-scale invasion of Ukraine"
+                "t": "Russia launches a full-scale invasion of Ukraine",
+                "icon": "warning"
               }
             ],
             "caption": "Ukraine and Russia"
@@ -1291,26 +1339,27 @@
           "text": "India's capital is New Delhi and its biggest city is Mumbai. It has the Himalayas in the north, the Thar Desert and tropical coasts. The Taj Mahal in Agra is its most famous sight.",
           "source": "generated",
           "visual": {
-            "type": "facts",
-            "items": [
-              {
-                "k": "Capital",
-                "v": "New Delhi"
-              },
-              {
-                "k": "Biggest city",
-                "v": "Mumbai"
-              },
-              {
-                "k": "Landscapes",
-                "v": "Himalayas, Thar Desert"
-              },
-              {
-                "k": "Famous for",
-                "v": "Taj Mahal, Agra"
-              }
-            ],
-            "caption": "India key facts"
+            "type": "diagram",
+            "name": "country",
+            "caption": "India. The Himalayas are in the north.",
+            "country": "india",
+            "places": [
+              [
+                "delhi",
+                "New Delhi (capital)",
+                "capital"
+              ],
+              [
+                "agra",
+                "Agra: Taj Mahal",
+                "city"
+              ],
+              [
+                "mumbai",
+                "Mumbai",
+                "city"
+              ]
+            ]
           }
         },
         {
@@ -1322,11 +1371,13 @@
             "events": [
               {
                 "d": "Before 1947",
-                "t": "Britain rules India (the British Raj)"
+                "t": "Britain rules India (the British Raj)",
+                "icon": "crown"
               },
               {
                 "d": "1947",
-                "t": "India becomes independent"
+                "t": "India becomes independent",
+                "icon": "flag"
               }
             ],
             "caption": "Colonial history"
@@ -1341,12 +1392,14 @@
             "columns": [
               {
                 "title": "Push factors (village)",
+                "icon": "hut",
                 "points": [
                   "Not enough work"
                 ]
               },
               {
                 "title": "Pull factors (city)",
+                "icon": "briefcase",
                 "points": [
                   "Jobs in Mumbai"
                 ],
@@ -1366,15 +1419,18 @@
             "items": [
               {
                 "k": "Trick 1",
-                "v": "Fake guides"
+                "v": "Fake guides",
+                "icon": "badge"
               },
               {
                 "k": "Trick 2",
-                "v": "Taxis taking the long way"
+                "v": "Taxis taking the long way",
+                "icon": "car"
               },
               {
                 "k": "Trick 3",
-                "v": "\"Your hotel has closed\""
+                "v": "\"Your hotel has closed\"",
+                "icon": "hotel"
               }
             ],
             "caption": "Street scams to watch for"
@@ -1391,26 +1447,27 @@
           "text": "China's capital is Beijing and its largest city is Shanghai. It has the Gobi Desert, the Himalayas and huge river plains. Tourists visit the Great Wall, the Forbidden City and the Terracotta Army.",
           "source": "generated",
           "visual": {
-            "type": "facts",
-            "items": [
-              {
-                "k": "Capital",
-                "v": "Beijing"
-              },
-              {
-                "k": "Largest city",
-                "v": "Shanghai"
-              },
-              {
-                "k": "Landscapes",
-                "v": "Gobi Desert, Himalayas"
-              },
-              {
-                "k": "Famous for",
-                "v": "The Great Wall"
-              }
-            ],
-            "caption": "China key facts"
+            "type": "diagram",
+            "name": "country",
+            "caption": "China. The Great Wall runs across the north.",
+            "country": "china",
+            "places": [
+              [
+                "beijing",
+                "Beijing (capital)",
+                "capital"
+              ],
+              [
+                "shanghai",
+                "Shanghai",
+                "city"
+              ],
+              [
+                "shenzhen",
+                "Shenzhen",
+                "city"
+              ]
+            ]
           }
         },
         {
@@ -1422,11 +1479,13 @@
             "events": [
               {
                 "d": "1980s",
-                "t": "Economy starts growing very fast"
+                "t": "Economy starts growing very fast",
+                "icon": "growth"
               },
               {
                 "d": "Today",
-                "t": "Second largest economy in the world"
+                "t": "Second largest economy in the world",
+                "icon": "factory"
               }
             ],
             "caption": "China's rise"
@@ -1442,14 +1501,17 @@
             "items": [
               {
                 "t": "Foxconn",
+                "icon": "factory",
                 "s": "a TNC"
               },
               {
                 "t": "Makes electronics",
+                "icon": "phone",
                 "s": "e.g. phones for Apple"
               },
               {
                 "t": "Criticised",
+                "icon": "clock",
                 "s": "long hours, low pay, strict rules"
               }
             ],
@@ -1467,26 +1529,32 @@
           "text": "South Africa has three capitals: Pretoria, Cape Town and Bloemfontein. Its largest city is Johannesburg. Tourists visit Table Mountain and Kruger National Park.",
           "source": "generated",
           "visual": {
-            "type": "facts",
-            "items": [
-              {
-                "k": "Capital 1",
-                "v": "Pretoria"
-              },
-              {
-                "k": "Capital 2",
-                "v": "Cape Town"
-              },
-              {
-                "k": "Capital 3",
-                "v": "Bloemfontein"
-              },
-              {
-                "k": "Largest city",
-                "v": "Johannesburg"
-              }
-            ],
-            "caption": "South Africa has three capitals"
+            "type": "diagram",
+            "name": "country",
+            "caption": "South Africa has three capitals (squares)",
+            "country": "southafrica",
+            "places": [
+              [
+                "pretoria",
+                "Pretoria",
+                "capital"
+              ],
+              [
+                "johannesburg",
+                "Johannesburg",
+                "city"
+              ],
+              [
+                "bloemfontein",
+                "Bloemfontein",
+                "capital"
+              ],
+              [
+                "capetown",
+                "Cape Town",
+                "capital"
+              ]
+            ]
           }
         },
         {
@@ -1498,12 +1566,14 @@
             "columns": [
               {
                 "title": "Strength",
+                "icon": "growth",
                 "points": [
                   "One of Africa's largest economies"
                 ]
               },
               {
                 "title": "Problem",
+                "icon": "unequal",
                 "points": [
                   "Huge gap between rich and poor"
                 ]
@@ -1521,15 +1591,18 @@
             "events": [
               {
                 "d": "1948",
-                "t": "Apartheid laws begin"
+                "t": "Apartheid laws begin",
+                "icon": "split"
               },
               {
                 "d": "1990",
-                "t": "Nelson Mandela is released from prison"
+                "t": "Nelson Mandela is released from prison",
+                "icon": "bars"
               },
               {
                 "d": "1994",
-                "t": "Free elections. Mandela becomes president"
+                "t": "Free elections. Mandela becomes president",
+                "icon": "ballot"
               }
             ],
             "caption": "The end of apartheid"

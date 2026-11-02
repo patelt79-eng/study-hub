@@ -752,15 +752,18 @@
             "events": [
               {
                 "d": "November 1918",
-                "t": "First World War ends"
+                "t": "First World War ends",
+                "icon": "dove"
               },
               {
                 "d": "January 1919",
-                "t": "Peace talks begin in Paris"
+                "t": "Peace talks begin in Paris",
+                "icon": "handshake"
               },
               {
                 "d": "June 1919",
-                "t": "Treaty of Versailles signed"
+                "t": "Treaty of Versailles signed",
+                "icon": "scroll"
               }
             ],
             "caption": "From war to treaty"
@@ -824,21 +827,25 @@
               {
                 "k": "Land",
                 "v": "Land lost",
+                "icon": "map",
                 "letter": "L"
               },
               {
                 "k": "Army",
                 "v": "Army cut",
+                "icon": "soldier",
                 "letter": "A"
               },
               {
                 "k": "Money",
                 "v": "Reparations",
+                "icon": "coins",
                 "letter": "M"
               },
               {
                 "k": "Blame",
                 "v": "War Guilt",
+                "icon": "pointing",
                 "letter": "B"
               }
             ],
@@ -854,6 +861,7 @@
             "columns": [
               {
                 "title": "Land",
+                "icon": "map",
                 "points": [
                   "About 13% of land lost",
                   "All colonies lost",
@@ -862,6 +870,7 @@
               },
               {
                 "title": "Army",
+                "icon": "soldier",
                 "points": [
                   "100,000 men only",
                   "No tanks, air force, submarines",
@@ -879,9 +888,18 @@
           "visual": {
             "type": "flow",
             "items": [
-              "Article 231: Germany to blame",
-              "Must pay reparations",
-              "£6.6 billion (set in 1921)"
+              {
+                "t": "Article 231: Germany to blame",
+                "icon": "pointing"
+              },
+              {
+                "t": "Must pay reparations",
+                "icon": "coins"
+              },
+              {
+                "t": "£6.6 billion (set in 1921)",
+                "icon": "scroll"
+              }
             ],
             "caption": "Blame leads to Money"
           }
@@ -901,15 +919,18 @@
             "events": [
               {
                 "d": "November 1918",
-                "t": "Kaiser Wilhelm II gives up the throne"
+                "t": "Kaiser Wilhelm II gives up the throne",
+                "icon": "crown"
               },
               {
                 "d": "1919",
-                "t": "Germany becomes a democracy: the Weimar Republic"
+                "t": "Germany becomes a democracy: the Weimar Republic",
+                "icon": "parliament"
               },
               {
                 "d": "From 1919",
-                "t": "People vote for the Reichstag"
+                "t": "People vote for the Reichstag",
+                "icon": "ballot"
               }
             ],
             "caption": "A new democracy"
@@ -924,15 +945,18 @@
             "items": [
               {
                 "k": "Weakness 1",
-                "v": "Many parties, weak coalitions"
+                "v": "Many parties, weak coalitions",
+                "icon": "people"
               },
               {
                 "k": "Weakness 2",
-                "v": "Article 48: rule by decree"
+                "v": "Article 48: rule by decree",
+                "icon": "scroll"
               },
               {
                 "k": "Weakness 3",
-                "v": "Blamed for the treaty"
+                "v": "Blamed for the treaty",
+                "icon": "pointing"
               }
             ],
             "caption": "Why Weimar was weak"
@@ -945,11 +969,26 @@
           "visual": {
             "type": "flow",
             "items": [
-              "Payment missed",
-              "Ruhr occupied",
-              "Workers strike",
-              "Money printed",
-              "Money worthless"
+              {
+                "t": "Payment missed",
+                "icon": "coins"
+              },
+              {
+                "t": "Ruhr occupied",
+                "icon": "soldier"
+              },
+              {
+                "t": "Workers strike",
+                "icon": "fist"
+              },
+              {
+                "t": "Money printed",
+                "icon": "printer"
+              },
+              {
+                "t": "Money worthless",
+                "icon": "barrow"
+              }
             ],
             "caption": "1923: hyperinflation"
           }
@@ -963,15 +1002,18 @@
             "events": [
               {
                 "d": "1923",
-                "t": "Stresemann brings in a new currency"
+                "t": "Stresemann brings in a new currency",
+                "icon": "coins"
               },
               {
                 "d": "1924",
-                "t": "Dawes Plan: American loans"
+                "t": "Dawes Plan: American loans",
+                "icon": "handshake"
               },
               {
                 "d": "1924 to 1929",
-                "t": "A few years of recovery"
+                "t": "A few years of recovery",
+                "icon": "growth"
               }
             ],
             "caption": "Recovery"
@@ -990,10 +1032,22 @@
           "visual": {
             "type": "flow",
             "items": [
-              "November 1923: Nazis try to seize Munich",
-              "The Putsch fails",
-              "Hitler on trial",
-              "Prison"
+              {
+                "t": "November 1923: Nazis try to seize Munich",
+                "icon": "mug"
+              },
+              {
+                "t": "The Putsch fails",
+                "icon": "no"
+              },
+              {
+                "t": "Hitler on trial",
+                "icon": "gavel"
+              },
+              {
+                "t": "Prison",
+                "icon": "bars"
+              }
             ],
             "caption": "The Munich Putsch"
           }
@@ -1007,12 +1061,14 @@
             "columns": [
               {
                 "title": "Before prison",
+                "icon": "fist",
                 "points": [
                   "Seize power by force"
                 ]
               },
               {
                 "title": "After prison",
+                "icon": "ballot",
                 "points": [
                   "Win power through elections"
                 ],
@@ -1032,15 +1088,18 @@
             "events": [
               {
                 "d": "1929",
-                "t": "Wall Street Crash"
+                "t": "Wall Street Crash",
+                "icon": "decline"
               },
               {
                 "d": "1932",
-                "t": "About 6 million Germans unemployed"
+                "t": "About 6 million Germans unemployed",
+                "icon": "queue"
               },
               {
                 "d": "30 January 1933",
-                "t": "Hitler becomes Chancellor"
+                "t": "Hitler becomes Chancellor",
+                "icon": "parliament"
               }
             ],
             "caption": "From crash to Chancellor"
@@ -1061,11 +1120,13 @@
             "events": [
               {
                 "d": "February 1933",
-                "t": "Reichstag fire. Communists blamed"
+                "t": "Reichstag fire. Communists blamed",
+                "icon": "fire"
               },
               {
                 "d": "March 1933",
-                "t": "Enabling Act: Hitler can make laws alone"
+                "t": "Enabling Act: Hitler can make laws alone",
+                "icon": "scroll"
               }
             ],
             "caption": "Removing opponents"
@@ -1080,11 +1141,13 @@
             "events": [
               {
                 "d": "June 1934",
-                "t": "Night of the Long Knives: Röhm killed"
+                "t": "Night of the Long Knives: Röhm killed",
+                "icon": "moon"
               },
               {
                 "d": "August 1934",
-                "t": "Hindenburg dies. Hitler becomes Führer"
+                "t": "Hindenburg dies. Hitler becomes Führer",
+                "icon": "crown"
               }
             ],
             "caption": "Total power"
@@ -1099,19 +1162,23 @@
             "items": [
               {
                 "k": "Secret police",
-                "v": "Gestapo"
+                "v": "Gestapo",
+                "icon": "eye"
               },
               {
                 "k": "Elite guard",
-                "v": "SS"
+                "v": "SS",
+                "icon": "shield"
               },
               {
                 "k": "Propaganda",
-                "v": "Goebbels"
+                "v": "Goebbels",
+                "icon": "megaphone"
               },
               {
                 "k": "Censorship",
-                "v": "Books, films, radio"
+                "v": "Books, films, radio",
+                "icon": "banned"
               }
             ],
             "caption": "How the Nazis kept control"

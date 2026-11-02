@@ -3,7 +3,7 @@
 // takes more than 4 seconds, the saved copy is used.
 // Change VERSION when files are added or removed.
 
-const VERSION = 'study-hub-v7';
+const VERSION = 'study-hub-v8';
 const FILES = [
   './',
   './index.html',
@@ -23,6 +23,7 @@ const FILES = [
   './js/theme.js',
   './js/meta.js',
   './js/visuals.js',
+  './js/pictos.js',
   './js/views/topic.js',
   './js/views/today.js',
   './js/views/schedule.js',

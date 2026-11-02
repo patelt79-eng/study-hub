@@ -14,6 +14,24 @@ import { fileURLToPath } from 'node:url';
 import { buildPlan } from '../js/plan.js';
 import { addDays } from '../js/dates.js';
 import { renderVisual } from '../js/visuals.js';
+import { PICTO_NAMES } from '../js/pictos.js';
+
+// A picture counts as drawn if it is a diagram, or if every item in it has a drawing.
+const DRAWN_TYPES = new Set(['diagram', 'venn', 'fracbars', 'expand', 'bars', 'scale', 'column']);
+const PICTOS = new Set(PICTO_NAMES);
+const hasIcon = x => x && PICTOS.has(x.icon);
+function isDrawn(v) {
+  if (DRAWN_TYPES.has(v.type)) return true;
+  if (v.type === 'flow') return v.items.every(hasIcon);
+  if (v.type === 'compare') return v.columns.every(hasIcon);
+  if (v.type === 'timeline') return v.events.every(hasIcon);
+  if (v.type === 'equation') return v.parts.every(hasIcon) && PICTOS.has(v.resultIcon);
+  if (v.type === 'facts' || v.type === 'grid') return v.items.every(hasIcon);
+  if (v.type === 'table') return (v.icons || []).length === v.rows.length - 1 && v.icons.every(i => PICTOS.has(i));
+  if (v.type === 'words') return v.tiles.every(hasIcon) && PICTOS.has(v.meaningIcon);
+  if (v.type === 'vocab') return v.pairs.every(hasIcon);
+  return false;
+}
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const args = new Set(process.argv.slice(2));
@@ -123,6 +141,7 @@ for (const id of SUBJECTS) {
       needSource(f, `topic ${t.id} learn card ${j + 1}`, l);
       if (!l.visual) fail(`${f}: topic ${t.id} learn card ${j + 1} has no picture ("visual")`);
       else if (!renderVisual(l.visual)) fail(`${f}: topic ${t.id} learn card ${j + 1} picture does not draw (type "${l.visual.type}"${l.visual.name ? `, name "${l.visual.name}"` : ''})`);
+      else if (!isDrawn(l.visual)) fail(`${f}: topic ${t.id} learn card ${j + 1} picture is only words in boxes. Give each item an "icon".`);
       const words = `${l.title} ${l.text}`.split(/\s+/).length;
       if (words > 60) warnings.push(`${f}: topic ${t.id} learn card ${j + 1} has ${words} words`);
     });

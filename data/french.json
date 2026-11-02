@@ -1466,14 +1466,17 @@
             "tiles": [
               {
                 "t": "je regarde",
-                "en": "I watch"
+                "en": "I watch",
+                "icon": "eye"
               },
               {
                 "t": "les infos",
-                "en": "the news"
+                "en": "the news",
+                "icon": "newspaper"
               }
             ],
             "meaning": "I watch the news",
+            "meaningIcon": "tv",
             "caption": "Say what you watch"
           }
         },
@@ -1486,27 +1489,33 @@
             "pairs": [
               {
                 "fr": "un dessin animé",
-                "en": "a cartoon"
+                "en": "a cartoon",
+                "icon": "cartoon"
               },
               {
                 "fr": "un documentaire",
-                "en": "a documentary"
+                "en": "a documentary",
+                "icon": "camera"
               },
               {
                 "fr": "un jeu télévisé",
-                "en": "a game show"
+                "en": "a game show",
+                "icon": "trophy"
               },
               {
                 "fr": "une série",
-                "en": "a series"
+                "en": "a series",
+                "icon": "episodes"
               },
               {
                 "fr": "les infos",
-                "en": "the news"
+                "en": "the news",
+                "icon": "newspaper"
               },
               {
                 "fr": "la météo",
-                "en": "the weather"
+                "en": "the weather",
+                "icon": "weather"
               }
             ],
             "caption": "Types of programme"
@@ -1527,27 +1536,33 @@
             "pairs": [
               {
                 "fr": "un film d'action",
-                "en": "an action film"
+                "en": "an action film",
+                "icon": "burst"
               },
               {
                 "fr": "un film d'horreur",
-                "en": "a horror film"
+                "en": "a horror film",
+                "icon": "ghost"
               },
               {
                 "fr": "un film de science-fiction",
-                "en": "a sci-fi film"
+                "en": "a sci-fi film",
+                "icon": "rocket"
               },
               {
                 "fr": "une comédie",
-                "en": "a comedy"
+                "en": "a comedy",
+                "icon": "mask"
               },
               {
                 "fr": "un film d'amour",
-                "en": "a romantic film"
+                "en": "a romantic film",
+                "icon": "heart"
               },
               {
                 "fr": "un film fantastique",
-                "en": "a fantasy film"
+                "en": "a fantasy film",
+                "icon": "wand"
               }
             ],
             "caption": "Types of film"
@@ -1562,18 +1577,22 @@
             "tiles": [
               {
                 "t": "j'adore",
-                "en": "I love"
+                "en": "I love",
+                "icon": "heart"
               },
               {
                 "t": "les",
-                "en": "the"
+                "en": "the",
+                "icon": "film"
               },
               {
                 "t": "films d'action",
-                "en": "action films"
+                "en": "action films",
+                "icon": "burst"
               }
             ],
             "meaning": "I love action films",
+            "meaningIcon": "ticket",
             "caption": "Use les after an opinion"
           }
         }
@@ -1592,23 +1611,28 @@
             "pairs": [
               {
                 "fr": "un livre",
-                "en": "a book"
+                "en": "a book",
+                "icon": "book"
               },
               {
                 "fr": "une BD",
-                "en": "a comic book"
+                "en": "a comic book",
+                "icon": "comic"
               },
               {
                 "fr": "un magazine",
-                "en": "a magazine"
+                "en": "a magazine",
+                "icon": "magazine"
               },
               {
                 "fr": "un journal",
-                "en": "a newspaper"
+                "en": "a newspaper",
+                "icon": "newspaper"
               },
               {
                 "fr": "un roman",
-                "en": "a novel"
+                "en": "a novel",
+                "icon": "book"
               }
             ],
             "caption": "Things to read"
@@ -1623,19 +1647,23 @@
             "pairs": [
               {
                 "fr": "je lis",
-                "en": "I read"
+                "en": "I read",
+                "icon": "book"
               },
               {
                 "fr": "je regarde la télé",
-                "en": "I watch TV"
+                "en": "I watch TV",
+                "icon": "tv"
               },
               {
                 "fr": "je vais au cinéma",
-                "en": "I go to the cinema"
+                "en": "I go to the cinema",
+                "icon": "ticket"
               },
               {
                 "fr": "j'écoute de la musique",
-                "en": "I listen to music"
+                "en": "I listen to music",
+                "icon": "music"
               }
             ],
             "caption": "Free time"
@@ -1656,19 +1684,23 @@
             "tiles": [
               {
                 "t": "j'ai",
-                "en": "I have"
+                "en": "I have",
+                "icon": "hand"
               },
               {
                 "t": "les yeux",
-                "en": "the eyes"
+                "en": "the eyes",
+                "icon": "eye"
               },
               {
                 "t": "marron",
                 "en": "brown: never changes",
+                "icon": "check",
                 "hl": true
               }
             ],
             "meaning": "I have brown eyes",
+            "meaningIcon": "eye",
             "caption": "Eyes"
           }
         },
@@ -1681,22 +1713,27 @@
             "tiles": [
               {
                 "t": "j'ai",
-                "en": "I have"
+                "en": "I have",
+                "icon": "hand"
               },
               {
                 "t": "les cheveux",
-                "en": "hair (plural)"
+                "en": "hair (plural)",
+                "icon": "hair"
               },
               {
-                "t": "long"
+                "t": "long",
+                "icon": "ruler"
               },
               {
                 "t": "s",
                 "en": "plural ending",
+                "icon": "check",
                 "hl": true
               }
             ],
             "meaning": "I have long hair",
+            "meaningIcon": "hair",
             "caption": "Cheveux is plural, so add -s"
           }
         }
@@ -1729,6 +1766,10 @@
                 "intéressantes"
               ]
             ],
+            "icons": [
+              "person",
+              "person"
+            ],
             "caption": "Adjective endings: add -e and -s"
           }
         },
@@ -1741,6 +1782,7 @@
             "columns": [
               {
                 "title": "Il est…",
+                "icon": "ukflag",
                 "points": [
                   "anglais",
                   "français"
@@ -1748,6 +1790,7 @@
               },
               {
                 "title": "Elle est…",
+                "icon": "frflag",
                 "points": [
                   "anglaise",
                   "française"
@@ -1806,23 +1849,28 @@
             "tiles": [
               {
                 "t": "j'aime",
-                "en": "I like"
+                "en": "I like",
+                "icon": "heart"
               },
               {
                 "t": "les comédies",
-                "en": "comedies"
+                "en": "comedies",
+                "icon": "mask"
               },
               {
                 "t": "parce que c'est",
-                "en": "because it's"
+                "en": "because it's",
+                "icon": "speech"
               },
               {
                 "t": "marrant",
                 "en": "funny",
+                "icon": "cartoon",
                 "hl": true
               }
             ],
             "meaning": "I like comedies because they are funny",
+            "meaningIcon": "check",
             "caption": "Add a reason"
           }
         }
@@ -1865,6 +1913,12 @@
                 "je fais"
               ]
             ],
+            "icons": [
+              "hand",
+              "person",
+              "walk",
+              "tools"
+            ],
             "caption": "Four key verbs",
             "lang": "fr",
             "langCol": 2
@@ -1906,6 +1960,14 @@
                 "regardent"
               ]
             ],
+            "icons": [
+              "eye",
+              "eye",
+              "eye",
+              "eye",
+              "eye",
+              "eye"
+            ],
             "caption": "Regular -er verb endings",
             "lang": "fr",
             "langCol": 1
@@ -1926,19 +1988,23 @@
             "tiles": [
               {
                 "t": "j'ai",
-                "en": "I have"
+                "en": "I have",
+                "icon": "hand"
               },
               {
                 "t": "regard",
-                "en": "watch"
+                "en": "watch",
+                "icon": "eye"
               },
               {
                 "t": "é",
                 "en": "past ending",
+                "icon": "clock",
                 "hl": true
               }
             ],
             "meaning": "I watched",
+            "meaningIcon": "tv",
             "caption": "avoir + past participle"
           }
         },
@@ -1970,6 +2036,11 @@
                 "I did"
               ]
             ],
+            "icons": [
+              "book",
+              "eye",
+              "tools"
+            ],
             "caption": "Irregular past participles",
             "lang": "fr",
             "langCol": 1
@@ -1984,12 +2055,14 @@
             "columns": [
               {
                 "title": "Most verbs use avoir",
+                "icon": "hand",
                 "points": [
                   "j'ai regardé"
                 ]
               },
               {
                 "title": "Aller uses être",
+                "icon": "walk",
                 "points": [
                   "je suis allé",
                   "je suis allée (female)"
@@ -2046,11 +2119,31 @@
           "visual": {
             "type": "flow",
             "items": [
-              "samedi dernier",
-              "samedi matin",
-              "puis",
-              "ensuite",
-              "après"
+              {
+                "t": "samedi dernier",
+                "icon": "calendar",
+                "s": "last Saturday"
+              },
+              {
+                "t": "samedi matin",
+                "icon": "sunrise",
+                "s": "Saturday morning"
+              },
+              {
+                "t": "puis",
+                "icon": "arrowr",
+                "s": "then"
+              },
+              {
+                "t": "ensuite",
+                "icon": "arrowr",
+                "s": "next"
+              },
+              {
+                "t": "après",
+                "icon": "clock",
+                "s": "afterwards"
+              }
             ],
             "caption": "Words to order a story"
           }

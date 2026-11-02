@@ -4,16 +4,21 @@
 // Nothing moves on its own.
 
 import { esc } from './ui.js';
+import { picto } from './pictos.js';
 
 const st = n => `data-step="${n}"`;
 
 // ---------- HTML components ----------
+// Items can carry an "icon" (a name from pictos.js) to show a drawing.
+
+const pic = (name, cls = '') => (name ? `<span class="v-pic ${cls}">${picto(name)}</span>` : '');
 
 function flow(v) {
   const items = v.items.map(x => (typeof x === 'string' ? { t: x } : x));
-  const html = `<ol class="v-flow">${items.map((x, i) => `<li ${st(i + 1)}>
+  const drawn = items.some(x => x.icon);
+  const html = `<ol class="v-flow${drawn ? ' drawn' : ''}">${items.map((x, i) => `<li ${st(i + 1)}>
     ${i ? '<span class="v-arrow" aria-hidden="true">→</span>' : ''}
-    <span class="v-box"><strong>${esc(x.t)}</strong>${x.s ? `<span>${esc(x.s)}</span>` : ''}</span></li>`).join('')}</ol>`;
+    <span class="v-box">${pic(x.icon)}<strong>${esc(x.t)}</strong>${x.s ? `<span>${esc(x.s)}</span>` : ''}</span></li>`).join('')}</ol>`;
   return { html, steps: items.length };
 }
 
@@ -21,6 +26,7 @@ function compare(v) {
   const html = `<div class="v-compare">${v.columns.map((c, i) => `
     ${i && v.link ? `<div class="v-link" ${st(i + 1)}>${esc(v.link)}</div>` : ''}
     <div class="v-col${c.hl ? ' hl' : ''}" ${st(i + 1)}>
+      ${pic(c.icon, 'big')}
       <p class="v-col-title">${esc(c.title)}</p>
       <ul>${c.points.map(p => `<li${c.lang ? ` lang="${c.lang}"` : ''}>${esc(p)}</li>`).join('')}</ul>
     </div>`).join('')}</div>`;
@@ -28,53 +34,57 @@ function compare(v) {
 }
 
 function timeline(v) {
-  const html = `<ol class="v-timeline">${v.events.map((e, i) => `<li ${st(i + 1)}>
-    <span class="v-dot" aria-hidden="true"></span><span class="v-date">${esc(e.d)}</span><span class="v-event">${esc(e.t)}</span></li>`).join('')}</ol>`;
+  const drawn = v.events.some(e => e.icon);
+  const html = `<ol class="v-timeline${drawn ? ' drawn' : ''}">${v.events.map((e, i) => `<li ${st(i + 1)}>
+    <span class="v-dot" aria-hidden="true"></span>${pic(e.icon)}<span class="v-tl-text"><span class="v-date">${esc(e.d)}</span><span class="v-event">${esc(e.t)}</span></span></li>`).join('')}</ol>`;
   return { html, steps: v.events.length };
 }
 
 function equation(v) {
   const ops = v.ops || [];
-  const html = `<div class="v-eq">${v.parts.map((p, i) => `
-    ${i ? `<span class="v-op" ${st(i + 1)}>${esc(ops[i - 1] || '+')}</span>` : ''}
-    <span class="v-tile" ${st(i + 1)}>${esc(p)}</span>`).join('')}
-    <span class="v-op" ${st(v.parts.length + 1)}>${esc(v.arrow || '→')}</span>
-    <span class="v-tile result" ${st(v.parts.length + 1)}>${esc(v.result)}</span></div>`;
-  return { html, steps: v.parts.length + 1 };
+  const parts = v.parts.map(p => (typeof p === 'string' ? { t: p } : p));
+  const tile = (p, cls, n) => `<span class="v-tile${cls}" ${st(n)}>${pic(p.icon)}<span>${esc(p.t)}</span></span>`;
+  const html = `<div class="v-eq">${parts.map((p, i) => `
+    ${i ? `<span class="v-op" ${st(i + 1)}>${esc(ops[i - 1] || '+')}</span>` : ''}${tile(p, '', i + 1)}`).join('')}
+    <span class="v-op" ${st(parts.length + 1)}>${esc(v.arrow || '→')}</span>
+    ${tile({ t: v.result, icon: v.resultIcon }, ' result', parts.length + 1)}</div>`;
+  return { html, steps: parts.length + 1 };
 }
 
 function facts(v) {
   const html = `<div class="v-facts">${v.items.map((x, i) => `<div class="v-fact" ${st(i + 1)}>
-    ${x.letter ? `<span class="v-letter">${esc(x.letter)}</span>` : ''}
+    ${x.letter ? `<span class="v-letter">${esc(x.letter)}</span>` : ''}${pic(x.icon)}
     <span class="v-k">${esc(x.k)}</span><span class="v-v">${esc(x.v)}</span></div>`).join('')}</div>`;
   return { html, steps: v.items.length };
 }
 
 function grid(v) {
   const hl = new Set(v.hl || []);
-  const html = `<div class="v-grid">${v.items.map((x, i) => `<span class="v-cell${hl.has(i) ? ' hl' : ''}" ${st(hl.has(i) ? 2 : 1)}>${esc(x)}</span>`).join('')}</div>`;
+  const items = v.items.map(x => (typeof x === 'string' ? { t: x } : x));
+  const html = `<div class="v-grid${items.some(x => x.icon) ? ' drawn' : ''}">${items.map((x, i) => `<span class="v-cell${hl.has(i) ? ' hl' : ''}" ${st(hl.has(i) ? 2 : 1)}>${pic(x.icon)}<span>${esc(x.t)}</span></span>`).join('')}</div>`;
   return { html, steps: hl.size ? 2 : 1 };
 }
 
 function table(v) {
   const [head, ...rows] = v.rows;
-  const html = `<div class="table-wrap"><table class="v-table"><thead><tr>${head.map(h => `<th>${esc(h)}</th>`).join('')}</tr></thead>
-    <tbody>${rows.map((r, i) => `<tr ${st(i + 1)}>${r.map((c, j) => `<td${v.lang && j === v.langCol ? ` lang="${v.lang}"` : ''}>${esc(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
+  const icons = v.icons || [];
+  const html = `<div class="table-wrap"><table class="v-table"><thead><tr>${icons.length ? '<th aria-hidden="true"></th>' : ''}${head.map(h => `<th>${esc(h)}</th>`).join('')}</tr></thead>
+    <tbody>${rows.map((r, i) => `<tr ${st(i + 1)}>${icons.length ? `<td class="v-icon-cell">${pic(icons[i])}</td>` : ''}${r.map((c, j) => `<td${v.lang && j === v.langCol ? ` lang="${v.lang}"` : ''}>${esc(c)}</td>`).join('')}</tr>`).join('')}</tbody></table></div>`;
   return { html, steps: rows.length };
 }
 
 function words(v) {
   const html = `<div class="v-words">${v.tiles.map((x, i) => `
     ${i ? '<span class="v-plus" aria-hidden="true">+</span>' : ''}
-    <span class="v-word${x.hl ? ' hl' : ''}" ${st(i + 1)}><strong lang="fr">${esc(x.t)}</strong>${x.en ? `<span>${esc(x.en)}</span>` : ''}</span>`).join('')}
+    <span class="v-word${x.hl ? ' hl' : ''}" ${st(i + 1)}>${pic(x.icon)}<strong lang="fr">${esc(x.t)}</strong>${x.en ? `<span>${esc(x.en)}</span>` : ''}</span>`).join('')}
     <span class="v-plus" aria-hidden="true" ${st(v.tiles.length + 1)}>=</span>
-    <span class="v-word result" ${st(v.tiles.length + 1)}><strong>${esc(v.meaning)}</strong></span></div>`;
+    <span class="v-word result" ${st(v.tiles.length + 1)}>${pic(v.meaningIcon)}<strong>${esc(v.meaning)}</strong></span></div>`;
   return { html, steps: v.tiles.length + 1 };
 }
 
 function vocab(v) {
-  const html = `<div class="v-vocab">${v.pairs.map((p, i) => `<div class="v-pair" ${st(i + 1)}>
-    <strong lang="fr">${esc(p.fr)}</strong><span>${esc(p.en)}</span></div>`).join('')}</div>`;
+  const html = `<div class="v-vocab${v.pairs.some(p => p.icon) ? ' drawn' : ''}">${v.pairs.map((p, i) => `<div class="v-pair" ${st(i + 1)}>
+    ${pic(p.icon)}<strong lang="fr">${esc(p.fr)}</strong><span>${esc(p.en)}</span></div>`).join('')}</div>`;
   return { html, steps: v.pairs.length };
 }
 
@@ -120,6 +130,23 @@ function wedge(cx, cy, r, a, b) {
 const T = (x, y, s, extra = '') => `<text x="${x}" y="${y}" ${extra}>${esc(s)}</text>`;
 const svgWrap = (w, h, body, alt) => `<svg class="v-svg" viewBox="0 0 ${w} ${h}" role="img" aria-label="${esc(alt || '')}">${body}</svg>`;
 const ARROW = '<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" class="fill-subj"/></marker></defs>';
+
+
+// Rough, simplified outlines (not to scale), with approximate city positions.
+const COUNTRIES = {
+  usa: { name: 'the USA', w: 360, h: 200, shape: [[20, 40], [110, 34], [190, 40], [262, 30], [300, 44], [334, 40], [322, 70], [300, 90], [292, 120], [276, 132], [282, 168], [266, 160], [244, 130], [206, 136], [180, 160], [160, 150], [136, 132], [96, 128], [66, 116], [38, 98], [24, 70]],
+    places: { washington: [300, 82], nyc: [316, 64] }, labelLeft: ['washington', 'nyc'] },
+  brazil: { name: 'Brazil', w: 350, h: 230, shape: [[70, 30], [120, 20], [160, 34], [196, 40], [250, 62], [282, 84], [264, 112], [236, 140], [218, 176], [180, 204], [150, 222], [132, 200], [118, 176], [96, 160], [70, 150], [44, 124], [24, 94], [30, 62], [50, 42]],
+    places: { brasilia: [196, 128], saopaulo: [190, 176], rio: [224, 166], amazon: [96, 70] }, labelLeft: ['saopaulo', 'brasilia'] },
+  russia: { name: 'Russia', w: 380, h: 170, shape: [[10, 100], [30, 72], [64, 66], [96, 48], [140, 38], [190, 30], [244, 26], [300, 30], [344, 40], [370, 60], [352, 82], [324, 88], [306, 112], [280, 120], [252, 110], [222, 120], [190, 128], [154, 120], [120, 126], [86, 120], [54, 134], [24, 124]],
+    places: { moscow: [50, 104], chernobyl: [20, 120] } },
+  india: { name: 'India', w: 260, h: 240, shape: [[96, 14], [126, 22], [134, 46], [168, 60], [210, 62], [236, 80], [214, 94], [184, 96], [170, 120], [154, 150], [134, 186], [118, 226], [104, 196], [90, 160], [68, 130], [42, 118], [26, 100], [44, 88], [70, 78], [80, 52]],
+    places: { delhi: [106, 66], mumbai: [70, 134], agra: [128, 104] }, labelLeft: ['mumbai'] },
+  china: { name: 'China', w: 360, h: 220, shape: [[40, 90], [74, 64], [108, 52], [150, 38], [200, 26], [250, 18], [300, 34], [340, 56], [316, 80], [290, 92], [298, 120], [274, 150], [240, 178], [200, 186], [164, 176], [130, 160], [100, 150], [64, 140], [34, 124], [20, 106]],
+    places: { beijing: [264, 84], shanghai: [292, 134], shenzhen: [244, 176] }, labelLeft: ['beijing', 'shanghai', 'shenzhen'] },
+  southafrica: { name: 'South Africa', w: 300, h: 190, shape: [[24, 40], [70, 34], [110, 46], [150, 30], [196, 20], [230, 26], [244, 54], [236, 90], [210, 126], [170, 152], [130, 164], [92, 166], [58, 160], [36, 140], [26, 104], [20, 70]],
+    places: { pretoria: [190, 58], johannesburg: [180, 76], bloemfontein: [150, 104], capetown: [52, 152] }, labelLeft: ['johannesburg'] },
+};
 
 const DIAGRAMS = {
   lungs(v) {
@@ -257,6 +284,115 @@ const DIAGRAMS = {
       <g ${st(3)}><path d="M${cx} ${cy}L${bx.toFixed(1)} ${by.toFixed(1)}" class="line"/><circle cx="${bx.toFixed(1)}" cy="${by.toFixed(1)}" r="4" class="fill-subj"/>${T(bx + 8, by + 4, 'B')}
         ${T(232, 110, '3. Use 3 figures:', 'class="small-t"')}${T(232, 136, '070°', 'class="big-t"')}</g>`;
     return { html: svgWrap(360, 210, body, 'The bearing of B from A is 070 degrees: start at north and turn 70 degrees clockwise.'), steps: 3 };
+  },
+  // Simplified country outline with marked cities. Shapes are rough, for orientation only.
+  country(v) {
+    const C = COUNTRIES[v.country];
+    const pts = C.shape.map(([x, y]) => `${x},${y}`).join(' ');
+    let body = `<polygon points="${pts}" class="land"/>`;
+    v.places.forEach(([key, label, kind], i) => {
+      const [x, y] = C.places[key];
+      const capital = kind === 'capital';
+      body += `<g ${st(i + 1)}>${capital ? `<rect x="${x - 6}" y="${y - 6}" width="12" height="12" class="fill-subj"/>` : `<circle cx="${x}" cy="${y}" r="6" class="fill-subj"/>`}
+        ${T(x + (C.labelLeft && C.labelLeft.includes(key) ? -10 : 10), y + 5, label, `class="map-t"${C.labelLeft && C.labelLeft.includes(key) ? ' text-anchor="end"' : ''}`)}</g>`;
+    });
+    body += `<g transform="translate(${C.w - 30} 26)" class="compass"><path d="M0 -14L5 4L0 0L-5 4Z" class="fill-subj"/>${T(0, 20, 'N', 'text-anchor="middle" class="small-t"')}</g>`;
+    const alt = `Simplified map of ${C.name}, showing ${v.places.map(p => p[1]).join(', ')}.`;
+    return { html: svgWrap(C.w, C.h, body, alt), steps: v.places.length };
+  },
+  pentagon() {
+    const cx = 110, cy = 104, R = 70;
+    const vs = [...Array(5)].map((_, k) => pt(cx, cy, R, -90 + 72 * k).map(n => +n.toFixed(1)));
+    const poly = vs.map(p => p.join(' ')).join('L');
+    const body = `<path d="M${poly}Z" class="fill-tint stroke-subj"/>
+      <g ${st(1)}><path d="M${vs[0].join(' ')}L${vs[2].join(' ')}M${vs[0].join(' ')}L${vs[3].join(' ')}" class="line dashed"/></g>
+      <g ${st(2)}><path d="M${vs[0].join(' ')}L${vs[1].join(' ')}L${vs[2].join(' ')}Z" class="tri a"/><path d="M${vs[0].join(' ')}L${vs[2].join(' ')}L${vs[3].join(' ')}Z" class="tri b"/><path d="M${vs[0].join(' ')}L${vs[3].join(' ')}L${vs[4].join(' ')}Z" class="tri a"/>
+        ${T(200, 70, '5 sides')}${T(200, 94, '→ 3 triangles')}</g>
+      <g ${st(3)}>${T(200, 128, '3 × 180° = 540°', 'class="big-t"')}</g>`;
+    return { html: svgWrap(370, 190, body, 'A pentagon split into 3 triangles from one corner. 3 times 180 degrees is 540 degrees.'), steps: 3 };
+  },
+  bidmas() {
+    const rows = [['B', 'Brackets'], ['I', 'Indices'], ['D M', 'Divide and multiply'], ['A S', 'Add and subtract']];
+    let body = '';
+    rows.forEach(([k, label], i) => {
+      const w = 300 - i * 40, x = (340 - w) / 2, y = 14 + i * 44;
+      body += `<g ${st(i + 1)}><rect x="${x}" y="${y}" width="${w}" height="36" rx="10" class="${i === 0 ? 'fill-subj' : 'fill-tint stroke-subj'}"/>
+        ${T(x + 16, y + 24, k, `class="big-t${i === 0 ? ' on-subj' : ''}"`)}${T(x + 70, y + 24, label, i === 0 ? 'class="on-subj"' : '')}</g>`;
+    });
+    body += `<g ${st(5)}>${T(170, 206, 'Do the top step first: 3 + 4 × 2 = 3 + 8 = 11', 'text-anchor="middle" class="small-t"')}</g>`;
+    return { html: svgWrap(340, 216, body, 'The BIDMAS order: brackets, then indices, then divide and multiply, then add and subtract.'), steps: 5 };
+  },
+  indices() {
+    const tile = (x, y, n) => [...Array(n)].map((_, i) => `<rect x="${x + i * 30}" y="${y}" width="26" height="26" rx="6" class="fill-tint stroke-subj"/>${T(x + i * 30 + 13, y + 18, 'a', 'text-anchor="middle"')}`).join('');
+    const body = `<g ${st(1)}>${T(10, 30, 'a³')}${tile(46, 12, 3)}</g>
+      <g ${st(2)}>${T(150, 30, '×')}${T(176, 30, 'a⁴')}${tile(212, 12, 4)}</g>
+      <g ${st(3)}>${T(10, 88, '= a⁷')}${tile(70, 70, 7)}${T(70, 130, 'Multiply: count them up. 3 + 4 = 7.', 'class="small-t"')}</g>`;
+    return { html: svgWrap(340, 140, body, 'a cubed times a to the power 4: three a tiles and four a tiles make seven, so a to the power 7.'), steps: 3 };
+  },
+  hundred() {
+    let cells = '';
+    for (let r = 0; r < 10; r++) for (let c = 0; c < 10; c++) {
+      const inA = c < 2, inB = r < 3;
+      cells += `<rect x="${20 + c * 16}" y="${14 + r * 16}" width="15" height="15" class="${inA && inB ? 'both' : 'cell'}" ${inA && inB ? st(3) : ''}/>`;
+    }
+    const body = `${cells}
+      <g ${st(1)}><rect x="20" y="14" width="32" height="160" class="band-a"/>${T(206, 40, '0.2 = 2 columns', 'class="small-t"')}</g>
+      <g ${st(2)}><rect x="20" y="14" width="160" height="48" class="band-b"/>${T(206, 64, '0.3 = 3 rows', 'class="small-t"')}</g>
+      <g ${st(3)}>${T(206, 100, 'Overlap: 6 squares', 'class="small-t"')}${T(206, 128, '= 6 hundredths', 'class="small-t"')}${T(206, 158, '0.2 × 0.3 = 0.06', '')}</g>`;
+    return { html: svgWrap(360, 188, body, 'A hundred square. 2 columns times 3 rows overlap in 6 small squares, which is 0.06.'), steps: 3 };
+  },
+  numberline() {
+    const X = n => 30 + n * 300;
+    const ticks = [...Array(9)].map((_, i) => `<path d="M${X(i / 8)} 70v${i % 4 === 0 ? 16 : 10}" class="line thin"/>`).join('');
+    const body = `<path d="M${X(0)} 78H${X(1)}" class="line"/>${ticks}${T(X(0), 104, '0', 'text-anchor="middle"')}${T(X(0.5), 104, '1/2', 'text-anchor="middle"')}${T(X(1), 104, '1', 'text-anchor="middle"')}
+      <g ${st(1)}><circle cx="${X(0.375)}" cy="78" r="7" class="fill-subj"/>${T(X(0.375), 50, '3/8 = 0.375', 'text-anchor="middle" class="big-t"')}</g>
+      <g ${st(2)}><circle cx="${X(0.35)}" cy="78" r="6" class="fill-other"/>${T(X(0.35) - 6, 134, '0.35 = 35/100 = 7/20', 'text-anchor="middle"')}</g>`;
+    return { html: svgWrap(360, 150, body, 'A number line from 0 to 1. Three eighths is 0.375. 0.35 is seven twentieths, just to its left.'), steps: 2 };
+  },
+  dots() {
+    let body = '';
+    [1, 2, 3].forEach((n, i) => {
+      const x0 = 20 + i * 110;
+      let d = '';
+      for (let k = 0; k < 3 * n; k++) d += `<circle cx="${x0 + (k % 3) * 18}" cy="${30 + Math.floor(k / 3) * 18}" r="7" class="fill-subj"/>`;
+      d += `<circle cx="${x0 + 60}" cy="30" r="7" class="fill-other"/><circle cx="${x0 + 60}" cy="48" r="7" class="fill-other"/>`;
+      body += `<g ${st(i + 1)}>${d}${T(x0 + 30, 108, `n = ${n}: ${3 * n + 2}`, 'text-anchor="middle"')}</g>`;
+    });
+    body += `<g ${st(4)}>${T(180, 140, 'Rows of 3 (that is 3n), plus 2 grey dots: 3n + 2', 'text-anchor="middle" class="small-t"')}</g>`;
+    return { html: svgWrap(360, 150, body, 'Dot patterns for 5, 8 and 11: 3n dots plus 2 extra dots each time, so the nth term is 3n plus 2.'), steps: 4 };
+  },
+  squares() {
+    let body = '';
+    [1, 2, 3, 4].forEach((n, i) => {
+      const x0 = 14 + i * 86, s = 12;
+      let d = '';
+      for (let r = 0; r < n; r++) for (let c = 0; c < n; c++) d += `<rect x="${x0 + c * s}" y="${70 - n * s + r * s}" width="${s - 1}" height="${s - 1}" class="fill-subj"/>`;
+      d += `<rect x="${x0 + n * s + 4}" y="${70 - s}" width="${s - 1}" height="${s - 1}" class="fill-other"/>`;
+      body += `<g ${st(i + 1)}>${d}${T(x0 + 22, 96, `${n * n} + 1 = ${n * n + 1}`, 'class="small-t"')}</g>`;
+    });
+    body += `<g ${st(5)}>${T(180, 126, 'A square of n² plus 1 extra: n² + 1', 'text-anchor="middle"')}</g>`;
+    return { html: svgWrap(360, 136, body, 'Squares of 1, 4, 9 and 16 dots, each with one extra, give 2, 5, 10 and 17: n squared plus 1.'), steps: 5 };
+  },
+  recurring() {
+    const body = `<g ${st(1)}>${T(40, 40, '10x = 7 . 7 7 7 7 …', 'class="big-t"')}</g>
+      <g ${st(2)}>${T(40, 76, '−   x = 0 . 7 7 7 7 …', 'class="big-t"')}<path d="M40 88H300" class="line"/></g>
+      <g ${st(3)}>${T(40, 118, '9x = 7', 'class="big-t"')}${T(170, 118, 'the 7s cancel out', 'class="small-t"')}</g>
+      <g ${st(4)}>${T(40, 152, 'x = 7/9', 'class="big-t hop-t"')}</g>`;
+    return { html: svgWrap(330, 164, body, 'Ten x is 7.777 recurring. Take away x, which is 0.777 recurring. 9x equals 7, so x is seven ninths.'), steps: 4 };
+  },
+  twoSeq() {
+    const row = (y, vals, labels) => vals.map((v, i) => `<circle cx="${40 + i * 56}" cy="${y}" r="20" class="fill-tint stroke-subj"/>${T(40 + i * 56, y + 6, String(v), 'text-anchor="middle" class="big-t"')}${i ? T(12 + i * 56, y - 28, labels[i - 1], 'text-anchor="middle" class="hop-t"') : ''}`).join('');
+    const body = `<g ${st(1)}>${T(10, 18, 'Geometric: × 2 each time', 'class="small-t"')}${row(60, [3, 6, 12, 24, 48], ['×2', '×2', '×2', '×2'])}</g>
+      <g ${st(2)}>${T(10, 112, 'Fibonacci: add the two before', 'class="small-t"')}${row(154, [1, 1, 2, 3, 5, 8], ['', '1+1', '1+2', '2+3', '3+5'])}</g>`;
+    return { html: svgWrap(360, 186, body, 'A geometric sequence 3, 6, 12, 24 multiplies by 2. A Fibonacci sequence 1, 1, 2, 3, 5, 8 adds the two terms before.'), steps: 2 };
+  },
+  reason() {
+    const body = `<path d="M20 60H200M20 130H200" class="line"/><path d="M70 20L150 170" class="line"/>
+      <path d="${wedge(91.3, 60, 22, 0, 62)}" class="wedge"/><path d="${wedge(128.7, 130, 22, 180, 242)}" class="wedge"/>
+      ${T(118, 84, '65°', 'class="big-t"')}${T(84, 124, 'x', 'class="big-t"')}
+      <g ${st(1)}>${T(215, 70, 'x = 65°', 'class="big-t"')}</g>
+      <g ${st(2)}>${T(215, 100, 'Reason:', 'class="small-t"')}${T(215, 120, 'alternate angles', 'class="small-t"')}${T(215, 138, 'are equal', 'class="small-t"')}</g>`;
+    return { html: svgWrap(360, 182, body, 'Two parallel lines. x equals 65 degrees, and the reason written is: alternate angles are equal.'), steps: 2 };
   },
 };
 

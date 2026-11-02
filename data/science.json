@@ -729,11 +729,26 @@
           "visual": {
             "type": "flow",
             "items": [
-              "Diaphragm contracts and flattens",
-              "Ribs move up and out",
-              "Chest gets bigger",
-              "Pressure falls",
-              "Air moves in"
+              {
+                "t": "Diaphragm contracts and flattens",
+                "icon": "diaphragm"
+              },
+              {
+                "t": "Ribs move up and out",
+                "icon": "ribs"
+              },
+              {
+                "t": "Chest gets bigger",
+                "icon": "expand"
+              },
+              {
+                "t": "Pressure falls",
+                "icon": "gauge"
+              },
+              {
+                "t": "Air moves in",
+                "icon": "wind"
+              }
             ],
             "caption": "Breathing in"
           }
@@ -761,9 +776,18 @@
           "visual": {
             "type": "flow",
             "items": [
-              "Glucose",
-              "Respiration in every cell",
-              "Energy released"
+              {
+                "t": "Glucose",
+                "icon": "sugar"
+              },
+              {
+                "t": "Respiration in every cell",
+                "icon": "cell"
+              },
+              {
+                "t": "Energy released",
+                "icon": "bolt"
+              }
             ],
             "caption": "Respiration releases energy"
           }
@@ -775,10 +799,17 @@
           "visual": {
             "type": "equation",
             "parts": [
-              "glucose",
-              "oxygen"
+              {
+                "t": "glucose",
+                "icon": "sugar"
+              },
+              {
+                "t": "oxygen",
+                "icon": "bubble"
+              }
             ],
             "result": "carbon dioxide + water",
+            "resultIcon": "water",
             "caption": "Aerobic respiration"
           }
         },
@@ -791,12 +822,14 @@
             "columns": [
               {
                 "title": "In muscles",
+                "icon": "muscle",
                 "points": [
                   "glucose → lactic acid"
                 ]
               },
               {
                 "title": "In yeast",
+                "icon": "yeast",
                 "points": [
                   "glucose → ethanol + carbon dioxide"
                 ]
@@ -842,15 +875,18 @@
             "events": [
               {
                 "d": "1869",
-                "t": "Mendeleev leaves gaps in his table"
+                "t": "Mendeleev leaves gaps in his table",
+                "icon": "table"
               },
               {
                 "d": "1875",
-                "t": "Gallium is found. It fits a gap"
+                "t": "Gallium is found. It fits a gap",
+                "icon": "flask"
               },
               {
                 "d": "1886",
-                "t": "Germanium is found. It fits a gap"
+                "t": "Germanium is found. It fits a gap",
+                "icon": "flask"
               }
             ],
             "caption": "Mendeleev's gaps were filled"
@@ -961,15 +997,18 @@
             "items": [
               {
                 "k": "Way 1",
-                "v": "More turns of wire"
+                "v": "More turns of wire",
+                "icon": "coil"
               },
               {
                 "k": "Way 2",
-                "v": "More current"
+                "v": "More current",
+                "icon": "battery"
               },
               {
                 "k": "Way 3",
-                "v": "An iron core"
+                "v": "An iron core",
+                "icon": "ironbar"
               }
             ],
             "caption": "Three ways to make it stronger"
@@ -984,19 +1023,23 @@
             "items": [
               {
                 "k": "Use",
-                "v": "Scrapyard cranes"
+                "v": "Scrapyard cranes",
+                "icon": "crane"
               },
               {
                 "k": "Use",
-                "v": "Electric bells"
+                "v": "Electric bells",
+                "icon": "bell"
               },
               {
                 "k": "Use",
-                "v": "Door locks"
+                "v": "Door locks",
+                "icon": "lock"
               },
               {
                 "k": "Use",
-                "v": "Relays"
+                "v": "Relays",
+                "icon": "switch"
               }
             ],
             "caption": "They can be switched on and off"

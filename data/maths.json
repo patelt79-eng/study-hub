@@ -2179,28 +2179,9 @@
           "text": "Write the difference in front of n, then adjust. For 5, 8, 11: the difference is 3, so start with 3n. 3n gives 3, 6, 9, so add 2. The nth term is 3n + 2.",
           "source": "generated",
           "visual": {
-            "type": "table",
-            "rows": [
-              [
-                "n",
-                "1",
-                "2",
-                "3"
-              ],
-              [
-                "3n",
-                "3",
-                "6",
-                "9"
-              ],
-              [
-                "3n + 2",
-                "5",
-                "8",
-                "11"
-              ]
-            ],
-            "caption": "Building the nth term 3n + 2"
+            "type": "diagram",
+            "name": "dots",
+            "caption": "Why the nth term is 3n + 2"
           }
         },
         {
@@ -2208,21 +2189,8 @@
           "text": "Geometric sequences multiply by the same number: 3, 6, 12, 24. In a Fibonacci sequence you add the two terms before: 1, 1, 2, 3, 5, 8.",
           "source": "generated",
           "visual": {
-            "type": "compare",
-            "columns": [
-              {
-                "title": "Geometric (×2)",
-                "points": [
-                  "3, 6, 12, 24"
-                ]
-              },
-              {
-                "title": "Fibonacci (add the two before)",
-                "points": [
-                  "1, 1, 2, 3, 5, 8"
-                ]
-              }
-            ],
+            "type": "diagram",
+            "name": "twoSeq",
             "caption": "Two other kinds of sequence"
           }
         }
@@ -2257,12 +2225,8 @@
           "text": "In the test, write the rule you used, for example 'alternate angles are equal'. Reasons can earn marks.",
           "source": "generated",
           "visual": {
-            "type": "flow",
-            "items": [
-              "Work out the angle",
-              "Write the rule",
-              "e.g. \"alternate angles are equal\""
-            ],
+            "type": "diagram",
+            "name": "reason",
             "caption": "Always give your reason"
           }
         }
@@ -2287,17 +2251,9 @@
           "text": "The interior angles of a polygon add up to (n − 2) × 180°, where n is the number of sides. For a pentagon that is 3 × 180 = 540°.",
           "source": "generated",
           "visual": {
-            "type": "equation",
-            "parts": [
-              "(5 − 2)",
-              "180°"
-            ],
-            "result": "540°",
-            "caption": "Interior angles of a pentagon",
-            "ops": [
-              "×"
-            ],
-            "arrow": "="
+            "type": "diagram",
+            "name": "pentagon",
+            "caption": "Interior angles of a pentagon"
           }
         },
         {
@@ -2321,13 +2277,9 @@
           "text": "Work in this order: Brackets, Indices, Division and Multiplication, Addition and Subtraction. So 3 + 4 × 2 = 11, not 14.",
           "source": "generated",
           "visual": {
-            "type": "flow",
-            "items": [
-              "3 + 4 × 2",
-              "Multiply first: 3 + 8",
-              "11"
-            ],
-            "caption": "BIDMAS in action"
+            "type": "diagram",
+            "name": "bidmas",
+            "caption": "The BIDMAS order"
           }
         },
         {
@@ -2363,35 +2315,9 @@
           "text": "Multiplying: add the powers. Dividing: subtract the powers. Power of a power: multiply them. A negative power means 1 over, so 2⁻³ = 1/8. Anything to the power 0 is 1.",
           "source": "generated",
           "visual": {
-            "type": "table",
-            "rows": [
-              [
-                "Rule",
-                "Do this",
-                "Example"
-              ],
-              [
-                "Multiply",
-                "Add the powers",
-                "a³ × a⁴ = a⁷"
-              ],
-              [
-                "Divide",
-                "Subtract the powers",
-                "a⁸ ÷ a³ = a⁵"
-              ],
-              [
-                "Power of a power",
-                "Multiply the powers",
-                "(a²)³ = a⁶"
-              ],
-              [
-                "Negative power",
-                "1 over",
-                "2⁻³ = 1/8"
-              ]
-            ],
-            "caption": "The index laws"
+            "type": "diagram",
+            "name": "indices",
+            "caption": "Why you add the powers"
           }
         }
       ]
@@ -2431,14 +2357,9 @@
           "text": "To multiply decimals, multiply without the points, then put back the same number of decimal places. For 0.2 × 0.3, work out 2 × 3 = 6, so the answer is 0.06.",
           "source": "generated",
           "visual": {
-            "type": "flow",
-            "items": [
-              "0.2 × 0.3",
-              "2 × 3 = 6",
-              "2 decimal places",
-              "0.06"
-            ],
-            "caption": "Multiplying decimals"
+            "type": "diagram",
+            "name": "hundred",
+            "caption": "Multiplying decimals on a hundred square"
           }
         },
         {
@@ -2446,26 +2367,9 @@
           "text": "Fraction to decimal: divide the top by the bottom, so 3/8 = 0.375. Decimal to fraction: write it over 10, 100 or 1000 and simplify, so 0.35 = 35/100 = 7/20.",
           "source": "generated",
           "visual": {
-            "type": "compare",
-            "columns": [
-              {
-                "title": "Fraction to decimal",
-                "points": [
-                  "3/8",
-                  "= 3 ÷ 8",
-                  "= 0.375"
-                ]
-              },
-              {
-                "title": "Decimal to fraction",
-                "points": [
-                  "0.35",
-                  "= 35/100",
-                  "= 7/20"
-                ]
-              }
-            ],
-            "caption": "Converting both ways"
+            "type": "diagram",
+            "name": "numberline",
+            "caption": "Fractions and decimals on a number line"
           }
         }
       ]
@@ -2530,13 +2434,22 @@
           "text": "Factorising is the opposite of expanding. Take out the highest common factor. 6x + 15 = 3(2x + 5). Check by expanding it again.",
           "source": "generated",
           "visual": {
-            "type": "flow",
-            "items": [
-              "6x + 15",
-              "HCF of 6 and 15 is 3",
-              "3(2x + 5)"
+            "type": "expand",
+            "cols": [
+              "2x",
+              "5"
             ],
-            "caption": "Factorising"
+            "rows": [
+              "3"
+            ],
+            "cells": [
+              [
+                "6x",
+                "15"
+              ]
+            ],
+            "result": "6x + 15 = 3(2x + 5)",
+            "caption": "Factorising: find what goes on the outside"
           }
         }
       ]
@@ -2555,12 +2468,14 @@
             "columns": [
               {
                 "title": "Covered in class?",
+                "icon": "check",
                 "points": [
                   "Do this topic"
                 ]
               },
               {
                 "title": "Not covered?",
+                "icon": "skip",
                 "points": [
                   "Skip it. That is fine."
                 ]
@@ -2574,31 +2489,9 @@
           "text": "If the second differences are all the same, the sequence is quadratic. Halve the second difference to get the number in front of n².",
           "source": "generated",
           "visual": {
-            "type": "table",
-            "rows": [
-              [
-                "Sequence",
-                "2",
-                "5",
-                "10",
-                "17"
-              ],
-              [
-                "1st difference",
-                "",
-                "3",
-                "5",
-                "7"
-              ],
-              [
-                "2nd difference",
-                "",
-                "",
-                "2",
-                "2"
-              ]
-            ],
-            "caption": "Same second difference: quadratic. Half of 2 is 1, so n²"
+            "type": "diagram",
+            "name": "squares",
+            "caption": "A quadratic sequence: n² + 1"
           }
         },
         {
@@ -2606,13 +2499,8 @@
           "text": "Call the decimal x. Multiply by 10 if one digit repeats, or 100 if two digits repeat. Subtract to remove the repeating part, then divide. 0.777… = 7/9.",
           "source": "generated",
           "visual": {
-            "type": "flow",
-            "items": [
-              "x = 0.777…",
-              "10x = 7.777…",
-              "9x = 7",
-              "x = 7/9"
-            ],
+            "type": "diagram",
+            "name": "recurring",
             "caption": "Recurring decimal to fraction"
           }
         },
@@ -2621,25 +2509,27 @@
           "text": "To factorise x² + 7x + 12, find two numbers that multiply to 12 and add to 7: (x + 3)(x + 4). A power of 1/2 means square root, so 16 to the power 1/2 is 4.",
           "source": "generated",
           "visual": {
-            "type": "compare",
-            "columns": [
-              {
-                "title": "Factorise x² + 7x + 12",
-                "points": [
-                  "3 × 4 = 12",
-                  "3 + 4 = 7",
-                  "(x + 3)(x + 4)"
-                ]
-              },
-              {
-                "title": "16 to the power 1/2",
-                "points": [
-                  "Power 1/2 = square root",
-                  "√16 = 4"
-                ]
-              }
+            "type": "expand",
+            "cols": [
+              "x",
+              "3"
             ],
-            "caption": "Quadratics and fractional indices"
+            "rows": [
+              "x",
+              "4"
+            ],
+            "cells": [
+              [
+                "x²",
+                "3x"
+              ],
+              [
+                "4x",
+                "12"
+              ]
+            ],
+            "result": "x² + 7x + 12 = (x + 3)(x + 4)",
+            "caption": "Factorising a quadratic: 3 × 4 = 12 and 3 + 4 = 7"
           }
         }
       ]

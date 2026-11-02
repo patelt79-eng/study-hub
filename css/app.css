@@ -441,6 +441,44 @@ button, .btn { font: inherit; color: inherit; }
 .v-grid-table td { background: var(--surface); }
 .v-expand-result { font-weight: 800; font-size: 1.2rem; margin: 10px 0 0; }
 
+/* Drawn pictograms inside pictures */
+.picto { width: 100%; height: 100%; color: var(--subj); }
+.picto .pf { fill: var(--subj); fill-opacity: 0.18; }
+.picto .ps { fill: var(--subj); stroke: none; }
+.v-pic { display: block; width: 52px; height: 52px; margin: 0 auto 6px; }
+.v-pic.big { width: 72px; height: 72px; }
+.v-flow.drawn { align-items: stretch; }
+.v-flow.drawn li { align-items: center; }
+.v-flow.drawn .v-box { align-items: center; text-align: center; min-width: 108px; max-width: 150px; padding: 10px 10px 12px; }
+.v-compare .v-col { text-align: left; }
+.v-compare .v-col .v-pic.big { margin: 0 0 8px; }
+.v-timeline.drawn li { flex-direction: row; align-items: center; gap: 12px; }
+.v-timeline.drawn .v-pic { width: 44px; height: 44px; margin: 0; flex: none; }
+.v-tl-text { display: flex; flex-direction: column; }
+.v-eq .v-tile { display: inline-flex; flex-direction: column; align-items: center; text-align: center; }
+.v-eq .v-tile .v-pic { width: 46px; height: 46px; }
+.v-eq .v-tile.result .picto { color: var(--on-subj); }
+.v-eq .v-tile.result .picto .pf { fill: var(--on-subj); }
+.v-fact .v-pic { margin: 0 0 6px; width: 46px; height: 46px; }
+.v-grid.drawn { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); }
+.v-grid.drawn .v-cell { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 10px 8px; }
+.v-cell.hl .picto { color: var(--on-subj); }
+.v-cell.hl .picto .pf { fill: var(--on-subj); }
+.v-vocab.drawn .v-pair { align-items: center; text-align: center; }
+.v-vocab.drawn .v-pic { width: 46px; height: 46px; }
+.v-word .v-pic { width: 40px; height: 40px; margin: 0 0 4px; }
+.v-word.result .picto { color: var(--on-subj); }
+.v-icon-cell { width: 52px; }
+.v-icon-cell .v-pic { width: 36px; height: 36px; margin: 0; }
+.v-svg .land { fill: var(--surface); stroke: var(--subj); stroke-width: 3; stroke-linejoin: round; }
+.v-svg .map-t { font-size: 14px; font-weight: 800; paint-order: stroke; stroke: var(--surface); stroke-width: 4px; }
+.v-svg .tri.a { fill: var(--subj); fill-opacity: 0.35; stroke: var(--subj); stroke-width: 2; }
+.v-svg .tri.b { fill: var(--subj); fill-opacity: 0.12; stroke: var(--subj); stroke-width: 2; }
+.v-svg .on-subj { fill: var(--on-subj); }
+.v-svg .both { fill: var(--subj); stroke: var(--surface); }
+.v-svg .band-a { fill: var(--subj); fill-opacity: 0.18; stroke: var(--subj); stroke-width: 2; }
+.v-svg .band-b { fill: var(--muted); fill-opacity: 0.18; stroke: var(--muted); stroke-width: 2; }
+
 /* Older activity screens (worked examples, writing, French tasks, light sessions) */
 .answer-box { background: var(--subj-tint); border-radius: 16px; padding: 16px; margin: 14px 0; }
 .options .btn { width: 100%; justify-content: flex-start; font-weight: 600; }

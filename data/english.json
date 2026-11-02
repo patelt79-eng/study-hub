@@ -687,9 +687,18 @@
           "visual": {
             "type": "flow",
             "items": [
-              "Mrs Johnstone has twins",
-              "She is poor",
-              "She gives one twin to Mrs Lyons"
+              {
+                "t": "Mrs Johnstone has twins",
+                "icon": "twins"
+              },
+              {
+                "t": "She is poor",
+                "icon": "wallet"
+              },
+              {
+                "t": "She gives one twin to Mrs Lyons",
+                "icon": "bighouse"
+              }
             ],
             "caption": "How the play begins (Liverpool)"
           }
@@ -703,6 +712,7 @@
             "columns": [
               {
                 "title": "Mickey",
+                "icon": "smallhouse",
                 "points": [
                   "Stays with Mrs Johnstone",
                   "Grows up poor"
@@ -710,6 +720,7 @@
               },
               {
                 "title": "Eddie",
+                "icon": "bighouse",
                 "points": [
                   "Given to Mrs Lyons",
                   "Grows up rich"
@@ -729,15 +740,18 @@
             "items": [
               {
                 "k": "Friend to both",
-                "v": "Linda (marries Mickey)"
+                "v": "Linda (marries Mickey)",
+                "icon": "heart"
               },
               {
                 "k": "Mickey's brother",
-                "v": "Sammy (crime)"
+                "v": "Sammy (crime)",
+                "icon": "handcuffs"
               },
               {
                 "k": "Speaks to us",
-                "v": "The Narrator"
+                "v": "The Narrator",
+                "icon": "megaphone"
               }
             ],
             "caption": "The other characters"
@@ -758,6 +772,7 @@
             "columns": [
               {
                 "title": "Eddie (rich)",
+                "icon": "gradcap",
                 "points": [
                   "University",
                   "Good job"
@@ -765,6 +780,7 @@
               },
               {
                 "title": "Mickey (poor)",
+                "icon": "bars",
                 "points": [
                   "Loses his job",
                   "Prison",
@@ -782,10 +798,17 @@
           "visual": {
             "type": "equation",
             "parts": [
-              "Same nature (twins)",
-              "Different nurture (homes)"
+              {
+                "t": "Same nature (twins)",
+                "icon": "twins"
+              },
+              {
+                "t": "Different nurture (homes)",
+                "icon": "houses"
+              }
             ],
             "result": "Different lives",
+            "resultIcon": "signpost",
             "caption": "Nature vs nurture"
           }
         },
@@ -798,6 +821,7 @@
             "columns": [
               {
                 "title": "Hope",
+                "icon": "star",
                 "points": [
                   "Dreams of a better life",
                   "Crushed by class and money"
@@ -805,6 +829,7 @@
               },
               {
                 "title": "Gender",
+                "icon": "person",
                 "points": [
                   "Women have few choices",
                   "Depend on men and money"
@@ -829,12 +854,14 @@
             "columns": [
               {
                 "title": "Repetition",
+                "icon": "repeat",
                 "points": [
                   "\"Never, never, never give up.\""
                 ]
               },
               {
                 "title": "Emotive language",
+                "icon": "tear",
                 "points": [
                   "\"The heartbroken child sobbed alone.\""
                 ]
@@ -852,12 +879,14 @@
             "columns": [
               {
                 "title": "Metaphor (is)",
+                "icon": "equals",
                 "points": [
                   "\"The classroom was a zoo.\""
                 ]
               },
               {
                 "title": "Simile (like / as)",
+                "icon": "approx",
                 "points": [
                   "\"as cold as ice\""
                 ]
@@ -875,12 +904,14 @@
             "columns": [
               {
                 "title": "Direct address",
+                "icon": "pointing",
                 "points": [
                   "\"You know how it feels.\""
                 ]
               },
               {
                 "title": "Ellipsis (…)",
+                "icon": "dots",
                 "points": [
                   "\"I thought he would come back…\""
                 ]
@@ -904,15 +935,18 @@
             "events": [
               {
                 "d": "Start",
-                "t": "The Narrator hints at how it ends"
+                "t": "The Narrator hints at how it ends",
+                "icon": "megaphone"
               },
               {
                 "d": "Middle",
-                "t": "The twins grow up"
+                "t": "The twins grow up",
+                "icon": "twins"
               },
               {
                 "d": "End",
-                "t": "The hint comes true"
+                "t": "The hint comes true",
+                "icon": "warning"
               }
             ],
             "caption": "Foreshadowing"
@@ -927,6 +961,7 @@
             "columns": [
               {
                 "title": "The audience knows",
+                "icon": "eye",
                 "points": [
                   "Mickey and Eddie are twins"
                 ],
@@ -934,6 +969,7 @@
               },
               {
                 "title": "Mickey and Eddie know",
+                "icon": "question",
                 "points": [
                   "Nothing about it"
                 ]
@@ -957,15 +993,18 @@
             "items": [
               {
                 "k": "She enters",
-                "v": "Pushing a pram"
+                "v": "Pushing a pram",
+                "icon": "pram"
               },
               {
                 "k": "She worries about",
-                "v": "Money and debts"
+                "v": "Money and debts",
+                "icon": "coins"
               },
               {
                 "k": "She must not",
-                "v": "Get attached to the baby"
+                "v": "Get attached to the baby",
+                "icon": "baby"
               }
             ],
             "caption": "The page 5 extract"
@@ -980,23 +1019,28 @@
             "items": [
               {
                 "k": "Way 1",
-                "v": "Money worries"
+                "v": "Money worries",
+                "icon": "coins"
               },
               {
                 "k": "Way 2",
-                "v": "Love for the baby"
+                "v": "Love for the baby",
+                "icon": "heart"
               },
               {
                 "k": "Way 3",
-                "v": "Repetition"
+                "v": "Repetition",
+                "icon": "repeat"
               },
               {
                 "k": "Way 4",
-                "v": "Direct address"
+                "v": "Direct address",
+                "icon": "pointing"
               },
               {
                 "k": "Way 5",
-                "v": "Ellipsis"
+                "v": "Ellipsis",
+                "icon": "dots"
               }
             ],
             "caption": "How Russell creates sympathy"
@@ -1011,14 +1055,17 @@
             "items": [
               {
                 "t": "Point",
+                "icon": "lightbulb",
                 "s": "answer the question"
               },
               {
                 "t": "Evidence",
+                "icon": "quote",
                 "s": "a short quote"
               },
               {
                 "t": "Analysis",
+                "icon": "magnifier",
                 "s": "technique + what a word suggests"
               }
             ],
