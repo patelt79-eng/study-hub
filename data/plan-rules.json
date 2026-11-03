@@ -10,12 +10,8 @@
     "Subjects are removed from the plan automatically once their paper date has passed.",
     "overrides: optional. A date here replaces the worked-out plan for that day, for example {\"2026-11-02\": {\"sessions\": [], \"message\": \"No sessions today.\"}}."
   ],
-  "start_date": "2026-10-28",
-  "non_school_days": [
-    "2026-10-28",
-    "2026-10-29",
-    "2026-10-30"
-  ],
+  "start_date": "2026-11-03",
+  "non_school_days": [],
   "sessions_school_day": 2,
   "sessions_weekend": 3,
   "session_minutes": 15,
