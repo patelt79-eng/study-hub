@@ -3,7 +3,7 @@
     "The daily plan is worked out from these rules. The same date always gives the same plan.",
     "start_date: the first day with a plan.",
     "non_school_days: dates that get the weekend number of sessions (half-term, INSET days).",
-    "tasks: each subject’s sessions, used in this order and then repeated. Topic sessions are learn → flashcards → quiz.",
+    "tasks: each subject’s sessions in priority order. Topics come first, most important first; the plan fits as many as it can before the paper. Writing and booklet tasks are used after that.",
     "tasks: each subject's sessions, used in this order and then repeated.",
     "light: the single short session on the evening before that subject's paper.",
     "light_evening_before: true means the day before a paper has only the light session for that paper.",
@@ -179,30 +179,6 @@
     ],
     "french": [
       {
-        "label": "TV programmes",
-        "route": "#/subject/french/topic/tv"
-      },
-      {
-        "label": "Films",
-        "route": "#/subject/french/topic/films"
-      },
-      {
-        "label": "Reading and free time",
-        "route": "#/subject/french/topic/reading"
-      },
-      {
-        "label": "Eyes and hair",
-        "route": "#/subject/french/topic/looks"
-      },
-      {
-        "label": "Nationalities and adjectives",
-        "route": "#/subject/french/topic/nationalities"
-      },
-      {
-        "label": "Opinions",
-        "route": "#/subject/french/topic/opinions"
-      },
-      {
         "label": "Present tense verbs",
         "route": "#/subject/french/topic/present"
       },
@@ -213,6 +189,30 @@
       {
         "label": "Time expressions",
         "route": "#/subject/french/topic/time"
+      },
+      {
+        "label": "Opinions",
+        "route": "#/subject/french/topic/opinions"
+      },
+      {
+        "label": "TV programmes",
+        "route": "#/subject/french/topic/tv"
+      },
+      {
+        "label": "Films",
+        "route": "#/subject/french/topic/films"
+      },
+      {
+        "label": "Eyes and hair",
+        "route": "#/subject/french/topic/looks"
+      },
+      {
+        "label": "Nationalities and adjectives",
+        "route": "#/subject/french/topic/nationalities"
+      },
+      {
+        "label": "Reading and free time",
+        "route": "#/subject/french/topic/reading"
       },
       {
         "label": "Reading: Marine’s email",
@@ -237,16 +237,16 @@
         "route": "#/subject/english/topic/themes"
       },
       {
+        "label": "The page 5 extract",
+        "route": "#/subject/english/topic/extract"
+      },
+      {
         "label": "Techniques: part 1",
         "route": "#/subject/english/topic/techniques"
       },
       {
         "label": "Techniques: part 2",
         "route": "#/subject/english/topic/drama"
-      },
-      {
-        "label": "The page 5 extract",
-        "route": "#/subject/english/topic/extract"
       },
       {
         "label": "PEA paragraphs: how Russell creates sympathy",

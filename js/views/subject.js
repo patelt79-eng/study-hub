@@ -8,6 +8,7 @@ import { esc, sayRow, plural } from '../ui.js';
 import { icon } from '../meta.js';
 import { todayPlan, sessionHref } from './today.js';
 import { ragList } from './rag.js';
+import { topicsNotInPlan } from '../plan.js';
 import { topicProgress, topicMeta } from './topic.js';
 
 export async function subjectView({ main }, id) {
@@ -57,18 +58,21 @@ export async function subjectView({ main }, id) {
     html += `<section class="next-up">${sayRow(`<h2>All topics done</h2><p>${esc(t)}</p>`, t)}</section>`;
   }
 
-  // Topics
+  // Topics. Some may not fit in the daily plan before the paper; they are tagged.
+  const notPlanned = new Set((topicsNotInPlan(tp.rules, tp.papers)[id] || []).map(x => x.route.split('/topic/')[1]));
   html += `<section class="card"><h2>Topics</h2>
     <p class="muted small">Each topic has three steps: learn, flashcards, then a short quiz.</p>
+    ${notPlanned.size ? `<p class="small">Topics marked "Not in your plan" did not fit before the assessment. You can still do them yourself if you have time.</p>` : ''}
     <ol class="topic-list">`;
   s.topics.forEach((t, n) => {
     const p = prog[t.id] || {};
     const state = p.done ? 'done' : p.step ? 'started' : '';
     const extra = p.done ? (p.total ? `Done · quiz ${p.score}/${p.total}` : 'Done') : p.step ? 'Started' : topicMeta(s, t);
+    const tag = t.sets12 ? '<span class="tag">Only if covered</span>' : notPlanned.has(t.id) && !p.done ? '<span class="tag">Not in your plan</span>' : '';
     html += `<li class="topic ${state}">
       <a href="#/subject/${id}/topic/${t.id}">
         <span class="topic-num">${p.done ? icon('check') : n + 1}</span>
-        <span class="topic-text"><strong>${esc(t.title)}</strong>${t.sets12 ? '<span class="tag">Only if covered</span>' : ''}<span class="small muted">${esc(extra)}</span></span>
+        <span class="topic-text"><strong>${esc(t.title)}</strong>${tag}<span class="small muted">${esc(extra)}</span></span>
       </a></li>`;
   });
   html += `</ol></section>`;

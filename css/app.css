@@ -711,3 +711,5 @@ legend { font-weight: 800; padding: 0 6px; }
 .cheer { font-weight: 800; color: var(--ok); margin: 0 0 8px; }
 .today-strip { padding: 12px 16px; }
 @media (max-width: 600px) { .plan-card { padding: 16px; } .today-head h1 { font-size: 1.3rem; } }
+
+.topic-text .tag { align-self: flex-start; margin: 2px 0 2px; }

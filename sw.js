@@ -3,7 +3,7 @@
 // takes more than 4 seconds, the saved copy is used.
 // Change VERSION when files are added or removed.
 
-const VERSION = 'study-hub-v8';
+const VERSION = 'study-hub-v9';
 const FILES = [
   './',
   './index.html',
