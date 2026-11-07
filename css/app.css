@@ -713,3 +713,9 @@ legend { font-weight: 800; padding: 0 6px; }
 @media (max-width: 600px) { .plan-card { padding: 16px; } .today-head h1 { font-size: 1.3rem; } }
 
 .topic-text .tag { align-self: flex-start; margin: 2px 0 2px; }
+
+/* Quiz hint: hidden until "Show hint" is tapped */
+.hint-area { margin: 12px 0 0; }
+.hint-btn { gap: 8px; }
+.hint-box { margin-top: 10px; padding: 12px 16px; border-radius: 16px; background: var(--note-soft); border: 2px dashed color-mix(in srgb, var(--subj) 40%, var(--border)); }
+.hint-box p { margin: 0; }

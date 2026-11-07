@@ -298,7 +298,8 @@
       "answer": 1,
       "explain": "glucose + oxygen → carbon dioxide + water.",
       "source": "generated",
-      "topic": "respiration"
+      "topic": "respiration",
+      "hint": "Aerobic respiration: glucose + oxygen → ? + ?"
     },
     {
       "id": "sci-q-02",
@@ -313,7 +314,8 @@
       "answer": 0,
       "explain": "In muscles, glucose → lactic acid.",
       "source": "generated",
-      "topic": "respiration"
+      "topic": "respiration",
+      "hint": "It is the substance that makes muscles ache after hard exercise."
     },
     {
       "id": "sci-q-03",
@@ -328,7 +330,8 @@
       "answer": 3,
       "explain": "Gas exchange happens in the tiny air sacs called alveoli.",
       "source": "generated",
-      "topic": "breathing"
+      "topic": "breathing",
+      "hint": "Tiny air sacs at the very end of the bronchioles."
     },
     {
       "id": "sci-q-04",
@@ -343,7 +346,8 @@
       "answer": 2,
       "explain": "The diaphragm contracts and flattens, so the chest gets bigger.",
       "source": "generated",
-      "topic": "breathing"
+      "topic": "breathing",
+      "hint": "When you breathe in, the chest needs to get bigger."
     },
     {
       "id": "sci-q-05",
@@ -358,7 +362,8 @@
       "answer": 1,
       "explain": "Mitochondria are where aerobic respiration happens.",
       "source": "generated",
-      "topic": "respiration"
+      "topic": "respiration",
+      "hint": "Known as the 'powerhouse' of the cell."
     },
     {
       "id": "sci-q-06",
@@ -373,7 +378,8 @@
       "answer": 0,
       "explain": "Oxygen diffuses into the blood. Carbon dioxide diffuses out.",
       "source": "generated",
-      "topic": "breathing"
+      "topic": "breathing",
+      "hint": "You breathe this gas in. Your cells need it."
     },
     {
       "id": "sci-q-07",
@@ -388,7 +394,8 @@
       "answer": 3,
       "explain": "Yeast makes ethanol and carbon dioxide. This is called fermentation.",
       "source": "generated",
-      "topic": "respiration"
+      "topic": "respiration",
+      "hint": "This is fermentation, used to make bread rise and to brew drinks."
     },
     {
       "id": "sci-q-08",
@@ -403,7 +410,8 @@
       "answer": 2,
       "explain": "Alveoli have very thin walls so gases can pass through quickly.",
       "source": "generated",
-      "topic": "breathing"
+      "topic": "breathing",
+      "hint": "Gases need to pass through the walls quickly. Which wall would slow them down?"
     },
     {
       "id": "sci-q-09",
@@ -418,7 +426,8 @@
       "answer": 1,
       "explain": "Columns are groups. Rows are periods.",
       "source": "generated",
-      "topic": "periodic"
+      "topic": "periodic",
+      "hint": "Rows are periods. Columns are…"
     },
     {
       "id": "sci-q-10",
@@ -433,7 +442,8 @@
       "answer": 0,
       "explain": "Metals are on the left and in the middle. Non-metals are on the right.",
       "source": "generated",
-      "topic": "periodic"
+      "topic": "periodic",
+      "hint": "Non-metals are on the right-hand side."
     },
     {
       "id": "sci-q-11",
@@ -448,7 +458,8 @@
       "answer": 3,
       "explain": "Metals are good conductors of heat and electricity.",
       "source": "generated",
-      "topic": "periodic"
+      "topic": "periodic",
+      "hint": "Electric wires are made of metal for a reason."
     },
     {
       "id": "sci-q-12",
@@ -463,7 +474,8 @@
       "answer": 2,
       "explain": "Group 1 metal + water → metal hydroxide + hydrogen.",
       "source": "generated",
-      "topic": "groups"
+      "topic": "groups",
+      "hint": "You see bubbles fizz off. It is the lightest gas."
     },
     {
       "id": "sci-q-13",
@@ -478,7 +490,8 @@
       "answer": 0,
       "explain": "Potassium is more reactive than sodium, and sodium is more reactive than lithium.",
       "source": "generated",
-      "topic": "groups"
+      "topic": "groups",
+      "hint": "Potassium reacts more strongly than sodium, and sodium more than lithium."
     },
     {
       "id": "sci-q-14",
@@ -493,7 +506,8 @@
       "answer": 2,
       "explain": "Noble gases are very unreactive, so they are safe to use.",
       "source": "generated",
-      "topic": "groups"
+      "topic": "groups",
+      "hint": "Group 0 elements have full outer shells, so they hardly react."
     },
     {
       "id": "sci-q-15",
@@ -508,7 +522,8 @@
       "answer": 1,
       "explain": "Neon is in group 0, with helium and argon.",
       "source": "generated",
-      "topic": "groups"
+      "topic": "groups",
+      "hint": "Noble gases are in group 0: helium, ?, argon."
     },
     {
       "id": "sci-q-16",
@@ -523,7 +538,8 @@
       "answer": 2,
       "explain": "His gaps were later filled by new elements with the properties he predicted.",
       "source": "generated",
-      "topic": "periodic"
+      "topic": "periodic",
+      "hint": "He predicted elements that nobody had found yet."
     },
     {
       "id": "sci-q-17",
@@ -538,7 +554,8 @@
       "answer": 1,
       "explain": "Like poles repel. Unlike poles attract.",
       "source": "generated",
-      "topic": "magnets"
+      "topic": "magnets",
+      "hint": "Like poles do one thing, unlike poles do the opposite."
     },
     {
       "id": "sci-q-18",
@@ -553,7 +570,8 @@
       "answer": 3,
       "explain": "Iron, nickel and cobalt are magnetic.",
       "source": "generated",
-      "topic": "magnets"
+      "topic": "magnets",
+      "hint": "Only three metals are magnetic: one of them is used to make steel."
     },
     {
       "id": "sci-q-19",
@@ -568,7 +586,8 @@
       "answer": 0,
       "explain": "Field lines go from the north pole to the south pole.",
       "source": "generated",
-      "topic": "magnets"
+      "topic": "magnets",
+      "hint": "Field lines leave one pole and go into the other."
     },
     {
       "id": "sci-q-20",
@@ -583,7 +602,8 @@
       "answer": 2,
       "explain": "More turns, more current and an iron core make it stronger.",
       "source": "generated",
-      "topic": "electromagnets"
+      "topic": "electromagnets",
+      "hint": "Think of three things: turns, current and core."
     },
     {
       "id": "sci-q-21",
@@ -598,7 +618,8 @@
       "answer": 0,
       "explain": "An electromagnet is only magnetic when the current flows.",
       "source": "generated",
-      "topic": "electromagnets"
+      "topic": "electromagnets",
+      "hint": "An electromagnet only works when the current flows."
     },
     {
       "id": "sci-q-22",
@@ -613,7 +634,8 @@
       "answer": 1,
       "explain": "Scrapyard cranes switch the magnet on to lift steel and off to drop it.",
       "source": "generated",
-      "topic": "electromagnets"
+      "topic": "electromagnets",
+      "hint": "It needs to pick up metal and then drop it again."
     },
     {
       "id": "sci-q-23",
@@ -628,7 +650,8 @@
       "answer": 1,
       "explain": "Field lines are closest together at the poles.",
       "source": "generated",
-      "topic": "magnets"
+      "topic": "magnets",
+      "hint": "Field lines are closest together where the field is strongest."
     }
   ],
   "resources": [

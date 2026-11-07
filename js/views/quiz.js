@@ -17,6 +17,7 @@ export async function quizView(ctx, subjectId, setId) {
   let questions = all;
   let i = 0;
   let chosen = null;
+  let hintShown = false;
   let score = 0;
   let missed = [];
   let round = 1;
@@ -38,6 +39,10 @@ export async function quizView(ctx, subjectId, setId) {
     let html = `<h1>${esc(s.name)} quiz${round > 1 ? ': missed questions' : ''}</h1>
       <p class="step-count">Question ${i + 1} of ${questions.length}</p>
       <div class="card">${sayRow(`<p class="big-text">${esc(q.q)}</p>`, spoken, q.say_lang || 'en-GB')}</div>
+      ${q.hint ? `<div class="hint-area">
+        <button type="button" class="btn small-btn hint-btn" id="hint-btn" aria-expanded="${hintShown}" aria-controls="hint-box">${hintShown ? 'Hide hint' : 'Show hint'}</button>
+        <div class="hint-box" id="hint-box"${hintShown ? '' : ' hidden'}>${sayRow(`<p><strong>Hint:</strong> ${esc(q.hint)}</p>`, `Hint. ${q.hint}`)}</div>
+      </div>` : ''}
       <ul class="options">`;
     q.options.forEach((o, k) => {
       let cls = 'btn';
@@ -56,6 +61,13 @@ export async function quizView(ctx, subjectId, setId) {
         <div class="row"><button type="button" class="btn primary" id="next">${i + 1 < questions.length ? 'Next question' : 'Finish'}</button></div>`;
     }
     main.innerHTML = html;
+    const hintBtn = main.querySelector('#hint-btn');
+    if (hintBtn) hintBtn.onclick = () => {
+      hintShown = !hintShown;
+      main.querySelector('#hint-box').hidden = !hintShown;
+      hintBtn.setAttribute('aria-expanded', String(hintShown));
+      hintBtn.textContent = hintShown ? 'Hide hint' : 'Show hint';
+    };
     main.querySelectorAll('.options .btn').forEach(b => {
       b.onclick = () => {
         chosen = Number(b.dataset.k);
@@ -67,6 +79,7 @@ export async function quizView(ctx, subjectId, setId) {
     const nextBtn = main.querySelector('#next');
     if (nextBtn) nextBtn.onclick = () => {
       chosen = null;
+      hintShown = false;
       i++;
       if (i < questions.length) { show(); const first = main.querySelector('.options .btn'); if (first) first.focus(); }
       else end();
@@ -96,7 +109,7 @@ export async function quizView(ctx, subjectId, setId) {
     main.innerHTML = html;
     const r = main.querySelector('#retry');
     if (r) r.onclick = () => {
-      questions = retry; missed = []; score = 0; i = 0; chosen = null; round++; show();
+      questions = retry; missed = []; score = 0; i = 0; chosen = null; hintShown = false; round++; show();
     };
   }
 

@@ -368,7 +368,8 @@
       "explain": "Imago Dei is Latin for 'image of God'.",
       "source": "generated",
       "needs_parent_check": true,
-      "topic": "creation"
+      "topic": "creation",
+      "hint": "'Imago' sounds like a word you use for a picture or a likeness."
     },
     {
       "id": "re-q-02",
@@ -384,7 +385,8 @@
       "explain": "Genesis 1:27 says God created humans in his own image, male and female.",
       "source": "generated",
       "needs_parent_check": true,
-      "topic": "creation"
+      "topic": "creation",
+      "hint": "It is in the very first chapter of the Bible, near the end of the six days."
     },
     {
       "id": "re-q-03",
@@ -400,7 +402,8 @@
       "explain": "Sanctity of life means all human life is holy because it is God's gift.",
       "source": "generated",
       "needs_parent_check": true,
-      "topic": "creation"
+      "topic": "creation",
+      "hint": "'Sanctity' comes from the same root as 'saint'. It is about something being holy."
     },
     {
       "id": "re-q-04",
@@ -416,7 +419,8 @@
       "explain": "Volitional means having free will, so we can choose.",
       "source": "generated",
       "needs_parent_check": true,
-      "topic": "creation"
+      "topic": "creation",
+      "hint": "'Volitional' is linked to the word 'volunteer': someone who chooses to do something."
     },
     {
       "id": "re-q-05",
@@ -432,7 +436,8 @@
       "explain": "Rational means humans can think, reason and understand.",
       "source": "generated",
       "needs_parent_check": true,
-      "topic": "creation"
+      "topic": "creation",
+      "hint": "'Rational' is linked to 'reason'. Think about what your brain does."
     },
     {
       "id": "re-q-06",
@@ -448,7 +453,8 @@
       "explain": "Genesis 2 tells the story of Adam and Eve and focuses on relationships.",
       "source": "generated",
       "needs_parent_check": true,
-      "topic": "genesis2"
+      "topic": "genesis2",
+      "hint": "One creation story is about seven days. The other is set in the Garden of Eden."
     },
     {
       "id": "re-q-07",
@@ -464,7 +470,8 @@
       "explain": "God creates in six days and rests on the seventh day.",
       "source": "generated",
       "needs_parent_check": true,
-      "topic": "creation"
+      "topic": "creation",
+      "hint": "God rests on the seventh day. How many days of work come before it?"
     },
     {
       "id": "re-q-08",
@@ -480,7 +487,8 @@
       "explain": "Every person has dignity because they are made in God's image, and it cannot be lost.",
       "source": "generated",
       "needs_parent_check": true,
-      "topic": "creation"
+      "topic": "creation",
+      "hint": "'Inalienable' means something that cannot be removed from you."
     },
     {
       "id": "re-q-09",
@@ -496,7 +504,8 @@
       "explain": "In Catholic teaching the couple are the ministers of the sacrament. The priest or deacon is the Church's witness.",
       "source": "generated",
       "needs_parent_check": true,
-      "topic": "matrimony"
+      "topic": "matrimony",
+      "hint": "In this sacrament the priest is a witness. Who makes the vows?"
     },
     {
       "id": "re-q-10",
@@ -512,7 +521,8 @@
       "explain": "Catholics believe marriage is lifelong, faithful and open to new life.",
       "source": "generated",
       "needs_parent_check": true,
-      "topic": "matrimony"
+      "topic": "matrimony",
+      "hint": "Think of the three promises a couple makes in a Catholic wedding."
     },
     {
       "id": "re-q-11",
@@ -528,7 +538,8 @@
       "explain": "Humans are made to be in relationship with God and with each other.",
       "source": "generated",
       "needs_parent_check": true,
-      "topic": "genesis2"
+      "topic": "genesis2",
+      "hint": "'Relational' comes from 'relationship'."
     },
     {
       "id": "re-q-12",
@@ -544,7 +555,8 @@
       "explain": "An allegorical reading looks for deeper meaning beyond the literal story.",
       "source": "generated",
       "needs_parent_check": true,
-      "topic": "allegorical"
+      "topic": "allegorical",
+      "hint": "An allegory is a story with a hidden meaning underneath."
     },
     {
       "id": "re-q-13",
@@ -560,7 +572,8 @@
       "explain": "Hannah prayed for a child and God gave her Samuel.",
       "source": "generated",
       "needs_parent_check": true,
-      "topic": "hannah"
+      "topic": "hannah",
+      "hint": "He grew up in the temple and became a great prophet. A book of the Bible is named after him."
     },
     {
       "id": "re-q-14",
@@ -576,7 +589,8 @@
       "explain": "Hannah's song in 1 Samuel 2 is like Mary's Magnificat in Luke 1.",
       "source": "generated",
       "needs_parent_check": true,
-      "topic": "hannah"
+      "topic": "hannah",
+      "hint": "Think about what each woman did after her son was born."
     },
     {
       "id": "re-q-15",
@@ -592,7 +606,8 @@
       "explain": "The Immaculate Conception is about Mary, not about Jesus' birth.",
       "source": "generated",
       "needs_parent_check": true,
-      "topic": "mary"
+      "topic": "mary",
+      "hint": "This belief is about Mary herself, not about Jesus' birth."
     },
     {
       "id": "re-q-16",
@@ -608,7 +623,8 @@
       "explain": "Protoevangelium means 'first Gospel'. It refers to Genesis 3:15.",
       "source": "generated",
       "needs_parent_check": true,
-      "topic": "allegorical"
+      "topic": "allegorical",
+      "hint": "'Proto' means first. 'Evangelium' is the Latin word for good news."
     },
     {
       "id": "re-q-17",
@@ -624,7 +640,8 @@
       "explain": "Mary's obedience to God is compared with Eve's disobedience.",
       "source": "generated",
       "needs_parent_check": true,
-      "topic": "mary"
+      "topic": "mary",
+      "hint": "Think about how each woman answered God."
     },
     {
       "id": "re-q-18",
@@ -640,7 +657,8 @@
       "explain": "The Magnificat begins 'My soul magnifies the Lord'.",
       "source": "generated",
       "needs_parent_check": true,
-      "topic": "mary"
+      "topic": "mary",
+      "hint": "It begins 'My soul magnifies the Lord'."
     },
     {
       "id": "re-q-19",
@@ -656,7 +674,8 @@
       "explain": "Typology links Old Testament people and events to the New Testament.",
       "source": "generated",
       "needs_parent_check": true,
-      "topic": "allegorical"
+      "topic": "allegorical",
+      "hint": "It links the Old Testament to the New Testament."
     },
     {
       "id": "re-q-20",
@@ -672,7 +691,8 @@
       "explain": "The Rosary uses beads to count the prayers.",
       "source": "generated",
       "needs_parent_check": true,
-      "topic": "mary"
+      "topic": "mary",
+      "hint": "You count your prayers on these, one at a time."
     },
     {
       "id": "re-q-21",
@@ -688,7 +708,8 @@
       "explain": "God forms Adam from the dust and breathes life into him.",
       "source": "generated",
       "needs_parent_check": true,
-      "topic": "genesis2"
+      "topic": "genesis2",
+      "hint": "Genesis 2 says God formed him from the ground, then breathed life into him."
     },
     {
       "id": "re-q-22",
@@ -704,7 +725,8 @@
       "explain": "God makes Eve as a partner, because humans are made for relationships.",
       "source": "generated",
       "needs_parent_check": true,
-      "topic": "genesis2"
+      "topic": "genesis2",
+      "hint": "God says something is \"not good\" before making Eve."
     },
     {
       "id": "re-q-23",
@@ -720,7 +742,8 @@
       "explain": "God gives humans the job of caring for creation.",
       "source": "generated",
       "needs_parent_check": true,
-      "topic": "genesis2"
+      "topic": "genesis2",
+      "hint": "A steward is someone who looks after something for its owner."
     },
     {
       "id": "re-q-24",
@@ -736,7 +759,8 @@
       "explain": "There are seven sacraments. Matrimony is one of them.",
       "source": "generated",
       "needs_parent_check": true,
-      "topic": "matrimony"
+      "topic": "matrimony",
+      "hint": "Count them: Baptism, Confirmation, Eucharist, and so on."
     },
     {
       "id": "re-q-25",
@@ -752,7 +776,8 @@
       "explain": "Catholics see 'one flesh' as God's plan for marriage.",
       "source": "generated",
       "needs_parent_check": true,
-      "topic": "matrimony"
+      "topic": "matrimony",
+      "hint": "It is a phrase about two people becoming completely united."
     },
     {
       "id": "re-q-26",
@@ -768,7 +793,8 @@
       "explain": "Catholics can read Genesis allegorically, for its deeper meaning.",
       "source": "generated",
       "needs_parent_check": true,
-      "topic": "allegorical"
+      "topic": "allegorical",
+      "hint": "Catholics can read Genesis allegorically. What does that mean it teaches?"
     },
     {
       "id": "re-q-27",
@@ -784,7 +810,8 @@
       "explain": "Hannah prayed at the temple and made a promise to God.",
       "source": "generated",
       "needs_parent_check": true,
-      "topic": "hannah"
+      "topic": "hannah",
+      "hint": "She went to a holy building to pray."
     },
     {
       "id": "re-q-28",
@@ -800,7 +827,8 @@
       "explain": "She promised her son would serve God, and she kept her promise.",
       "source": "generated",
       "needs_parent_check": true,
-      "topic": "hannah"
+      "topic": "hannah",
+      "hint": "She made a promise about the son she was praying for."
     },
     {
       "id": "re-q-29",
@@ -816,7 +844,8 @@
       "explain": "Jesus is truly God, so his mother is the Mother of God.",
       "source": "generated",
       "needs_parent_check": true,
-      "topic": "mary"
+      "topic": "mary",
+      "hint": "Think about who Mary's son is."
     }
   ],
   "writing_intro": "Use a PEE paragraph: Point, Evidence, Explain. The first three are the Challenge questions from page 10. The last three are the Extended writing topics from page 10.",

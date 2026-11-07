@@ -56,6 +56,7 @@ export async function topicView({ main, params }, subjectId, topicId) {
   let notYet = [];
   let qs = quiz;
   let chosen = null;
+  let hintShown = false;
   let score = 0;
   let missed = [];
   let quizRound = 1;
@@ -131,8 +132,14 @@ export async function topicView({ main, params }, subjectId, topicId) {
     } else if (step === 'quiz') {
       const q = qs[i];
       const spoken = `${q.q} ${q.options.map((o, k) => `${LETTERS[k]}: ${o}.`).join(' ')}`;
+      // The hint starts hidden. Using it does not change the score.
+      const hint = q.hint ? `<div class="hint-area">
+          <button type="button" class="btn small-btn hint-btn" id="hint-btn" aria-expanded="${hintShown}" aria-controls="hint-box">${icon('bulb')}${hintShown ? 'Hide hint' : 'Show hint'}</button>
+          <div class="hint-box" id="hint-box"${hintShown ? '' : ' hidden'}>${sayRow(`<p><strong>Hint:</strong> ${esc(q.hint)}</p>`, `Hint. ${q.hint}`)}</div>
+        </div>` : '';
       body = `${bar(i + 1, qs.length, 'Question')}
         <div class="panel">${sayRow(`<p class="big-text">${esc(q.q)}</p>`, spoken)}</div>
+        ${hint}
         <ul class="options">${q.options.map((o, k) => {
           let cls = 'option';
           if (chosen !== null && k === q.answer) cls += ' correct';
@@ -171,7 +178,7 @@ export async function topicView({ main, params }, subjectId, topicId) {
   }
 
   function goTo(newStep) {
-    step = newStep; i = 0; shown = false; chosen = null;
+    step = newStep; i = 0; shown = false; chosen = null; hintShown = false;
     if (newStep === 'cards' || newStep === 'quiz') saveProgress(subjectId, topicId, { step: newStep });
     render(); focusMain();
   }
@@ -210,6 +217,13 @@ export async function topicView({ main, params }, subjectId, topicId) {
       on('#go', afterCards);
     }
     if (step === 'quiz') {
+      on('#hint-btn', () => {
+        hintShown = !hintShown;
+        const btn = main.querySelector('#hint-btn');
+        main.querySelector('#hint-box').hidden = !hintShown;
+        btn.setAttribute('aria-expanded', String(hintShown));
+        btn.innerHTML = `${icon('bulb')}${hintShown ? 'Hide hint' : 'Show hint'}`;
+      });
       main.querySelectorAll('.option').forEach(b => {
         b.onclick = () => {
           chosen = Number(b.dataset.k);
@@ -217,10 +231,10 @@ export async function topicView({ main, params }, subjectId, topicId) {
           render(); main.querySelector('#go').focus({ preventScroll: true });
         };
       });
-      on('#go', () => { chosen = null; i++; if (i < qs.length) { render(); focusMain(); } else finish(); });
+      on('#go', () => { chosen = null; hintShown = false; i++; if (i < qs.length) { render(); focusMain(); } else finish(); });
     }
     if (step === 'done') {
-      on('#retry', () => { qs = missed; missed = []; score = 0; quizRound++; step = 'quiz'; i = 0; chosen = null; render(); focusMain(); });
+      on('#retry', () => { qs = missed; missed = []; score = 0; quizRound++; step = 'quiz'; i = 0; chosen = null; hintShown = false; render(); focusMain(); });
     }
   }
 

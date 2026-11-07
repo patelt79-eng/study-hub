@@ -363,7 +363,8 @@
       "answer": 1,
       "explain": "It was signed in June 1919 in the Palace of Versailles, near Paris.",
       "source": "generated",
-      "topic": "versailles-aims"
+      "topic": "versailles-aims",
+      "hint": "The war ended in November 1918. The treaty came the next summer."
     },
     {
       "id": "his-q-02",
@@ -378,7 +379,8 @@
       "answer": 0,
       "explain": "Clemenceau of France wanted revenge and security for France.",
       "source": "generated",
-      "topic": "versailles-aims"
+      "topic": "versailles-aims",
+      "hint": "France suffered the most damage. Who led France?"
     },
     {
       "id": "his-q-03",
@@ -393,7 +395,8 @@
       "answer": 1,
       "explain": "Article 231 made Germany accept the blame for starting the war.",
       "source": "generated",
-      "topic": "versailles-terms"
+      "topic": "versailles-terms",
+      "hint": "Article 231 was about who was responsible for the war."
     },
     {
       "id": "his-q-04",
@@ -408,7 +411,8 @@
       "answer": 3,
       "explain": "The army was limited to 100,000 soldiers, with no conscription.",
       "source": "generated",
-      "topic": "versailles-terms"
+      "topic": "versailles-terms",
+      "hint": "It was a small army: one hundred thousand."
     },
     {
       "id": "his-q-05",
@@ -423,7 +427,8 @@
       "answer": 0,
       "explain": "Wilson's Fourteen Points aimed for a fair, lasting peace.",
       "source": "generated",
-      "topic": "versailles-aims"
+      "topic": "versailles-aims",
+      "hint": "He was the American president with the Fourteen Points."
     },
     {
       "id": "his-q-06",
@@ -438,7 +443,8 @@
       "answer": 2,
       "explain": "Alsace-Lorraine was returned to France.",
       "source": "generated",
-      "topic": "versailles-terms"
+      "topic": "versailles-terms",
+      "hint": "It is a region on the border between France and Germany, with a double name."
     },
     {
       "id": "his-q-07",
@@ -453,7 +459,8 @@
       "answer": 1,
       "explain": "Article 48 gave the President emergency powers.",
       "source": "generated",
-      "topic": "weimar"
+      "topic": "weimar",
+      "hint": "It was an emergency power for one person."
     },
     {
       "id": "his-q-08",
@@ -468,7 +475,8 @@
       "answer": 3,
       "explain": "In 1923 money became almost worthless.",
       "source": "generated",
-      "topic": "weimar"
+      "topic": "weimar",
+      "hint": "It was the same year as the Munich Putsch."
     },
     {
       "id": "his-q-09",
@@ -483,7 +491,8 @@
       "answer": 0,
       "explain": "They took goods instead when Germany did not pay.",
       "source": "generated",
-      "topic": "weimar"
+      "topic": "weimar",
+      "hint": "It was about money Germany owed under the treaty."
     },
     {
       "id": "his-q-10",
@@ -498,7 +507,8 @@
       "answer": 2,
       "explain": "Coalitions often disagreed and fell apart.",
       "source": "generated",
-      "topic": "weimar"
+      "topic": "weimar",
+      "hint": "With so many parties, no single party had a majority."
     },
     {
       "id": "his-q-11",
@@ -513,7 +523,8 @@
       "answer": 1,
       "explain": "Stresemann brought in a new currency and the Dawes Plan.",
       "source": "generated",
-      "topic": "weimar"
+      "topic": "weimar",
+      "hint": "He brought in a new currency and the Dawes Plan."
     },
     {
       "id": "his-q-12",
@@ -528,7 +539,8 @@
       "answer": 0,
       "explain": "It started in a beer hall in Munich, Bavaria.",
       "source": "generated",
-      "topic": "rise"
+      "topic": "rise",
+      "hint": "The Putsch started in a beer hall in Bavaria's capital."
     },
     {
       "id": "his-q-13",
@@ -543,7 +555,8 @@
       "answer": 2,
       "explain": "He was sentenced to five years but served about nine months.",
       "source": "generated",
-      "topic": "rise"
+      "topic": "rise",
+      "hint": "Think about what happens to someone who breaks the law."
     },
     {
       "id": "his-q-14",
@@ -558,7 +571,8 @@
       "answer": 3,
       "explain": "Mein Kampf means 'My Struggle'.",
       "source": "generated",
-      "topic": "rise"
+      "topic": "rise",
+      "hint": "Its title means 'My Struggle'."
     },
     {
       "id": "his-q-15",
@@ -573,7 +587,8 @@
       "answer": 1,
       "explain": "The Wall Street Crash in the USA caused a world economic crisis.",
       "source": "generated",
-      "topic": "rise"
+      "topic": "rise",
+      "hint": "It started in New York, on the stock market."
     },
     {
       "id": "his-q-16",
@@ -588,7 +603,8 @@
       "answer": 0,
       "explain": "President Hindenburg appointed him on 30 January 1933.",
       "source": "generated",
-      "topic": "rise"
+      "topic": "rise",
+      "hint": "It was at the start of the year the Nazis took power."
     },
     {
       "id": "his-q-17",
@@ -603,7 +619,8 @@
       "answer": 2,
       "explain": "It gave Hitler the power of a dictator.",
       "source": "generated",
-      "topic": "control"
+      "topic": "control",
+      "hint": "It enabled Hitler to act without parliament."
     },
     {
       "id": "his-q-18",
@@ -618,7 +635,8 @@
       "answer": 3,
       "explain": "Hitler removed Röhm, the SA leader, and others in June 1934.",
       "source": "generated",
-      "topic": "control"
+      "topic": "control",
+      "hint": "He led the SA, the Brownshirts."
     },
     {
       "id": "his-q-19",
@@ -633,7 +651,8 @@
       "answer": 0,
       "explain": "The Gestapo spied on people and arrested opponents.",
       "source": "generated",
-      "topic": "control"
+      "topic": "control",
+      "hint": "They spied on people and arrested opponents."
     },
     {
       "id": "his-q-20",
@@ -648,7 +667,8 @@
       "answer": 1,
       "explain": "Joseph Goebbels controlled the radio, films, newspapers and rallies.",
       "source": "generated",
-      "topic": "control"
+      "topic": "control",
+      "hint": "He was the Minister of Propaganda. His name starts with G."
     },
     {
       "id": "his-q-21",
@@ -663,7 +683,8 @@
       "answer": 2,
       "explain": "He used it as an excuse to arrest communists.",
       "source": "generated",
-      "topic": "control"
+      "topic": "control",
+      "hint": "Hitler used the fire as an excuse to arrest his left-wing enemies."
     }
   ],
   "writing": [],

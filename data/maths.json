@@ -1568,7 +1568,8 @@
       "answer": 1,
       "explain": "Multiply first: 3 × 4 = 12. Then 5 + 12 = 17.",
       "source": "generated",
-      "topic": "number"
+      "topic": "number",
+      "hint": "BIDMAS: multiply before you add."
     },
     {
       "id": "ma-q-02",
@@ -1583,7 +1584,8 @@
       "answer": 0,
       "explain": "6 is the biggest number that divides into both 18 and 24.",
       "source": "generated",
-      "topic": "number"
+      "topic": "number",
+      "hint": "List the factors of 18 and 24. Find the biggest one in both lists."
     },
     {
       "id": "ma-q-03",
@@ -1598,7 +1600,8 @@
       "answer": 3,
       "explain": "24 is the smallest number in both the 8 and 12 times tables.",
       "source": "generated",
-      "topic": "number"
+      "topic": "number",
+      "hint": "Count up in 8s and 12s. Find the first number in both lists."
     },
     {
       "id": "ma-q-04",
@@ -1613,7 +1616,8 @@
       "answer": 1,
       "explain": "Multiplying: add the powers. 4 + 3 = 7.",
       "source": "generated",
-      "topic": "number"
+      "topic": "number",
+      "hint": "When you multiply powers of the same letter, add the powers."
     },
     {
       "id": "ma-q-05",
@@ -1628,7 +1632,8 @@
       "answer": 2,
       "explain": "3⁻² = 1/3² = 1/9.",
       "source": "generated",
-      "topic": "number"
+      "topic": "number",
+      "hint": "A negative power means 1 over. Work out 3² first."
     },
     {
       "id": "ma-q-06",
@@ -1643,7 +1648,8 @@
       "answer": 0,
       "explain": "Power of a power: multiply. 2 × 5 = 10.",
       "source": "generated",
-      "topic": "number"
+      "topic": "number",
+      "hint": "A power of a power: multiply the powers."
     },
     {
       "id": "ma-q-07",
@@ -1658,7 +1664,8 @@
       "answer": 1,
       "explain": "Brackets first: 8 − 2 = 6. Then 6 × 5 = 30.",
       "source": "generated",
-      "topic": "number"
+      "topic": "number",
+      "hint": "Brackets first."
     },
     {
       "id": "ma-q-08",
@@ -1673,7 +1680,8 @@
       "answer": 3,
       "explain": "Multiply both terms by 5: 5x and 15.",
       "source": "generated",
-      "topic": "algebra"
+      "topic": "algebra",
+      "hint": "Multiply both terms inside the bracket by 5."
     },
     {
       "id": "ma-q-09",
@@ -1688,7 +1696,8 @@
       "answer": 0,
       "explain": "x² + x + 4x + 4 = x² + 5x + 4.",
       "source": "generated",
-      "topic": "algebra"
+      "topic": "algebra",
+      "hint": "Multiply each term in the first bracket by each term in the second, then collect the x terms."
     },
     {
       "id": "ma-q-10",
@@ -1703,7 +1712,8 @@
       "answer": 1,
       "explain": "The HCF of 9 and 12 is 3.",
       "source": "generated",
-      "topic": "algebra"
+      "topic": "algebra",
+      "hint": "What is the biggest number that divides into 9 and 12?"
     },
     {
       "id": "ma-q-11",
@@ -1718,7 +1728,8 @@
       "answer": 2,
       "explain": "Difference is 4, so 4n. 4n gives 4, 8, 12. Add 2.",
       "source": "generated",
-      "topic": "sequences"
+      "topic": "sequences",
+      "hint": "Find the difference first. Then compare with that times table."
     },
     {
       "id": "ma-q-12",
@@ -1733,7 +1744,8 @@
       "answer": 3,
       "explain": "Add the last two terms: 5 + 8 = 13.",
       "source": "generated",
-      "topic": "sequences"
+      "topic": "sequences",
+      "hint": "Add the last two terms together."
     },
     {
       "id": "ma-q-13",
@@ -1748,7 +1760,8 @@
       "answer": 0,
       "explain": "You multiply by 3 each time.",
       "source": "generated",
-      "topic": "sequences"
+      "topic": "sequences",
+      "hint": "Look for the one where you multiply by the same number each time."
     },
     {
       "id": "ma-q-14",
@@ -1763,7 +1776,8 @@
       "answer": 2,
       "explain": "180 − 110 = 70.",
       "source": "generated",
-      "topic": "angle-rules"
+      "topic": "angle-rules",
+      "hint": "Angles on a straight line add up to 180°."
     },
     {
       "id": "ma-q-15",
@@ -1778,7 +1792,8 @@
       "answer": 1,
       "explain": "Co-interior angles (C shape) add up to 180°.",
       "source": "generated",
-      "topic": "angle-rules"
+      "topic": "angle-rules",
+      "hint": "Co-interior angles make a C shape. They are not equal."
     },
     {
       "id": "ma-q-16",
@@ -1793,7 +1808,8 @@
       "answer": 0,
       "explain": "360 ÷ 8 = 45.",
       "source": "generated",
-      "topic": "polygons"
+      "topic": "polygons",
+      "hint": "Exterior angles add up to 360°. Share them between the sides."
     },
     {
       "id": "ma-q-17",
@@ -1808,7 +1824,8 @@
       "answer": 3,
       "explain": "South is a half turn from north: 180°.",
       "source": "generated",
-      "topic": "polygons"
+      "topic": "polygons",
+      "hint": "Start at north and turn clockwise. South is half a turn."
     },
     {
       "id": "ma-q-18",
@@ -1823,7 +1840,8 @@
       "answer": 0,
       "explain": "Alternate angles (Z shape) are equal.",
       "source": "generated",
-      "topic": "angle-rules"
+      "topic": "angle-rules",
+      "hint": "Alternate angles make a Z shape."
     },
     {
       "id": "ma-q-19",
@@ -1838,7 +1856,8 @@
       "answer": 1,
       "explain": "3/6 + 2/6 = 5/6.",
       "source": "generated",
-      "topic": "fractions"
+      "topic": "fractions",
+      "hint": "Change both to sixths first."
     },
     {
       "id": "ma-q-20",
@@ -1853,7 +1872,8 @@
       "answer": 3,
       "explain": "2 × 1 = 2, 5 × 2 = 10. 2/10 = 1/5.",
       "source": "generated",
-      "topic": "fractions"
+      "topic": "fractions",
+      "hint": "Multiply the tops, multiply the bottoms, then simplify."
     },
     {
       "id": "ma-q-21",
@@ -1868,7 +1888,8 @@
       "answer": 0,
       "explain": "3/4 = 75/100 = 0.75.",
       "source": "generated",
-      "topic": "fractions"
+      "topic": "fractions",
+      "hint": "Change it to hundredths: 3/4 = ?/100."
     },
     {
       "id": "ma-q-22",
@@ -1883,7 +1904,8 @@
       "answer": 2,
       "explain": "2 × 3 = 6, with 2 decimal places: 0.06.",
       "source": "generated",
-      "topic": "fractions"
+      "topic": "fractions",
+      "hint": "Work out 2 × 3, then count the decimal places in the question."
     },
     {
       "id": "ma-q-23",
@@ -1898,7 +1920,8 @@
       "answer": 1,
       "explain": "2/3 × 3/1 = 6/3 = 2.",
       "source": "generated",
-      "topic": "fractions"
+      "topic": "fractions",
+      "hint": "Keep, change, flip: 2/3 × 3/1."
     },
     {
       "id": "ma-q-24",
@@ -1913,7 +1936,8 @@
       "answer": 2,
       "explain": "2 × 4 = 8 and 2 + 4 = 6.",
       "source": "generated",
-      "topic": "sets12"
+      "topic": "sets12",
+      "hint": "Find two numbers that multiply to 8 and add to 6."
     },
     {
       "id": "ma-q-25",
@@ -1928,7 +1952,8 @@
       "answer": 1,
       "explain": "Power 1/2 means square root. √16 = 4.",
       "source": "generated",
-      "topic": "sets12"
+      "topic": "sets12",
+      "hint": "A power of 1/2 means square root."
     },
     {
       "id": "ma-q-26",
@@ -1943,7 +1968,8 @@
       "answer": 0,
       "explain": "x = 0.555…, 10x = 5.555…, so 9x = 5 and x = 5/9.",
       "source": "generated",
-      "topic": "sets12"
+      "topic": "sets12",
+      "hint": "One digit repeats, so it goes over 9."
     },
     {
       "id": "ma-q-27",
@@ -1958,7 +1984,8 @@
       "answer": 3,
       "explain": "These are the square numbers.",
       "source": "generated",
-      "topic": "sets12"
+      "topic": "sets12",
+      "hint": "These are special numbers: 1 × 1, 2 × 2, 3 × 3…"
     },
     {
       "id": "ma-q-28",
@@ -1973,7 +2000,8 @@
       "answer": 1,
       "explain": "2 × 5 + 3 = 13.",
       "source": "generated",
-      "topic": "sequences"
+      "topic": "sequences",
+      "hint": "Put n = 5 into 2n + 3."
     },
     {
       "id": "ma-q-29",
@@ -1988,7 +2016,8 @@
       "answer": 2,
       "explain": "x² + 2x + 3x + 6 = x² + 5x + 6.",
       "source": "generated",
-      "topic": "algebra"
+      "topic": "algebra",
+      "hint": "Multiply out: x times x, x times 2, 3 times x, 3 times 2. Then collect."
     }
   ],
   "resources": [

@@ -832,7 +832,8 @@
       "answer": 1,
       "explain": "J'ai comes from avoir, to have.",
       "source": "generated",
-      "topic": "present"
+      "topic": "present",
+      "hint": "It comes from avoir."
     },
     {
       "id": "fr-q-02",
@@ -847,7 +848,8 @@
       "answer": 0,
       "explain": "Je vais comes from aller, to go.",
       "source": "generated",
-      "topic": "present"
+      "topic": "present",
+      "hint": "It comes from aller."
     },
     {
       "id": "fr-q-03",
@@ -862,7 +864,8 @@
       "answer": 3,
       "explain": "Sommes comes from être, to be.",
       "source": "generated",
-      "topic": "present"
+      "topic": "present",
+      "hint": "Sommes comes from être."
     },
     {
       "id": "fr-q-04",
@@ -877,7 +880,8 @@
       "answer": 0,
       "explain": "Faire: ils font.",
       "source": "generated",
-      "topic": "present"
+      "topic": "present",
+      "hint": "Faire: je fais, tu fais, il fait, nous faisons, vous faites, ils…"
     },
     {
       "id": "fr-q-05",
@@ -892,7 +896,8 @@
       "answer": 2,
       "explain": "Être: vous êtes.",
       "source": "generated",
-      "topic": "present"
+      "topic": "present",
+      "hint": "Être: je suis, tu es, il est, nous sommes, vous…"
     },
     {
       "id": "fr-q-06",
@@ -907,7 +912,8 @@
       "answer": 1,
       "explain": "J'ai + regardé is the passé composé, the past tense.",
       "source": "generated",
-      "topic": "past"
+      "topic": "past",
+      "hint": "J'ai + a past participle is the passé composé."
     },
     {
       "id": "fr-q-07",
@@ -922,7 +928,8 @@
       "answer": 3,
       "explain": "Aller uses être in the passé composé: je suis allé (or allée).",
       "source": "generated",
-      "topic": "past"
+      "topic": "past",
+      "hint": "Aller uses être, not avoir, in the past."
     },
     {
       "id": "fr-q-08",
@@ -937,7 +944,8 @@
       "answer": 0,
       "explain": "-er verbs change to -é: mangé.",
       "source": "generated",
-      "topic": "past"
+      "topic": "past",
+      "hint": "-er verbs change -er to -é."
     },
     {
       "id": "fr-q-09",
@@ -952,7 +960,8 @@
       "answer": 1,
       "explain": "Lu is the past participle of lire, to read.",
       "source": "generated",
-      "topic": "past"
+      "topic": "past",
+      "hint": "Lu is the past participle of lire."
     },
     {
       "id": "fr-q-10",
@@ -967,7 +976,8 @@
       "answer": 2,
       "explain": "J'ai joué is the passé composé. Samedi dernier means last Saturday.",
       "source": "generated",
-      "topic": "past"
+      "topic": "past",
+      "hint": "Look for avoir + a past participle, and a time word like 'dernier'."
     },
     {
       "id": "fr-q-11",
@@ -982,7 +992,8 @@
       "answer": 3,
       "explain": "Un dessin animé is a cartoon.",
       "source": "generated",
-      "topic": "tv"
+      "topic": "tv",
+      "hint": "Animé means animated."
     },
     {
       "id": "fr-q-12",
@@ -997,7 +1008,8 @@
       "answer": 0,
       "explain": "Un jeu télévisé is a TV game show.",
       "source": "generated",
-      "topic": "tv"
+      "topic": "tv",
+      "hint": "Jeu means game. Télévisé means on TV."
     },
     {
       "id": "fr-q-13",
@@ -1012,7 +1024,8 @@
       "answer": 2,
       "explain": "Un film d'horreur is a horror film.",
       "source": "generated",
-      "topic": "films"
+      "topic": "films",
+      "hint": "Horror is horreur in French."
     },
     {
       "id": "fr-q-14",
@@ -1027,7 +1040,8 @@
       "answer": 1,
       "explain": "Cheveux is masculine plural, so the adjective adds -s: longs.",
       "source": "generated",
-      "topic": "looks"
+      "topic": "looks",
+      "hint": "Cheveux is plural, so the adjective needs an -s."
     },
     {
       "id": "fr-q-15",
@@ -1042,7 +1056,8 @@
       "answer": 0,
       "explain": "Marron never changes its ending.",
       "source": "generated",
-      "topic": "looks"
+      "topic": "looks",
+      "hint": "This colour word never changes its ending."
     },
     {
       "id": "fr-q-16",
@@ -1057,7 +1072,8 @@
       "answer": 3,
       "explain": "Je déteste means I hate.",
       "source": "generated",
-      "topic": "opinions"
+      "topic": "opinions",
+      "hint": "It looks like the English word 'detest'."
     },
     {
       "id": "fr-q-17",
@@ -1072,7 +1088,8 @@
       "answer": 1,
       "explain": "De temps en temps means from time to time.",
       "source": "generated",
-      "topic": "time"
+      "topic": "time",
+      "hint": "Temps means time."
     },
     {
       "id": "fr-q-18",
@@ -1087,7 +1104,8 @@
       "answer": 2,
       "explain": "Add -e for feminine: anglaise.",
       "source": "generated",
-      "topic": "nationalities"
+      "topic": "nationalities",
+      "hint": "For feminine, add -e."
     },
     {
       "id": "fr-q-19",
@@ -1102,7 +1120,8 @@
       "answer": 0,
       "explain": "Une BD is short for une bande dessinée, a comic book.",
       "source": "generated",
-      "topic": "reading"
+      "topic": "reading",
+      "hint": "BD is short for bande dessinée: drawn strips."
     },
     {
       "id": "fr-q-20",
@@ -1117,7 +1136,8 @@
       "answer": 3,
       "explain": "Une fois par semaine means once a week.",
       "source": "generated",
-      "topic": "time"
+      "topic": "time",
+      "hint": "Fois means time (as in \"one time\"). Semaine means week."
     },
     {
       "id": "fr-q-21",
@@ -1132,7 +1152,8 @@
       "answer": 1,
       "explain": "C'est nul means it's rubbish.",
       "source": "generated",
-      "topic": "opinions"
+      "topic": "opinions",
+      "hint": "Nul is a negative opinion."
     },
     {
       "id": "fr-q-22",
@@ -1147,7 +1168,8 @@
       "answer": 1,
       "explain": "La météo is the weather forecast.",
       "source": "generated",
-      "topic": "tv"
+      "topic": "tv",
+      "hint": "You watch it to find out if it will rain."
     },
     {
       "id": "fr-q-23",
@@ -1162,7 +1184,8 @@
       "answer": 2,
       "explain": "Un film d'amour is a romantic film.",
       "source": "generated",
-      "topic": "films"
+      "topic": "films",
+      "hint": "Amour means love."
     },
     {
       "id": "fr-q-24",
@@ -1177,7 +1200,8 @@
       "answer": 0,
       "explain": "Un film fantastique is a fantasy film, which is different.",
       "source": "generated",
-      "topic": "films"
+      "topic": "films",
+      "hint": "The French is almost the same as the English."
     },
     {
       "id": "fr-q-25",
@@ -1192,7 +1216,8 @@
       "answer": 3,
       "explain": "Je lis comes from lire, to read.",
       "source": "generated",
-      "topic": "reading"
+      "topic": "reading",
+      "hint": "It comes from lire."
     },
     {
       "id": "fr-q-26",
@@ -1207,7 +1232,8 @@
       "answer": 1,
       "explain": "Cheveux is plural, so court becomes courts.",
       "source": "generated",
-      "topic": "looks"
+      "topic": "looks",
+      "hint": "Cheveux is plural, so the adjective needs an -s."
     },
     {
       "id": "fr-q-27",
@@ -1222,7 +1248,8 @@
       "answer": 2,
       "explain": "Série is feminine and singular, so add -e.",
       "source": "generated",
-      "topic": "nationalities"
+      "topic": "nationalities",
+      "hint": "Série is feminine and singular. Add one letter."
     },
     {
       "id": "fr-q-28",
@@ -1237,7 +1264,8 @@
       "answer": 3,
       "explain": "Dernier means last.",
       "source": "generated",
-      "topic": "time"
+      "topic": "time",
+      "hint": "Dernier means the one before this one."
     }
   ],
   "french_tasks": [

@@ -273,7 +273,8 @@
       "answer": 1,
       "explain": "It says the classroom IS a zoo, without 'like' or 'as'.",
       "source": "generated",
-      "topic": "techniques"
+      "topic": "techniques",
+      "hint": "It says the classroom IS something. There is no \"like\" or \"as\"."
     },
     {
       "id": "en-q-02",
@@ -288,7 +289,8 @@
       "answer": 0,
       "explain": "It compares using 'as … as'.",
       "source": "generated",
-      "topic": "techniques"
+      "topic": "techniques",
+      "hint": "Look for the word \"as\"."
     },
     {
       "id": "en-q-03",
@@ -303,7 +305,8 @@
       "answer": 3,
       "explain": "The word 'never' is used three times for emphasis.",
       "source": "generated",
-      "topic": "techniques"
+      "topic": "techniques",
+      "hint": "How many times does \"never\" appear?"
     },
     {
       "id": "en-q-04",
@@ -318,7 +321,8 @@
       "answer": 2,
       "explain": "The speaker talks straight to 'you'.",
       "source": "generated",
-      "topic": "techniques"
+      "topic": "techniques",
+      "hint": "Who is \"you\"? The speaker talks straight to someone."
     },
     {
       "id": "en-q-05",
@@ -333,7 +337,8 @@
       "answer": 1,
       "explain": "Ellipsis shows words left unsaid, often sadness or doubt.",
       "source": "generated",
-      "topic": "techniques"
+      "topic": "techniques",
+      "hint": "The sentence stops before it is finished."
     },
     {
       "id": "en-q-06",
@@ -348,7 +353,8 @@
       "answer": 0,
       "explain": "Words like 'heartbroken', 'sobbed' and 'alone' are chosen to make us feel sad.",
       "source": "generated",
-      "topic": "techniques"
+      "topic": "techniques",
+      "hint": "Which words are chosen to make you feel sad?"
     },
     {
       "id": "en-q-07",
@@ -363,7 +369,8 @@
       "answer": 3,
       "explain": "It hints at what will happen later.",
       "source": "generated",
-      "topic": "drama"
+      "topic": "drama",
+      "hint": "The early line is a hint about what comes later."
     },
     {
       "id": "en-q-08",
@@ -378,7 +385,8 @@
       "answer": 1,
       "explain": "The audience knows something the character does not.",
       "source": "generated",
-      "topic": "drama"
+      "topic": "drama",
+      "hint": "The audience knows more than the character."
     },
     {
       "id": "en-q-09",
@@ -393,7 +401,8 @@
       "answer": 0,
       "explain": "It says hope IS a candle.",
       "source": "generated",
-      "topic": "techniques"
+      "topic": "techniques",
+      "hint": "Hope IS a candle. No \"like\" or \"as\"."
     },
     {
       "id": "en-q-10",
@@ -408,7 +417,8 @@
       "answer": 2,
       "explain": "It compares using 'like'.",
       "source": "generated",
-      "topic": "techniques"
+      "topic": "techniques",
+      "hint": "Look for the word \"like\"."
     },
     {
       "id": "en-q-11",
@@ -423,7 +433,8 @@
       "answer": 3,
       "explain": "The speaker talks to someone directly and repeats 'listen'.",
       "source": "generated",
-      "topic": "drama"
+      "topic": "drama",
+      "hint": "Two things: the speaker talks to someone, and a word is used twice."
     },
     {
       "id": "en-q-12",
@@ -438,7 +449,8 @@
       "answer": 1,
       "explain": "Words like 'cruel' and 'crushing' make us feel the family's pain.",
       "source": "generated",
-      "topic": "drama"
+      "topic": "drama",
+      "hint": "Words like \"cruel\" and \"crushing\" are chosen to make us feel."
     },
     {
       "id": "en-q-13",
@@ -453,7 +465,8 @@
       "answer": 2,
       "explain": "The play is set in Liverpool.",
       "source": "generated",
-      "topic": "characters"
+      "topic": "characters",
+      "hint": "It is a city in the north-west of England, famous for its football clubs."
     },
     {
       "id": "en-q-14",
@@ -468,7 +481,8 @@
       "answer": 0,
       "explain": "She is already struggling for money with many children.",
       "source": "generated",
-      "topic": "characters"
+      "topic": "characters",
+      "hint": "Think about money and how many children she already has."
     },
     {
       "id": "en-q-15",
@@ -483,7 +497,8 @@
       "answer": 3,
       "explain": "Eddie (Edward) grows up in the wealthy Lyons family.",
       "source": "generated",
-      "topic": "characters"
+      "topic": "characters",
+      "hint": "The rich family brings him up. He goes to university."
     },
     {
       "id": "en-q-16",
@@ -498,7 +513,8 @@
       "answer": 1,
       "explain": "The twins share nature but have different nurture.",
       "source": "generated",
-      "topic": "themes"
+      "topic": "themes",
+      "hint": "Nature is what you are born with. What is the other half?"
     },
     {
       "id": "en-q-17",
@@ -513,7 +529,8 @@
       "answer": 1,
       "explain": "The stage direction at the top of the extract tells you. Check it in your booklet.",
       "source": "generated",
-      "topic": "extract"
+      "topic": "extract",
+      "hint": "Look at the stage direction at the top of the extract."
     },
     {
       "id": "en-q-18",
@@ -528,7 +545,8 @@
       "answer": 0,
       "explain": "She worries about debts and about not being allowed to keep the baby.",
       "source": "generated",
-      "topic": "extract"
+      "topic": "extract",
+      "hint": "She sings about debts and about a baby she cannot keep."
     },
     {
       "id": "en-q-19",
@@ -543,7 +561,8 @@
       "answer": 2,
       "explain": "Linda marries Mickey.",
       "source": "generated",
-      "topic": "characters"
+      "topic": "characters",
+      "hint": "She is friends with both twins, but she marries one of them."
     },
     {
       "id": "en-q-20",
@@ -558,7 +577,8 @@
       "answer": 3,
       "explain": "Money and class give Eddie chances that Mickey does not get.",
       "source": "generated",
-      "topic": "themes"
+      "topic": "themes",
+      "hint": "One twin is rich and one is poor."
     },
     {
       "id": "en-q-21",
@@ -573,7 +593,8 @@
       "answer": 2,
       "explain": "Mrs Johnstone is poor, which is why she gives away a twin. This links to class and gender.",
       "source": "generated",
-      "topic": "themes"
+      "topic": "themes",
+      "hint": "She is the twins' real mother."
     }
   ],
   "writing_intro": "Use PEA paragraphs: Point, Evidence, Analysis. Use your booklet to find the evidence. Type your own quotation from the extract on page 5.",

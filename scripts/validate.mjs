@@ -100,6 +100,11 @@ for (const id of SUBJECTS) {
     else if (new Set(q.options.map(o => o.trim().toLowerCase())).size !== 4) fail(`${f}: quiz ${q.id} has repeated options`);
     if (!Number.isInteger(q.answer) || q.answer < 0 || q.answer > 3) fail(`${f}: quiz ${q.id} must have exactly one correct answer (answer 0 to 3)`);
     if (!q.explain) fail(`${f}: quiz ${q.id} has no explanation`);
+    if (!q.hint) fail(`${f}: quiz ${q.id} has no hint`);
+    else if (Array.isArray(q.options) && q.options[q.answer]) {
+      const ans = q.options[q.answer].toLowerCase().replace(/[.…]/g, '').trim();
+      if (ans.length >= 2 && q.hint.toLowerCase().includes(ans)) fail(`${f}: quiz ${q.id} hint gives away the answer ("${q.options[q.answer]}")`);
+    }
     if (!q.q) fail(`${f}: quiz ${q.id} has no question text`);
   });
   for (const set of qSets) if (!s.quiz.some(q => q.set === set)) fail(`${f}: quiz set "${set}" is empty`);

@@ -366,7 +366,8 @@
       "answer": 1,
       "explain": "Superpowers have strong economies and militaries, and influence other countries.",
       "source": "generated",
-      "topic": "superpowers"
+      "topic": "superpowers",
+      "hint": "Superpowers have power in four ways. Two of them are money and armed forces."
     },
     {
       "id": "geo-q-02",
@@ -381,7 +382,8 @@
       "answer": 0,
       "explain": "The USA was left as the only superpower. This is called global hegemony.",
       "source": "generated",
-      "topic": "superpowers"
+      "topic": "superpowers",
+      "hint": "The Cold War had two superpowers. One of them broke up in 1991."
     },
     {
       "id": "geo-q-03",
@@ -396,7 +398,8 @@
       "answer": 3,
       "explain": "Washington DC is the capital. New York is the largest city.",
       "source": "generated",
-      "topic": "superpowers"
+      "topic": "superpowers",
+      "hint": "It is not the biggest city. It is named after the first president."
     },
     {
       "id": "geo-q-04",
@@ -411,7 +414,8 @@
       "answer": 0,
       "explain": "Hollywood films, music and brands spread American culture around the world.",
       "source": "generated",
-      "topic": "superpowers"
+      "topic": "superpowers",
+      "hint": "Think of something people all over the world watch."
     },
     {
       "id": "geo-q-05",
@@ -426,7 +430,8 @@
       "answer": 2,
       "explain": "The Cold War was a rivalry between the two superpowers from the late 1940s to 1991.",
       "source": "generated",
-      "topic": "superpowers"
+      "topic": "superpowers",
+      "hint": "It was called 'cold' because the two sides never fought each other directly."
     },
     {
       "id": "geo-q-06",
@@ -441,7 +446,8 @@
       "answer": 2,
       "explain": "Brasília is the capital. São Paulo is the biggest city.",
       "source": "generated",
-      "topic": "brazil"
+      "topic": "brazil",
+      "hint": "Brazil built a new capital in the middle of the country. Its name is like the country's name."
     },
     {
       "id": "geo-q-07",
@@ -456,7 +462,8 @@
       "answer": 0,
       "explain": "Trees are cut down for cattle farming, soya, logging and mining.",
       "source": "generated",
-      "topic": "brazil"
+      "topic": "brazil",
+      "hint": "Trees are cut down to make space for farm animals."
     },
     {
       "id": "geo-q-08",
@@ -471,7 +478,8 @@
       "answer": 1,
       "explain": "Rocinha is in Rio de Janeiro. It is one of the largest favelas in Brazil.",
       "source": "generated",
-      "topic": "brazil"
+      "topic": "brazil",
+      "hint": "It is the Brazilian city famous for Christ the Redeemer."
     },
     {
       "id": "geo-q-09",
@@ -486,7 +494,8 @@
       "answer": 3,
       "explain": "Brazil was colonised by Portugal, so Portuguese is the main language.",
       "source": "generated",
-      "topic": "brazil"
+      "topic": "brazil",
+      "hint": "Brazil was once a colony of a European country next to Spain."
     },
     {
       "id": "geo-q-10",
@@ -501,7 +510,8 @@
       "answer": 2,
       "explain": "Moscow is the capital and largest city of Russia.",
       "source": "generated",
-      "topic": "russia"
+      "topic": "russia",
+      "hint": "It is also Russia's biggest city, home of the Kremlin."
     },
     {
       "id": "geo-q-11",
@@ -516,7 +526,8 @@
       "answer": 1,
       "explain": "The USSR broke up in 1991 into 15 separate countries, including Russia and Ukraine.",
       "source": "generated",
-      "topic": "russia"
+      "topic": "russia",
+      "hint": "It was a few years after the Berlin Wall fell in 1989."
     },
     {
       "id": "geo-q-12",
@@ -531,7 +542,8 @@
       "answer": 0,
       "explain": "The economy was struggling, the arms race was expensive, and many republics wanted independence.",
       "source": "generated",
-      "topic": "russia"
+      "topic": "russia",
+      "hint": "Think about money. The arms race cost a lot."
     },
     {
       "id": "geo-q-13",
@@ -547,7 +559,8 @@
       "explain": "In February 2022 Russia invaded Ukraine. The war has caused many deaths and forced millions of people to leave their homes.",
       "source": "generated",
       "needs_parent_check": true,
-      "topic": "russia"
+      "topic": "russia",
+      "hint": "Russia sent its army across the border in 2022."
     },
     {
       "id": "geo-q-14",
@@ -562,7 +575,8 @@
       "answer": 1,
       "explain": "The town of Pripyat was evacuated, and people still cannot live in the exclusion zone.",
       "source": "generated",
-      "topic": "russia"
+      "topic": "russia",
+      "hint": "Radiation made the area unsafe for people to live in."
     },
     {
       "id": "geo-q-15",
@@ -577,7 +591,8 @@
       "answer": 3,
       "explain": "Britain ruled India until independence in 1947. This period is called the British Raj.",
       "source": "generated",
-      "topic": "india"
+      "topic": "india",
+      "hint": "This period is called the British Raj."
     },
     {
       "id": "geo-q-16",
@@ -592,7 +607,8 @@
       "answer": 0,
       "explain": "Dharavi is in Mumbai. It is one of the largest slums in Asia.",
       "source": "generated",
-      "topic": "india"
+      "topic": "india",
+      "hint": "It is India's biggest city, on the west coast."
     },
     {
       "id": "geo-q-17",
@@ -607,7 +623,8 @@
       "answer": 2,
       "explain": "Pull factors attract people to a place. Push factors make people leave a place.",
       "source": "generated",
-      "topic": "india"
+      "topic": "india",
+      "hint": "A pull factor attracts people. What does the city have that villages don't?"
     },
     {
       "id": "geo-q-18",
@@ -622,7 +639,8 @@
       "answer": 1,
       "explain": "The Taj Mahal is in Agra. It is one of India's most famous tourist attractions.",
       "source": "generated",
-      "topic": "india"
+      "topic": "india",
+      "hint": "It is a city in the north of India, not the capital."
     },
     {
       "id": "geo-q-19",
@@ -637,7 +655,8 @@
       "answer": 0,
       "explain": "Beijing is the capital. Shanghai is the largest city.",
       "source": "generated",
-      "topic": "china"
+      "topic": "china",
+      "hint": "The Forbidden City is there. Its name starts with B."
     },
     {
       "id": "geo-q-20",
@@ -652,7 +671,8 @@
       "answer": 2,
       "explain": "Foxconn makes electronics for brands such as Apple in large factories in China.",
       "source": "generated",
-      "topic": "china"
+      "topic": "china",
+      "hint": "TNC stands for transnational corporation. Foxconn makes phones for Apple."
     },
     {
       "id": "geo-q-21",
@@ -668,7 +688,8 @@
       "explain": "Reports have described long hours, low pay and strict rules for workers. This is exploitation.",
       "source": "generated",
       "needs_parent_check": true,
-      "topic": "china"
+      "topic": "china",
+      "hint": "Think about how the factory workers were treated."
     },
     {
       "id": "geo-q-22",
@@ -683,7 +704,8 @@
       "answer": 1,
       "explain": "China now has the second largest economy in the world.",
       "source": "generated",
-      "topic": "china"
+      "topic": "china",
+      "hint": "Think about how quickly China has become rich since the 1980s."
     },
     {
       "id": "geo-q-23",
@@ -698,7 +720,8 @@
       "answer": 0,
       "explain": "Apartheid laws began in 1948. It ended with free elections in 1994.",
       "source": "generated",
-      "topic": "south-africa"
+      "topic": "south-africa",
+      "hint": "It was just after the Second World War."
     },
     {
       "id": "geo-q-24",
@@ -713,7 +736,8 @@
       "answer": 3,
       "explain": "Nelson Mandela spent 27 years in prison and became president in 1994.",
       "source": "generated",
-      "topic": "south-africa"
+      "topic": "south-africa",
+      "hint": "He spent 27 years in prison before leading the country."
     },
     {
       "id": "geo-q-25",
@@ -728,7 +752,8 @@
       "answer": 1,
       "explain": "Apartheid caused deep inequality, which still affects South Africa today.",
       "source": "generated",
-      "topic": "south-africa"
+      "topic": "south-africa",
+      "hint": "Apartheid kept people apart by race. Who was treated worse?"
     },
     {
       "id": "geo-q-26",
@@ -743,7 +768,8 @@
       "answer": 2,
       "explain": "South Africa is one of the most developed economies in Africa, but it has big gaps between rich and poor.",
       "source": "generated",
-      "topic": "south-africa"
+      "topic": "south-africa",
+      "hint": "South Africa has a lot of industry, cities and mines."
     },
     {
       "id": "geo-q-27",
@@ -758,7 +784,8 @@
       "answer": 1,
       "explain": "Brazil's economy is growing fast as it builds more industry.",
       "source": "generated",
-      "topic": "development"
+      "topic": "development",
+      "hint": "An emerging country is one of the BRICS."
     },
     {
       "id": "geo-q-28",
@@ -773,7 +800,8 @@
       "answer": 0,
       "explain": "Mumbai and São Paulo are megacities.",
       "source": "generated",
-      "topic": "development"
+      "topic": "development",
+      "hint": "'Mega' means very big. Think about the number of people."
     },
     {
       "id": "geo-q-29",
@@ -788,7 +816,8 @@
       "answer": 2,
       "explain": "A primate city is much bigger and more important than any other city in its country.",
       "source": "generated",
-      "topic": "development"
+      "topic": "development",
+      "hint": "'Primate' here means 'first'. London is first by a long way."
     }
   ],
   "resources": [
