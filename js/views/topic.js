@@ -6,6 +6,7 @@ import { todayISO, shortDate } from '../dates.js';
 import { esc, sayRow, plural, markSessionFromParams } from '../ui.js';
 import { icon } from '../meta.js';
 import { renderVisual } from '../visuals.js';
+import { sendQuizReport } from '../report.js';
 
 const LETTERS = ['A', 'B', 'C', 'D'];
 const STEPS = [['learn', 'Learn'], ['cards', 'Flashcards'], ['quiz', 'Quiz']];
@@ -19,6 +20,13 @@ function saveProgress(subjectId, topicId, patch) {
   all[subjectId] = all[subjectId] || {};
   all[subjectId][topicId] = { ...(all[subjectId][topicId] || {}), ...patch };
   store.set('topicProgress', all);
+}
+
+// "3 of 6 topics done (50%)", used in parent reports.
+export function subjectProgressText(s) {
+  const prog = topicProgress(s.id);
+  const done = s.topics.filter(x => prog[x.id] && prog[x.id].done).length;
+  return `${done} of ${s.topics.length} topics done (${Math.round((done / s.topics.length) * 100)}%)`;
 }
 
 export function topicParts(s, t) {
@@ -191,6 +199,10 @@ export async function topicView({ main, params }, subjectId, topicId) {
     if (quizRound === 1 && quiz.length) { patch.score = score; patch.total = qs.length; }
     saveProgress(subjectId, topicId, patch);
     markSessionFromParams(params);
+    // Tell a parent how the quiz went (only the first attempt, and only if reports are set up).
+    if (quizRound === 1 && quiz.length) {
+      sendQuizReport({ subject: s.name, topic: t.title, quiz: 'Topic quiz', score, total: qs.length, subjectProgress: subjectProgressText(s) });
+    }
     step = 'done';
     render(); focusMain();
   }

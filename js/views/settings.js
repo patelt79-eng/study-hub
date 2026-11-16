@@ -5,6 +5,7 @@ import { getJSON, classChoice, isDefaultClass } from '../data.js';
 import { supported as speechSupported, speak, voicesFor, quality, QUALITY_LABEL, savedVoiceKey, onVoicesChanged, isRobotic, displayName } from '../speech.js';
 import { savedTheme, applyTheme, SKINS, savedSkin, applySkin } from '../theme.js';
 import { esc } from '../ui.js';
+import { reportUrl, reportName, saveReportSettings, sendTestReport } from '../report.js';
 
 const SAMPLE = {
   en: 'Hello. This is how I will read your flashcards and questions.',
@@ -89,6 +90,20 @@ export async function settingsView({ main }) {
         <p class="small muted">Downloads are free. Premium voices are larger files, so use Wi-Fi.</p>
       </details>
     </fieldset>` : `<p class="muted">Read-aloud is not available in this browser.</p>`}
+    <details id="reports"><summary>Quiz reports for a parent${reportUrl() ? ' (on)' : ''}</summary>
+      <p>For a parent. After each quiz, this tablet can email the result to you: student, subject, topic, score, percentage and how much of the subject is done.</p>
+      <p class="small muted">You need your own Google Apps Script address. The setup steps are at the top of the file scripts/quiz-email.gs. The address and the name are saved on this tablet only.</p>
+      <label for="report-name">Student's name (used in the email)</label>
+      <input type="text" id="report-name" value="${esc(reportName())}" autocomplete="off" maxlength="40">
+      <label for="report-url">Google Apps Script address (ends in /exec)</label>
+      <input type="text" id="report-url" value="${esc(reportUrl())}" autocomplete="off" autocapitalize="off" spellcheck="false" inputmode="url" placeholder="https://script.google.com/macros/s/…/exec">
+      <div class="row">
+        <button type="button" class="btn primary" id="save-report">Save</button>
+        <button type="button" class="btn" id="test-report">Send a test email</button>
+        <button type="button" class="btn" id="off-report">Turn reports off</button>
+      </div>
+      <p id="report-msg" role="status"></p>
+    </details>
     <details${isDefault ? '' : ' open'}><summary>Not my class?</summary>
       <p>Only change this if the assessment dates in Schedule are wrong for you. This changes your schedule and your daily plan.</p>
       <label for="core">Core group</label>
@@ -130,6 +145,27 @@ export async function settingsView({ main }) {
       speak(SAMPLE[base], base === 'fr' ? 'fr-FR' : 'en-GB', b.dataset.voice || null);
     };
   }
+  const reportMsg = main.querySelector('#report-msg');
+  const saveReport = () => {
+    const ok = saveReportSettings(main.querySelector('#report-url').value, main.querySelector('#report-name').value);
+    reportMsg.textContent = ok
+      ? (reportUrl() ? 'Saved. A result will be emailed after each quiz.' : 'Saved. Reports are off because there is no address.')
+      : 'That address does not look right. It should start with https://script.google.com/macros/s/ and end with /exec.';
+    return ok;
+  };
+  main.querySelector('#save-report').addEventListener('click', saveReport);
+  main.querySelector('#test-report').addEventListener('click', async () => {
+    if (!saveReport() || !reportUrl()) return;
+    reportMsg.textContent = 'Sending a test email…';
+    const sent = await sendTestReport();
+    reportMsg.textContent = sent
+      ? 'Test sent. Check your inbox in a minute. If nothing arrives, check the address and that the script is deployed for "Anyone".'
+      : 'The test could not be sent. Check the internet connection and try again.';
+  });
+  main.querySelector('#off-report').addEventListener('click', () => {
+    main.querySelector('#report-url').value = '';
+    saveReport();
+  });
   main.querySelector('#save-class').addEventListener('click', () => {
     store.set('class', { core: main.querySelector('#core').value, lang: main.querySelector('#lang').value });
     main.querySelector('#class-msg').textContent = 'Saved. Your schedule and plan now use this class.';

@@ -3,6 +3,8 @@
 import * as store from '../store.js';
 import { getSubject } from '../data.js';
 import { todayISO } from '../dates.js';
+import { sendQuizReport } from '../report.js';
+import { subjectProgressText } from './topic.js';
 import { esc, sayRow, speakBtn, minutes, plural, markSessionFromParams, doneButtons, finishedLine } from '../ui.js';
 
 const LETTERS = ['A', 'B', 'C', 'D'];
@@ -95,6 +97,7 @@ export async function quizView(ctx, subjectId, setId) {
       h[key] = { score, total: questions.length, date: todayISO(), attempts: (prev ? prev.attempts || 1 : 0) + 1 };
       store.set('quizHistory', h);
       markSessionFromParams(params);
+      sendQuizReport({ subject: s.name, topic: title, quiz: 'Full quiz', score, total: questions.length, subjectProgress: subjectProgressText(s) });
     }
     const summary = round === 1
       ? `You answered ${score} out of ${questions.length} correctly.`

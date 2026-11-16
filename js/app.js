@@ -4,6 +4,7 @@ import { supported as speechSupported, speak, stop } from './speech.js';
 import { initThemeButton } from './theme.js';
 import { icon } from './meta.js';
 import { playVisual } from './visuals.js';
+import { flushReports } from './report.js';
 import { getSubject } from './data.js';
 import { esc } from './ui.js';
 import { todayView } from './views/today.js';
@@ -146,6 +147,10 @@ document.addEventListener('click', e => {
 initThemeButton();
 
 document.querySelectorAll('.tabs a').forEach(a => a.insertAdjacentHTML('afterbegin', icon(a.dataset.tab)));
+
+// Send any quiz reports that were waiting (for example from when the tablet was offline).
+flushReports();
+window.addEventListener('online', flushReports);
 
 window.addEventListener('hashchange', route);
 route();
